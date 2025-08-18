@@ -1,3 +1,12 @@
+## [1.0.23](https://github.com/vikejs/vike-server/compare/v1.0.22...v1.0.23) (2025-08-18)
+
+
+### Bug Fixes
+
+* avoid Vite type version mismatch ([2c0985a](https://github.com/vikejs/vike-server/commit/2c0985ac60b986bb226d1c9d87d484b9cd869e79))
+
+
+
 ## [1.0.22](https://github.com/vikejs/vike-server/compare/v1.0.21...v1.0.22) (2025-08-04)
 
 
