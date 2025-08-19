@@ -1,3 +1,86 @@
+## [1.0.23](https://github.com/vikejs/vike-server/compare/v1.0.22...v1.0.23) (2025-08-18)
+
+
+### Bug Fixes
+
+* avoid Vite type version mismatch ([2c0985a](https://github.com/vikejs/vike-server/commit/2c0985ac60b986bb226d1c9d87d484b9cd869e79))
+
+
+
+## [1.0.22](https://github.com/vikejs/vike-server/compare/v1.0.21...v1.0.22) (2025-08-04)
+
+
+### Reverts
+
+* **fix:** better compat with newer vike versions ([5cb8e8b](https://github.com/vikejs/vike-server/commit/5cb8e8b68dd07c08cd07a52ee82fbde20e4b4b94))
+
+
+
+## [1.0.21](https://github.com/vikejs/vike-server/compare/v1.0.20...v1.0.21) (2025-08-04)
+
+
+### Bug Fixes
+
+* better compat with newer vike versions ([8969ea9](https://github.com/vikejs/vike-server/commit/8969ea9a4f0451eb9822aca9ac25fff645de2ad2))
+
+
+
+## [1.0.20](https://github.com/vikejs/vike-server/compare/v1.0.19...v1.0.20) (2025-08-04)
+
+
+### Bug Fixes
+
+* do not try to dedupe vike-server, as it messes up module resolution ([#128](https://github.com/vikejs/vike-server/issues/128)) ([0c63f34](https://github.com/vikejs/vike-server/commit/0c63f340e6429394b615ab186a934b9de8a91ab8))
+
+
+
+## [1.0.19](https://github.com/vikejs/vike-server/compare/v1.0.18...v1.0.19) (2025-06-10)
+
+
+### Bug Fixes
+
+* fix export conditions for bun and deno ([72b23bd](https://github.com/vikejs/vike-server/commit/72b23bd9a75163dc4d5ed7e6a15a7b75a0e2ce17))
+
+
+
+## [1.0.18](https://github.com/vikejs/vike-server/compare/v1.0.17...v1.0.18) (2025-05-30)
+
+
+### Bug Fixes
+
+* add vike-{react,vue,solid} optional peer deps ([#122](https://github.com/vikejs/vike-server/issues/122)) ([b44a784](https://github.com/vikejs/vike-server/commit/b44a7846a4297a903f23d45ea213e5bfca1db0b2))
+* set +stream as config defined by peer dependency ([6ca1f64](https://github.com/vikejs/vike-server/commit/6ca1f64ff365b074b2e7902b4c40635d53597dd8))
+
+
+### MINOR BREAKING CHANGES
+
+* Update `vike` to `0.4.231` or above.
+
+> [!NOTE]
+> We recommend always updating `vike` and `vike-*` extensions together.
+
+
+
+## [1.0.17](https://github.com/vikejs/vike-server/compare/v1.0.16...v1.0.17) (2025-05-29)
+
+
+### Bug Fixes
+
+* set default stream type to Web Stream ([#120](https://github.com/vikejs/vike-server/issues/120)) ([6c18620](https://github.com/vikejs/vike-server/commit/6c18620847796a230b323c7c64b47899e9452b50))
+
+
+### MINOR BREAKING CHANGES
+
+* If you're using `vike-{react,vue,solid}`, update to:
+  - `vike-react@0.6.4` or above
+  - `vike-vue@0.9.2` or above
+  - `vike-solid@0.7.11` or above
+
+> [!NOTE]
+> We recommend always updating `vike` and `vike-*` extensions together.
+
+
+
 ## [1.0.16](https://github.com/vikejs/vike-server/compare/v1.0.15...v1.0.16) (2025-05-12)
 
 

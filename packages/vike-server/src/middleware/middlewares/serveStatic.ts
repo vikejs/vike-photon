@@ -4,12 +4,14 @@ import type { Get, UniversalMiddleware } from '@universal-middleware/core'
 import { cloneRequest, enhance, url as getUrl } from '@universal-middleware/core'
 import { getGlobalContext } from 'vike/server'
 import type { GlobalContextServer } from 'vike/types'
+import { assert } from "../../utils/assert.js";
 import { isVercel } from '../../utils/isVercel.js'
 import type { VikeOptions } from '../types.js'
 
 async function removeBaseUrl(req: Request) {
   if (!req.url) return req
   const globalContext = (await getGlobalContext()) as GlobalContextServer
+  assert(!globalContext.isClientSide)
   const baseAssets = globalContext.baseAssets
   // Don't choke on older Vike versions
   if (baseAssets === undefined) return req
