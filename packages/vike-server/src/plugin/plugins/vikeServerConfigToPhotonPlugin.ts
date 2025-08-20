@@ -12,26 +12,6 @@ export function vikeServerConfigToPhotonPlugin(): Plugin {
           photon: vikeConfig.config.server
         }
       }
-    },
-    // TODO investigate why this happens
-    configEnvironment(_name, config) {
-      if (config.consumer === 'server') {
-        if (config.build?.outDir?.endsWith('/client')) {
-          return {
-            build: {
-              outDir: config.build.outDir.replace(/\/client$/, '/server')
-            }
-          }
-        }
-      } else {
-        if (config.build?.outDir?.endsWith('/server')) {
-          return {
-            build: {
-              outDir: config.build.outDir.replace(/\/server$/, '/client')
-            }
-          }
-        }
-      }
     }
   }
 }
