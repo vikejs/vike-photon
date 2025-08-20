@@ -31,7 +31,16 @@
   "pnpm": {
     "overrides": {
       "vike": "0.4.237-commit-8749e81"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "@prisma/client",
+      "@prisma/engines",
+      "esbuild",
+      "playwright-chromium",
+      "prisma",
+      "sharp"
+    ]
   },
   "packageManager": "pnpm@10.11.0"
 }
