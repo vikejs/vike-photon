@@ -17,9 +17,6 @@ importers:
       '@brillout/test-e2e':
         specifier: ^0.6.10
         version: 0.6.10
-      '@brillout/test-types':
-        specifier: ^0.1.15
-        version: 0.1.15(typescript@5.8.3)
       playwright:
         specifier: ^1.51.1
         version: 1.51.1
@@ -459,12 +456,6 @@ packages:
   '@brillout/test-e2e@0.6.10':
     resolution: {integrity: sha512-eVXMzIXiw7M5TMMAmWmSry5DGWjioXFOkU8J74sjaTNLQjC8qkNp8Mi3/wI0KUlZLMmfo5QWV3z2ToCRAE5TGA==}
     hasBin: true
-
-  '@brillout/test-types@0.1.15':
-    resolution: {integrity: sha512-3akYLhRnuZoK0GLoLzFG1CJb7PMixIgdXnYEABlsOMfQDPEOmXwI6FGoQ6PwgVWc/J9HS8iY7bhED53T26qplw==}
-    hasBin: true
-    peerDependencies:
-      typescript: '>=4.0.0'
 
   '@brillout/vite-plugin-server-entry@0.7.12':
     resolution: {integrity: sha512-yh+tsIl2qpStgj1JofxC6tb1WoDYHGnth7XZtHou5baRkBE7DgmoCRIE+kw6S3511KwCMOcuBQSUszrYg5dLUw==}
@@ -3167,13 +3158,6 @@ snapshots:
       strip-ansi: 6.0.1
     transitivePeerDependencies:
       - encoding
-
-  '@brillout/test-types@0.1.15(typescript@5.8.3)':
-    dependencies:
-      '@brillout/picocolors': 1.0.28
-      fast-glob: 3.3.3
-      source-map-support: 0.5.21
-      typescript: 5.8.3
 
   '@brillout/vite-plugin-server-entry@0.7.12':
     dependencies:

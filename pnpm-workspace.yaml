@@ -2,3 +2,7 @@ packages:
   - 'test/*'
   - 'packages/*'
   - 'examples/*'
+
+shamefullyHoist: true
+linkWorkspacePackages: true
+preferWorkspacePackages: true

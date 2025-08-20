@@ -4,7 +4,8 @@
     "build": "vike build",
     "prepare": "pnpm prisma generate && pnpm prisma db push",
     "prod": "vike build && node build/server/index.mjs",
-    "prod:bun": "vike build && bun --bun --silent build/server/bun-index.mjs"
+    "prod:bun": "vike build && bun --bun --silent build/server/bun-index.mjs",
+    "test:types": "tsc --noEmit"
   },
   "dependencies": {
     "@elysiajs/node": "^1.3.0",

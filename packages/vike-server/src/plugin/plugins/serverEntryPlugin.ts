@@ -24,14 +24,23 @@ export function serverEntryPlugin(): Plugin[] {
         handler(code, id) {
           const meta = this.getModuleInfo(id)?.meta
           if (
-            meta?.photon?.standalone !== true &&
             // No additional Photon target package is in use, so Photon entries are considered Target entries
-            ((isPhotonMeta(meta) && this.environment.config.photon.defaultBuildEnv === 'ssr') ||
-              // `isTargetEntry` is defined by Photon targets
-              meta?.photonConfig?.isTargetEntry)
+            (isPhotonMeta(meta) && this.environment.config.photon.defaultBuildEnv === 'ssr') ||
+            // `isTargetEntry` is defined by Photon targets
+            meta?.photonConfig?.isTargetEntry
           ) {
             const ms = new MagicString(code)
-            ms.prepend(`import "${serverEntryVirtualId}";\n`)
+
+            if (meta?.photon?.standalone !== true) {
+              // Inject Vike virtual server entry
+              ms.prepend(`import "${serverEntryVirtualId}";\n`)
+            }
+
+            // set NODE_ENV to "production", unless it's already defined
+            ms.prepend(`if (typeof process !== 'undefined' && process.env && (!process.env.NODE_ENV || process.env.NODE_ENV === 'undefined')) {
+  process.env.NODE_ENV = 'production';
+}\n`)
+
             return {
               code: ms.toString(),
               map: ms.generateMap({

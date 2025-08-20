@@ -109,6 +109,7 @@
     "dev": "tsup --watch",
     "build": "rm -rf dist && tsup",
     "release": "release-me patch",
+    "test:types": "tsc --noEmit",
     "release:minor": "release-me minor",
     "release:major": "release-me major",
     "release:commit": "release-me commit"

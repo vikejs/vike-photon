@@ -4,7 +4,7 @@
     "dev": "cd ./packages/vike-server/ && pnpm run dev",
     "build": "pnpm --recursive --filter {packages/*} run build",
     "========= Test": "",
-    "test": "test-e2e && test-types",
+    "test": "test-e2e && pnpm --recursive test:types",
     "========= Release": "",
     "release": "cd ./packages/vike-server/ && pnpm run release",
     "release:minor": "cd ./packages/vike-server/ && pnpm run release:minor",
@@ -23,7 +23,6 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@brillout/test-e2e": "^0.6.10",
-    "@brillout/test-types": "^0.1.15",
     "playwright": "^1.51.1"
   },
   "engines": {
@@ -34,5 +33,5 @@
       "vike": "0.4.237-commit-8749e81"
     }
   },
-  "packageManager": "pnpm@9.15.5"
+  "packageManager": "pnpm@10.11.0"
 }
