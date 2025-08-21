@@ -4,7 +4,7 @@ import type { Plugin } from 'vite'
 export function vikeServerConfigToPhotonPlugin(): Plugin {
   return {
     name: 'vike-server:to-photon-config',
-    async config(userConfig) {
+    config(userConfig) {
       const vikeConfig = getVikeConfig(userConfig)
 
       if (vikeConfig.config.server) {
