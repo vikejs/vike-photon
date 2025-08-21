@@ -30,7 +30,7 @@
   },
   "pnpm": {
     "overrides": {
-      "vike": "0.4.237-commit-8749e81"
+      "vike": "0.4.237-commit-e549c30"
     },
     "onlyBuiltDependencies": [
       "@biomejs/biome",
