@@ -38,7 +38,8 @@ export function serverEntryPlugin(): Plugin[] {
 
             // set NODE_ENV to "production", unless it's already defined
             ms.prepend(`if (typeof process !== 'undefined' && process.env && (!process.env.NODE_ENV || process.env.NODE_ENV === 'undefined')) {
-  process.env.NODE_ENV = 'production';
+  const { env } = process;
+  env.NODE_ENV = 'production';
 }\n`)
 
             return {

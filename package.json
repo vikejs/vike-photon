@@ -30,7 +30,7 @@
   },
   "pnpm": {
     "overrides": {
-      "vike": "0.4.237-commit-e549c30",
+      "vike": "0.4.237-commit-fd8294f",
       "@types/node": "^20.17.30"
     },
     "onlyBuiltDependencies": [
