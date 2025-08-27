@@ -36,12 +36,6 @@ export function serverEntryPlugin(): Plugin[] {
               ms.prepend(`import "${serverEntryVirtualId}";\n`)
             }
 
-            // set NODE_ENV to "production", unless it's already defined
-            ms.prepend(`if (typeof process !== 'undefined' && process.env && (!process.env.NODE_ENV || process.env.NODE_ENV === 'undefined')) {
-  const { env } = process;
-  env.NODE_ENV = 'production';
-}\n`)
-
             return {
               code: ms.toString(),
               map: ms.generateMap({

@@ -1,4 +1,4 @@
-import { apply, serve } from '@photonjs/core/express'
+import { apply, serve } from '@photonjs/express'
 import express from 'express'
 
 function startServer() {

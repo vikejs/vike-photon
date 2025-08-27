@@ -1,5 +1,5 @@
 import type { Server } from 'node:http'
-import { apply, serve } from '@photonjs/core/express'
+import { apply, serve } from '@photonjs/express'
 import express from 'express'
 import { getMiddlewares } from 'vike-server/universal-middlewares'
 import { init } from '../database/todoItems.js'

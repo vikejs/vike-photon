@@ -117,7 +117,8 @@
   "dependencies": {
     "@brillout/picocolors": "^1.0.26",
     "@brillout/vite-plugin-server-entry": "^0.7.5",
-    "@photonjs/core": "^0.0.3",
+    "@photonjs/core": "^0.0.7",
+    "@photonjs/runtime": "^0.0.4",
     "@universal-middleware/compress": "^0.2.30",
     "@universal-middleware/core": "^0.4.9",
     "@universal-middleware/elysia": "^0.5.3",

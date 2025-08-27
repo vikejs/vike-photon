@@ -10,7 +10,7 @@ export const compressMiddleware = ((options?) =>
       const compressMiddlewareInternal = compressMiddlewareFactory()(request)
 
       return async (response) => {
-        if (process.env.NODE_ENV !== 'development') {
+        if (process.env.NODE_ENV === 'production') {
           const isAsset = new URL(request.url).pathname.startsWith('/assets/')
           const shouldCompressResponse = compressionType === true || (compressionType === 'static' && isAsset)
           if (shouldCompressResponse) {

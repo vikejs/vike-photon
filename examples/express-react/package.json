@@ -2,10 +2,10 @@
   "scripts": {
     "dev": "vike dev",
     "build": "vike build",
-    "prod": "vike build && node dist/server/index.mjs"
+    "prod": "vike build && NODE_ENV=production node dist/server/index.mjs"
   },
   "dependencies": {
-    "@photonjs/core": "^0.0.3",
+    "@photonjs/express": "^0.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "express": "^5.1.0",
     "react": "^19.1.0",

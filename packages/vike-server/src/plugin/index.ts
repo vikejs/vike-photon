@@ -1,6 +1,6 @@
 export { vikeServer, vikeServer as default }
 
-import { installPhoton } from '@photonjs/core/vite'
+import { installPhoton } from '@photonjs/runtime/vite'
 import type { Plugin } from 'vite'
 import { configPlugin } from './plugins/configPlugin.js'
 import { serverEntryPlugin } from './plugins/serverEntryPlugin.js'

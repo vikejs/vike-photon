@@ -1,4 +1,4 @@
-import { apply, serve } from '@photonjs/core/elysia'
+import { apply, serve } from '@photonjs/elysia'
 import { Elysia } from 'elysia'
 import { getMiddlewares } from 'vike-server/universal-middlewares'
 import { init } from '../database/todoItems'
