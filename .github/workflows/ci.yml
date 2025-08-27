@@ -32,5 +32,3 @@ jobs:
       - run: pnpm exec playwright install chromium
       - run: pnpm run build
       - run: pnpm run test
-        # Avoids the need for cross-env, which can cause issues, mostly returning wrong exit codes
-        shell: bash

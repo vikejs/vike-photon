@@ -21,8 +21,7 @@ function testRun(
 ) {
   run(cmd, {
     serverUrl: options?.https ? 'https://localhost:3000' : 'http://127.0.0.1:3000',
-    isFlaky: options?.isFlaky,
-    doNotFailOnWarning: true
+    isFlaky: options?.isFlaky
   })
   const entry = `./server/index-${process.env.VIKE_NODE_FRAMEWORK || 'hono'}.ts`
   const isProd = cmd.includes('run prod')

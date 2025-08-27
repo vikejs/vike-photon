@@ -3,8 +3,8 @@
     "dev": "vike dev",
     "build": "vike build",
     "prepare": "pnpm prisma generate && pnpm prisma db push",
-    "prod": "vike build && NODE_ENV=production node build/server/index.mjs",
-    "prod:bun": "vike build && NODE_ENV=production bun --bun --silent build/server/bun-index.mjs",
+    "prod": "vike build && node build/server/index.mjs",
+    "prod:bun": "vike build && bun --bun --silent build/server/bun-index.mjs",
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
