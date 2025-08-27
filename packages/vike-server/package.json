@@ -131,8 +131,8 @@
     "esbuild": "^0.25.2"
   },
   "peerDependencies": {
-    "vike": ">=0.4.237",
-    "vite": ">=6"
+    "vike": ">=0.4.238",
+    "vite": ">=7.1"
   },
   "peerDependenciesMeta": {
     "vite": {
@@ -155,7 +155,7 @@
     "rollup": "4.38.0",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3",
-    "vike": "^0.4.237",
+    "vike": "^0.4.238",
     "vite": "^7.1.3"
   },
   "files": [

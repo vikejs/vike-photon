@@ -9,7 +9,7 @@ export { config as default }
 const config = {
   name: 'vike-server',
   require: {
-    vike: '>=0.4.237',
+    vike: '>=0.4.238',
     'vike-react': {
       version: '>=0.6.4',
       optional: true
@@ -26,7 +26,6 @@ const config = {
   vite: {
     plugins: [photon(), vikeServer()]
   },
-  vite6BuilderApp: true,
   // @ts-ignore
   stream: {
     enable: null,
