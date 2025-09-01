@@ -1,1 +1,1 @@
-See [Vike Docs > Server](https://vike.dev/server).
+See [Vike Docs > Server](https://vike.dev/vike-server).

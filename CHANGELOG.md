@@ -249,7 +249,7 @@
 https://github.com/vikejs/vike-server/blob/main/MIGRATION.md
 
 #### Official documentation
-https://vike.dev/server
+https://vike.dev/vike-server
 
 
 ## [0.3.7](https://github.com/vikejs/vike-node/compare/v0.3.6...v0.3.7) (2025-02-25)
