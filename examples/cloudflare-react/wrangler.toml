@@ -1,4 +1,4 @@
-name = "photonc-cloudflare-react-example"
+name = "photon-cloudflare-react-example"
 main = "cloudflare-entry.js"
 compatibility_date = "2025-08-28"
 compatibility_flags = [ "nodejs_compat" ]

@@ -2,8 +2,13 @@ export { testRun }
 
 import { autoRetry, expect, fetch, fetchHtml, getServerUrl, page, run, test } from '@brillout/test-e2e'
 
-function testRun(cmd: 'pnpm run dev' | 'pnpm run prod') {
-  run(cmd, { serverUrl: 'http://127.0.0.1:3000' })
+function testRun(cmd: 'pnpm run dev' | 'pnpm run preview') {
+  run(cmd, {
+    serverUrl: 'http://localhost:3000',
+    tolerateError({ logText }) {
+      return logText.includes("Vite's CLI is deprecated")
+    }
+  })
 
   test('HTML', async () => {
     const html = await fetchHtml('/')
