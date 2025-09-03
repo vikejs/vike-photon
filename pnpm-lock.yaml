@@ -6,6 +6,7 @@ settings:
 
 overrides:
   '@types/node': ^20.17.30
+  vike: 0.4.238-commit-d48a597
 
 importers:
 
@@ -23,9 +24,6 @@ importers:
 
   examples/cloudflare-react:
     dependencies:
-      hono:
-        specifier: ^4.9.2
-        version: 4.9.2
       react:
         specifier: ^19.1.0
         version: 19.1.1
@@ -33,21 +31,18 @@ importers:
         specifier: ^19.1.0
         version: 19.1.1(react@19.1.1)
       vike:
-        specifier: ^0.4.238
-        version: 0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
+        specifier: 0.4.238-commit-d48a597
+        version: 0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
       vike-react:
         specifier: ^0.6.4
-        version: 0.6.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vike@0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1)))
+        version: 0.6.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vike@0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1)))
       vike-server:
         specifier: ^1.0.23
         version: link:../../packages/vike-server
     devDependencies:
       '@photonjs/cloudflare':
         specifier: ^0.0.7
-        version: 0.0.7(@hattip/core@0.0.49)(crossws@0.3.5)(fastify@5.5.0)(h3@1.15.4)(hono@4.9.2)(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))(workerd@1.20250829.0)(wrangler@4.33.2)
-      '@photonjs/hono':
-        specifier: ^0.0.6
-        version: 0.0.6(@hattip/core@0.0.49)(elysia@1.3.13(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.5.0)(h3@1.15.4)(hono@4.9.2)(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
+        version: 0.0.7(@hattip/core@0.0.49)(crossws@0.3.5)(fastify@5.5.0)(h3@1.15.4)(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))(workerd@1.20250829.0)(wrangler@4.33.2)
       '@photonjs/runtime':
         specifier: ^0.0.6
         version: 0.0.6(@hattip/core@0.0.49)(elysia@1.3.13(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.5.0)(h3@1.15.4)(hono@4.9.2)(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
@@ -76,11 +71,11 @@ importers:
         specifier: ^19.1.0
         version: 19.1.1(react@19.1.1)
       vike:
-        specifier: ^0.4.238
-        version: 0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
+        specifier: 0.4.238-commit-d48a597
+        version: 0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
       vike-react:
         specifier: ^0.6.4
-        version: 0.6.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vike@0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1)))
+        version: 0.6.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vike@0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1)))
       vike-server:
         specifier: ^1.0.23
         version: link:../../packages/vike-server
@@ -103,11 +98,11 @@ importers:
         specifier: ^19.1.0
         version: 19.1.1(react@19.1.1)
       vike:
-        specifier: ^0.4.238
-        version: 0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
+        specifier: 0.4.238-commit-d48a597
+        version: 0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
       vike-react:
         specifier: ^0.6.4
-        version: 0.6.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vike@0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1)))
+        version: 0.6.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vike@0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1)))
       vike-server:
         specifier: ^1.0.23
         version: link:../../packages/vike-server
@@ -133,11 +128,11 @@ importers:
         specifier: ^19.1.0
         version: 19.1.1(react@19.1.1)
       vike:
-        specifier: ^0.4.238
-        version: 0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
+        specifier: 0.4.238-commit-d48a597
+        version: 0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
       vike-react:
         specifier: ^0.6.4
-        version: 0.6.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vike@0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1)))
+        version: 0.6.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vike@0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1)))
       vike-server:
         specifier: ^1.0.23
         version: link:../../packages/vike-server
@@ -239,8 +234,8 @@ importers:
         specifier: ^5.8.3
         version: 5.9.2
       vike:
-        specifier: ^0.4.238
-        version: 0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
+        specifier: 0.4.238-commit-d48a597
+        version: 0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
       vite:
         specifier: ^7.1.4
         version: 7.1.4(@types/node@20.19.11)(jiti@2.5.1)
@@ -332,8 +327,8 @@ importers:
         specifier: ^5.8.3
         version: 5.9.2
       vike:
-        specifier: ^0.4.238
-        version: 0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
+        specifier: 0.4.238-commit-d48a597
+        version: 0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
       vike-server:
         specifier: workspace:*
         version: link:../../packages/vike-server
@@ -3394,10 +3389,10 @@ packages:
     peerDependencies:
       react: '>=19'
       react-dom: '>=19'
-      vike: '>=0.4.182'
+      vike: 0.4.238-commit-d48a597
 
-  vike@0.4.238:
-    resolution: {integrity: sha512-Baw9UzQfScC7HCz5AFuuxjEG+1Q2tNQdpUZC1QcP7VmYEliLKqCLyqXqDm+7YekcY1jXfZP/DoCiS0GEzwBEoA==}
+  vike@0.4.238-commit-d48a597:
+    resolution: {integrity: sha512-yhdni3OcfZF7RCiLwL1FYAKlc6N3/o9J7qokFwDhLKZPLTDdzn/87lqfhXXzx2sfc/DUm3g+kNi0rd+VeTLZVQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -4360,7 +4355,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@photonjs/cloudflare@0.0.7(@hattip/core@0.0.49)(crossws@0.3.5)(fastify@5.5.0)(h3@1.15.4)(hono@4.9.2)(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))(workerd@1.20250829.0)(wrangler@4.33.2)':
+  '@photonjs/cloudflare@0.0.7(@hattip/core@0.0.49)(crossws@0.3.5)(fastify@5.5.0)(h3@1.15.4)(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))(workerd@1.20250829.0)(wrangler@4.33.2)':
     dependencies:
       '@cloudflare/vite-plugin': 1.12.2(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))(workerd@1.20250829.0)(wrangler@4.33.2)
       '@photonjs/core': 0.0.9(@hattip/core@0.0.49)(elysia@1.3.13(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.5.0)(h3@1.15.4)(hono@4.9.2)(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
@@ -6525,14 +6520,14 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vike-react@0.6.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vike@0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))):
+  vike-react@0.6.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vike@0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))):
     dependencies:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       react-streaming: 0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      vike: 0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
+      vike: 0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1))
 
-  vike@0.4.238(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1)):
+  vike@0.4.238-commit-d48a597(react-streaming@0.4.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.4(@types/node@20.19.11)(jiti@2.5.1)):
     dependencies:
       '@brillout/import': 0.2.6
       '@brillout/json-serializer': 0.5.20

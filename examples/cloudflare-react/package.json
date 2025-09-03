@@ -1,11 +1,10 @@
 {
   "scripts": {
-    "dev": "vike dev",
-    "build": "vike build",
-    "prod": "vike build && node dist/server/index.mjs"
+    "dev": "vite dev",
+    "build": "vite build",
+    "prod": "vite build && node dist/server/index.mjs"
   },
   "dependencies": {
-    "hono": "^4.9.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "vike": "^0.4.238",
@@ -14,7 +13,6 @@
   },
   "devDependencies": {
     "@photonjs/cloudflare": "^0.0.7",
-    "@photonjs/hono": "^0.0.6",
     "@photonjs/runtime": "^0.0.6",
     "@vitejs/plugin-react": "^4.3.4",
     "vite": "^7.1.4"

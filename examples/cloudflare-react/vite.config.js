@@ -5,14 +5,12 @@ import vike from 'vike/plugin'
 
 export default {
   plugins: [react(), vike(), vikeServer(), cloudflare()],
-  photon: {
-    server: 'server.js'
-  },
   ssr: {
     optimizeDeps: {
       // FIXME
       exclude: [
         'vike-server',
+        'vike',
         '@photonjs/hono',
         '@photonjs/cloudflare',
         '@photonjs/compress',
@@ -24,8 +22,10 @@ export default {
         '@photonjs/hattip',
         '@photonjs/hono',
         '@photonjs/sirv',
-        '@photonjs/srvx'
-      ]
+        '@photonjs/srvx',
+        '@photonjs/runtime'
+      ],
+      include: ['vike > @brillout/require-shim']
     }
   }
 }
