@@ -39,7 +39,8 @@
       "esbuild",
       "playwright-chromium",
       "prisma",
-      "sharp"
+      "sharp",
+      "workerd"
     ]
   },
   "packageManager": "pnpm@10.11.0"
