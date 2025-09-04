@@ -25,6 +25,17 @@ export function configPlugin(): Plugin {
           codeSplitting: {
             framework: false
           }
+        },
+        builder: {
+          // Override Vike's buildApp, because it exit(0)
+          async buildApp(builder) {
+            if (builder.environments.client) {
+              await builder.build(builder.environments.client)
+            }
+            if (builder.environments.ssr) {
+              await builder.build(builder.environments.ssr)
+            }
+          }
         }
       }
     }

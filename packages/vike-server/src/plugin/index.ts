@@ -3,6 +3,7 @@ export { vikeServer, vikeServer as default }
 import { installPhoton } from '@photonjs/runtime/vite'
 import type { Plugin } from 'vite'
 import { configPlugin } from './plugins/configPlugin.js'
+import { routesPlugins } from './plugins/routes.js'
 import { serverEntryPlugin } from './plugins/serverEntryPlugin.js'
 import { setPhotonMeta } from './plugins/setPhotonMeta.js'
 import { standalonePlugin } from './plugins/standalonePlugin.js'
@@ -20,7 +21,8 @@ function vikeServer(): PluginInterop[] {
       resolveMiddlewares() {
         return 'vike-server/universal-middlewares'
       }
-    })
+    }),
+    ...routesPlugins()
     // biome-ignore lint/suspicious/noExplicitAny: cast
   ] satisfies Plugin[] as any
 }
