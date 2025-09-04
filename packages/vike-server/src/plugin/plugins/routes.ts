@@ -26,7 +26,12 @@ export function routesPlugins(): Plugin[] {
             addPhotonEntry(this, name, {
               route: route ?? undefined,
               // Tell the API that this route is compatible with `codeSplitting.framework: false`
-              type: 'server-config'
+              type: 'server-config',
+              // Additional meta that can be used by other vike-* packages to update the entry
+              vikeMeta: {
+                pageId,
+                page
+              }
             })
           }
         }

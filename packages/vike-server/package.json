@@ -9,6 +9,9 @@
     "./plugin": "./dist/plugin.js",
     "./api": "./dist/api.js",
     ".": "./dist/index.js",
+    "./photon-types": {
+      "types": "./photon.d.ts"
+    },
     "./universal-middlewares": {
       "types": "./dist/universal.d.ts",
       "development": {
@@ -160,7 +163,8 @@
     "vite": "^7.1.4"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "photon.d.ts"
   ],
   "repository": "github:vikejs/vike-server",
   "license": "MIT"
