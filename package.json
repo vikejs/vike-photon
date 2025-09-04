@@ -31,7 +31,7 @@
   "pnpm": {
     "overrides": {
       "@types/node": "^20.17.30",
-      "vike": "0.4.238-commit-d48a597"
+      "vike": "0.4.239-commit-050a4a3"
     },
     "onlyBuiltDependencies": [
       "@biomejs/biome",
