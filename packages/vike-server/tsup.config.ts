@@ -27,6 +27,7 @@ export default defineConfig([
     entry: {
       config: './src/config.ts',
       plugin: './src/plugin/index.ts',
+      api: './src/api.ts',
       index: './src/index.ts'
     },
     format: ['esm'],

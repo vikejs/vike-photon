@@ -1,6 +1,7 @@
 import { addPhotonEntry } from '@photonjs/core/api'
 import { getVikeConfig } from 'vike/plugin'
 import type { Plugin } from 'vite'
+import { pageNamePrefix } from "../../api.js";
 
 // Here, we programatically declare all Vike's routes into Photon
 // Further vike-* packages, like vike-vercel, can update those entries (for instance, setting vercel specific metadata)
@@ -19,7 +20,7 @@ export function routesPlugins(): Plugin[] {
           const vikeConfig = getVikeConfig(this.environment.config)
 
           for (const [pageId, page] of Object.entries(vikeConfig.pages)) {
-            const name = `__vike_${pageId}`
+            const name = `${pageNamePrefix}${pageId}`
             // Convert Vike's routes to rou3 format
             // For conversions from popular formats, see https://www.npmjs.com/package/convert-route
             const route = typeof page.route === 'string' ? getParametrizedRoute(page.route) : null

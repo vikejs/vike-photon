@@ -10,7 +10,7 @@ declare module '@photonjs/core' {
     interface EntryBase {
       vikeMeta?: {
         pageId: string
-        page: ValueOf<VikeConfig['pages']>
+        page: ValueOf<import('vike/types').VikeConfig['pages']>
       }
     }
   }
