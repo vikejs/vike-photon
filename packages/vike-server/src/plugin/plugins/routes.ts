@@ -1,7 +1,7 @@
 import { addPhotonEntry } from '@photonjs/core/api'
 import { getVikeConfig } from 'vike/plugin'
 import type { Plugin } from 'vite'
-import { pageNamePrefix } from "../../api.js";
+import { pageNamePrefix } from '../../api.js'
 
 // Here, we programatically declare all Vike's routes into Photon
 // Further vike-* packages, like vike-vercel, can update those entries (for instance, setting vercel specific metadata)
@@ -16,6 +16,8 @@ export function routesPlugins(): Plugin[] {
       },
 
       buildStart: {
+        // Prefer to add new entries as soon as possible, giving some room for other plugins to interact with
+        order: 'pre',
         handler() {
           const vikeConfig = getVikeConfig(this.environment.config)
 
