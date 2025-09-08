@@ -8,9 +8,11 @@ export function vikePhotonConfigToPhotonPlugin(): Plugin {
     config(userConfig) {
       const vikeConfig = getVikeConfig(userConfig);
 
-      if (vikeConfig.config.server) {
+      if (vikeConfig.config.photon) {
+        const { standalone: _, ...photonConfig } = vikeConfig.config.photon;
+
         return {
-          photon: vikeConfig.config.server,
+          photon: photonConfig,
         };
       }
     },

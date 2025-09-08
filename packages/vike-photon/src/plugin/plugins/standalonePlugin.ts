@@ -29,7 +29,7 @@ export function standalonePlugin(): Plugin {
     applyToEnvironment(env) {
       if (env.name === "ssr") {
         const vikeConfig = getVikeConfig(env.config);
-        return Boolean(vikeConfig.config.server?.standalone);
+        return Boolean(vikeConfig.config.photon?.standalone);
       }
       return false;
     },
@@ -54,7 +54,7 @@ export function standalonePlugin(): Plugin {
     enforce: "post",
     async closeBundle() {
       const vikeConfig = getVikeConfig(this.environment.config);
-      const standalone = vikeConfig.config.server?.standalone;
+      const standalone = vikeConfig.config.photon?.standalone;
       const userEsbuildOptions = typeof standalone === "object" && standalone !== null ? standalone.esbuild : {};
 
       await buildWithEsbuild(userEsbuildOptions, this.environment.config);

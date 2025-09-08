@@ -124,14 +124,7 @@
     "@photonjs/runtime": "^0.0.8",
     "@universal-middleware/compress": "^0.2.31",
     "@universal-middleware/core": "^0.4.10",
-    "@universal-middleware/elysia": "^0.5.3",
-    "@universal-middleware/express": "^0.4.19",
-    "@universal-middleware/fastify": "^0.5.20",
-    "@universal-middleware/h3": "^0.4.12",
-    "@universal-middleware/hattip": "^0.4.13",
-    "@universal-middleware/hono": "^0.4.16",
     "@universal-middleware/sirv": "^0.1.21",
-    "arktype": "^2.1.22",
     "esbuild": "^0.25.9"
   },
   "peerDependencies": {

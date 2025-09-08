@@ -32,7 +32,7 @@ const config = {
     type: "web",
   },
   meta: {
-    server: {
+    photon: {
       env: { config: true },
       global: true,
     },
@@ -47,7 +47,7 @@ const config = {
 declare global {
   namespace Vike {
     interface Config {
-      server?: Photon.Config & { standalone?: boolean | null | { esbuild: BuildOptions } };
+      photon?: Photon.Config & { standalone?: boolean | null | { esbuild: BuildOptions } };
     }
   }
 }

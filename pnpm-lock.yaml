@@ -166,30 +166,9 @@ importers:
       '@universal-middleware/core':
         specifier: ^0.4.10
         version: 0.4.10(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)
-      '@universal-middleware/elysia':
-        specifier: ^0.5.3
-        version: 0.5.3(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)
-      '@universal-middleware/express':
-        specifier: ^0.4.19
-        version: 0.4.19(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)
-      '@universal-middleware/fastify':
-        specifier: ^0.5.20
-        version: 0.5.20(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)
-      '@universal-middleware/h3':
-        specifier: ^0.4.12
-        version: 0.4.12(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)
-      '@universal-middleware/hattip':
-        specifier: ^0.4.13
-        version: 0.4.13(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)
-      '@universal-middleware/hono':
-        specifier: ^0.4.16
-        version: 0.4.16(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)
       '@universal-middleware/sirv':
         specifier: ^0.1.21
         version: 0.1.21
-      arktype:
-        specifier: ^2.1.22
-        version: 2.1.22
       esbuild:
         specifier: ^0.25.9
         version: 0.25.9
@@ -351,12 +330,6 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
-
-  '@ark/schema@0.49.0':
-    resolution: {integrity: sha512-GphZBLpW72iS0v4YkeUtV3YIno35Gimd7+ezbPO9GwEi9kzdUrPVjvf6aXSBAfHikaFc/9pqZOpv3pOXnC71tw==}
-
-  '@ark/util@0.49.0':
-    resolution: {integrity: sha512-/BtnX7oCjNkxi2vi6y1399b+9xd1jnCrDYhZ61f0a+3X8x8DxlK52VgEEzyuC2UQMPACIfYrmHkhD3lGt2GaMA==}
 
   '@babel/code-frame@7.27.1':
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
@@ -2066,9 +2039,6 @@ packages:
   any-promise@1.3.0:
     resolution: {integrity: sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A==}
 
-  arktype@2.1.22:
-    resolution: {integrity: sha512-xdzl6WcAhrdahvRRnXaNwsipCgHuNoLobRqhiP8RjnfL9Gp947abGlo68GAIyLtxbD+MLzNyH2YR4kEqioMmYQ==}
-
   array-ify@1.0.0:
     resolution: {integrity: sha512-c5AMf34bKdvPhQ7tBGhqkgKNUzMr4WUs+WDtC2ZUGOUncbxKMTvqxYctiseW3+L4bA8ec+GcZ6/A/FW4m8ukng==}
 
@@ -3580,12 +3550,6 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.30
-
-  '@ark/schema@0.49.0':
-    dependencies:
-      '@ark/util': 0.49.0
-
-  '@ark/util@0.49.0': {}
 
   '@babel/code-frame@7.27.1':
     dependencies:
@@ -5100,11 +5064,6 @@ snapshots:
   ansi-styles@6.2.1: {}
 
   any-promise@1.3.0: {}
-
-  arktype@2.1.22:
-    dependencies:
-      '@ark/schema': 0.49.0
-      '@ark/util': 0.49.0
 
   array-ify@1.0.0: {}
 
