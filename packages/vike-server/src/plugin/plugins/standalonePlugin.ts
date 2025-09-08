@@ -14,6 +14,7 @@ const OPTIONAL_NPM_IMPORTS = [
   'class-transformer'
 ]
 
+// TODO should this be moved to Photon, under node target?
 export function standalonePlugin(): Plugin {
   let root = ''
   let outDir = ''

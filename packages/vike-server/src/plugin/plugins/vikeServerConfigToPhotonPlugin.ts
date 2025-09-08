@@ -1,6 +1,7 @@
 import { getVikeConfig } from 'vike/plugin'
 import type { Plugin } from 'vite'
 
+// Forward config from Vike to Photon
 export function vikeServerConfigToPhotonPlugin(): Plugin {
   return {
     name: 'vike-server:to-photon-config',
