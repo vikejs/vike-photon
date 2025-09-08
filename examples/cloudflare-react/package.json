@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite build && vite preview",
-    "deploy": "vite build && wrangler deploy"
+    "dev": "vike dev",
+    "build": "vike build",
+    "preview": "vike build && vite preview",
+    "deploy": "vike build && wrangler deploy"
   },
   "dependencies": {
     "react": "^19.1.1",
