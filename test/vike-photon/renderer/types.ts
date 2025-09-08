@@ -1,3 +1,5 @@
+import type React from "react";
+
 export type { PageProps };
 
 type Page = (pageProps: PageProps) => React.ReactElement;

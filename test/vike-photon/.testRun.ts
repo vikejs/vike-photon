@@ -43,7 +43,7 @@ function testRun(
     if (isProd && process.env.VIKE_NODE_FRAMEWORK === "h3") {
       // h3 handles streaming very poorly, so we have to preload the page for now
       // See https://github.com/unjs/h3/issues/986
-      page.goto(`${getServerUrl()}/`);
+      await page.goto(`${getServerUrl()}/`);
       await sleep(300);
     }
 

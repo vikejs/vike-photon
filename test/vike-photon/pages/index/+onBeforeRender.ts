@@ -1,10 +1,10 @@
 // https://vike.dev/onBeforeRender
 export { onBeforeRender };
 
-import type { OnBeforeRenderAsync } from "vike/types";
+import type { PageContextServer } from "vike/types";
 import { getTodoItems } from "../../database/todoItems";
 
-const onBeforeRender: OnBeforeRenderAsync = async (pageContext): ReturnType<OnBeforeRenderAsync> => {
+async function onBeforeRender(pageContext: PageContextServer) {
   const todoItemsInitial = await getTodoItems();
 
   return {
@@ -15,4 +15,4 @@ const onBeforeRender: OnBeforeRenderAsync = async (pageContext): ReturnType<OnBe
       },
     },
   };
-};
+}
