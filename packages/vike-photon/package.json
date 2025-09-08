@@ -130,7 +130,7 @@
   "peerDependencies": {
     "vike": ">=0.4.238",
     "vite": ">=7.1",
-    "@photonjs/cloudflare": "^0.0.9"
+    "@photonjs/cloudflare": ">=0.0.9"
   },
   "peerDependenciesMeta": {
     "vite": {
