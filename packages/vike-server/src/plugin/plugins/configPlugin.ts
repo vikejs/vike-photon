@@ -2,17 +2,17 @@ import type { Plugin } from 'vite'
 
 export function configPlugin(): Plugin {
   return {
-    name: 'vike-server:common-config',
+    name: 'vike-photon:common-config',
     config() {
       return {
         resolve: {
           // Contains virtual modules
-          noExternal: ['vike-server']
+          noExternal: ['vike-photon']
         },
         ssr: {
           optimizeDeps: {
             // Those are ESM packages, no need to optimize them
-            exclude: ['vike-server', 'vike'],
+            exclude: ['vike-photon', 'vike'],
             // Still optimize this dual-format dependency
             include: ['vike > @brillout/require-shim']
           }

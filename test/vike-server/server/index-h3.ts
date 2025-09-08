@@ -1,7 +1,7 @@
 import type { Server } from 'node:http'
 import { apply, serve } from '@photonjs/h3'
 import { createApp, createRouter, eventHandler } from 'h3'
-import { getMiddlewares } from 'vike-server/universal-middlewares'
+import { getMiddlewares } from 'vike-photon/universal-middlewares'
 import { init } from '../database/todoItems'
 
 async function startServer() {

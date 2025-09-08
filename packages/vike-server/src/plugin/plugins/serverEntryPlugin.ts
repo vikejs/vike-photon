@@ -1,7 +1,7 @@
 import { serverEntryVirtualId, type VitePluginServerEntryOptions } from '@brillout/vite-plugin-server-entry/plugin'
+import { isPhotonMeta } from '@photonjs/core/api'
 import MagicString from 'magic-string'
 import type { Plugin } from 'vite'
-import { isPhotonMeta } from '@photonjs/core/api'
 
 declare module 'vite' {
   interface UserConfig {
@@ -12,7 +12,7 @@ declare module 'vite' {
 export function serverEntryPlugin(): Plugin[] {
   return [
     {
-      name: 'vike-server:serverEntry',
+      name: 'vike-photon:serverEntry',
       apply: 'build',
 
       applyToEnvironment(env) {
@@ -50,7 +50,7 @@ export function serverEntryPlugin(): Plugin[] {
       sharedDuringBuild: true
     },
     {
-      name: 'vike-server:serverEntry:vitePluginServerEntry',
+      name: 'vike-photon:serverEntry:vitePluginServerEntry',
       /* `inject: true` also needs to be set when running `$ vike preview`, see https://github.com/vikejs/vike/blob/97f1a076cb62fd6b9b210769474a06e368792459/vike/node/api/preview.ts#L21
       apply: 'build',
       */

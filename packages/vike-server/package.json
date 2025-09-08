@@ -1,5 +1,5 @@
 {
-  "name": "vike-server",
+  "name": "vike-photon",
   "version": "1.0.23",
   "type": "module",
   "main": "./dist/index.js",
@@ -166,6 +166,6 @@
     "dist/",
     "photon.d.ts"
   ],
-  "repository": "github:vikejs/vike-server",
+  "repository": "github:vikejs/vike-photon",
   "license": "MIT"
 }

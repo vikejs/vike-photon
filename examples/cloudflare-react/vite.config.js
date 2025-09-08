@@ -1,8 +1,8 @@
 import { cloudflare } from '@photonjs/cloudflare/vite'
 import react from '@vitejs/plugin-react'
-import vikeServer from 'vike-server/plugin'
+import vikePhoton from 'vike-photon/plugin'
 import vike from 'vike/plugin'
 
 export default {
-  plugins: [react(), vike(), vikeServer(), cloudflare()]
+  plugins: [react(), vike(), vikePhoton(), cloudflare()]
 }

@@ -1,4 +1,4 @@
-import vikeServer from 'vike-server/config'
+import vikePhoton from 'vike-photon/config'
 import type { Config } from 'vike/types'
 
 const FRAMEWORK = process.env.VIKE_NODE_FRAMEWORK || 'hono'
@@ -7,7 +7,7 @@ export default {
   passToClient: ['pageProps'],
   clientRouting: true,
   hydrationCanBeAborted: true,
-  extends: [vikeServer],
+  extends: [vikePhoton],
   server: {
     server: `./server/index-${FRAMEWORK}.ts`
   },

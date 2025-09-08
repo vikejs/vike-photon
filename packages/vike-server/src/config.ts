@@ -2,12 +2,12 @@ import type { Photon } from '@photonjs/core'
 import { photon } from '@photonjs/core/vite'
 import type { BuildOptions } from 'esbuild'
 import type { Config } from 'vike/types'
-import { vikeServer } from './plugin/index.js'
+import { vikePhoton } from './plugin/index.js'
 
 export { config as default }
 
 const config = {
-  name: 'vike-server',
+  name: 'vike-photon',
   require: {
     vike: '>=0.4.238',
     'vike-react': {
@@ -24,7 +24,7 @@ const config = {
     }
   },
   vite: {
-    plugins: [photon(), vikeServer()]
+    plugins: [photon(), vikePhoton()]
   },
   // @ts-ignore
   stream: {

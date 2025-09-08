@@ -146,7 +146,7 @@ function testRun(
       })
     })
 
-    test('vike-server server-side HMR (server-entry)', async () => {
+    test('vike-photon server-side HMR (server-entry)', async () => {
       await page.goto(`${getServerUrl()}/`)
 
       expect(await page.textContent('h3')).toBe('x-runtime')
@@ -165,7 +165,7 @@ function testRun(
       expectLog('')
     })
 
-    test('vike-server server-side HMR (+middleware)', async () => {
+    test('vike-photon server-side HMR (+middleware)', async () => {
       const dummyMiddlewarePath = './pages/middlewareDummy.ts'
       {
         const response: Response = await fetch(`${getServerUrl()}/dummy`)

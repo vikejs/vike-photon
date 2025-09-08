@@ -1,6 +1,6 @@
 import { apply, serve } from '@photonjs/elysia'
 import { Elysia } from 'elysia'
-import { getMiddlewares } from 'vike-server/universal-middlewares'
+import { getMiddlewares } from 'vike-photon/universal-middlewares'
 import { init } from '../database/todoItems'
 
 async function startServer() {

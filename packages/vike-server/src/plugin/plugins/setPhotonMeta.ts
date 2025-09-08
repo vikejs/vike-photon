@@ -2,7 +2,7 @@ import type { Plugin } from 'vite'
 
 export function setPhotonMeta(): Plugin {
   return {
-    name: 'vike-server:set-photon-meta',
+    name: 'vike-photon:set-photon-meta',
     transform: {
       filter: {
         id: [/\+middleware\.[jt]s/]

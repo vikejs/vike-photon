@@ -1,8 +1,8 @@
 export { config }
 
-import vikeServer from 'vike-server/config'
+import vikePhoton from 'vike-photon/config'
 
 const config = {
   // https://vike.dev/extends
-  extends: [vikeServer]
+  extends: [vikePhoton]
 }

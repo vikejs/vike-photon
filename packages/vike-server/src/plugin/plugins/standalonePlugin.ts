@@ -1,10 +1,10 @@
 import path from 'node:path'
+import type { Photon } from '@photonjs/core'
 import esbuild, { type BuildOptions } from 'esbuild'
 import { getVikeConfig } from 'vike/plugin'
 import type { Plugin, ResolvedConfig, Rollup } from 'vite'
 import { assert } from '../../utils/assert.js'
 import { toPosixPath } from '../utils/filesystemPathHandling.js'
-import type { Photon } from '@photonjs/core'
 
 const OPTIONAL_NPM_IMPORTS = [
   '@nestjs/microservices',
@@ -24,7 +24,7 @@ export function standalonePlugin(): Plugin {
   let rollupResolve: (...args: any[]) => Promise<any>
 
   return {
-    name: 'vike-server:standalone',
+    name: 'vike-photon:standalone',
     apply: 'build',
     applyToEnvironment(env) {
       if (env.name === 'ssr') {
@@ -41,8 +41,8 @@ export function standalonePlugin(): Plugin {
       root = toPosixPath(config.root)
       outDir = toPosixPath(config.build.outDir)
       outDirAbs = path.isAbsolute(outDir) ? outDir : path.posix.join(root, outDir)
-      const vikeServerConfig = this.environment.config.photon
-      const entries = findRollupBundleEntries(bundle, vikeServerConfig)
+      const vikePhotonConfig = this.environment.config.photon
+      const entries = findRollupBundleEntries(bundle, vikePhotonConfig)
       rollupEntryFilePaths = entries.reduce(
         (acc, cur) => {
           acc[cur.fileName.replace('.js', '.standalone')] = path.posix.join(outDirAbs, cur.fileName)
@@ -115,8 +115,8 @@ function createStandaloneIgnorePlugin(rollupResolve: (...args: any[]) => Promise
   }
 }
 
-function findRollupBundleEntries(bundle: Rollup.OutputBundle, vikeServerConfig: Photon.ConfigResolved) {
-  const entries = ['index', ...vikeServerConfig.entries.map((e) => e.target || e.name)]
+function findRollupBundleEntries(bundle: Rollup.OutputBundle, vikePhotonConfig: Photon.ConfigResolved) {
+  const entries = ['index', ...vikePhotonConfig.entries.map((e) => e.target || e.name)]
 
   const chunks: Rollup.OutputChunk[] = []
   for (const key in bundle) {

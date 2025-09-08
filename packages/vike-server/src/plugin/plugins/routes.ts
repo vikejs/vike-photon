@@ -8,7 +8,7 @@ import { pageNamePrefix } from '../../api.js'
 export function routesPlugins(): Plugin[] {
   return [
     {
-      name: 'vike-server:routes:build',
+      name: 'vike-photon:routes:build',
       apply: 'build',
 
       applyToEnvironment(env) {

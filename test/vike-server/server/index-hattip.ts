@@ -1,7 +1,7 @@
 import type { Server } from 'node:http'
 import { createRouter, type RouterContext } from '@hattip/router'
 import { apply, serve } from '@photonjs/hattip'
-import { getMiddlewares } from 'vike-server/universal-middlewares'
+import { getMiddlewares } from 'vike-photon/universal-middlewares'
 import { init } from '../database/todoItems'
 
 declare module '@hattip/compose' {

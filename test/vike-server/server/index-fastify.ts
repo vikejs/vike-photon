@@ -2,7 +2,7 @@ import type { Server } from 'node:http'
 import { apply, serve } from '@photonjs/fastify'
 import fastify from 'fastify'
 import rawBody from 'fastify-raw-body'
-import { getMiddlewares } from 'vike-server/universal-middlewares'
+import { getMiddlewares } from 'vike-photon/universal-middlewares'
 import { init } from '../database/todoItems.js'
 import { two } from './shared-chunk.js'
 

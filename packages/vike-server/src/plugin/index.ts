@@ -1,4 +1,4 @@
-export { vikeServer, vikeServer as default }
+export { vikePhoton, vikePhoton as default }
 
 import { installPhoton } from '@photonjs/runtime/vite'
 import type { Plugin } from 'vite'
@@ -7,19 +7,19 @@ import { routesPlugins } from './plugins/routes.js'
 import { serverEntryPlugin } from './plugins/serverEntryPlugin.js'
 import { setPhotonMeta } from './plugins/setPhotonMeta.js'
 import { standalonePlugin } from './plugins/standalonePlugin.js'
-import { vikeServerConfigToPhotonPlugin } from './plugins/vikeServerConfigToPhotonPlugin.js'
+import { vikePhotonConfigToPhotonPlugin } from './plugins/vikePhotonConfigToPhotonPlugin.js'
 
 type PluginInterop = Record<string, unknown> & { name: string }
-function vikeServer(): PluginInterop[] {
+function vikePhoton(): PluginInterop[] {
   return [
     configPlugin(),
-    vikeServerConfigToPhotonPlugin(),
+    vikePhotonConfigToPhotonPlugin(),
     ...serverEntryPlugin(),
     standalonePlugin(),
     setPhotonMeta(),
-    ...installPhoton('vike-server', {
+    ...installPhoton('vike-photon', {
       resolveMiddlewares() {
-        return 'vike-server/universal-middlewares'
+        return 'vike-photon/universal-middlewares'
       }
     }),
     ...routesPlugins()
