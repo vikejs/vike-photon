@@ -47,8 +47,8 @@ importers:
         specifier: ^0.0.8
         version: 0.0.8(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
       '@vitejs/plugin-react':
-        specifier: ^4.7.0
-        version: 4.7.0(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
+        specifier: ^5.0.2
+        version: 5.0.2(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
       vite:
         specifier: ^7.1.5
         version: 7.1.5(@types/node@20.19.13)(jiti@2.5.1)
@@ -62,8 +62,8 @@ importers:
         specifier: ^0.0.8
         version: 0.0.8(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
       '@vitejs/plugin-react':
-        specifier: ^4.7.0
-        version: 4.7.0(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
+        specifier: ^5.0.2
+        version: 5.0.2(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
       express:
         specifier: ^5.1.0
         version: 5.1.0
@@ -119,8 +119,8 @@ importers:
         specifier: ^0.0.8
         version: 0.0.8(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
       '@vitejs/plugin-react':
-        specifier: ^4.7.0
-        version: 4.7.0(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
+        specifier: ^5.0.2
+        version: 5.0.2(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
       hono:
         specifier: ^4.9.6
         version: 4.9.6
@@ -205,7 +205,7 @@ importers:
         version: 1.19.1(hono@4.9.6)
       '@types/bun':
         specifier: ^1.2.21
-        version: 1.2.21(@types/react@18.3.24)
+        version: 1.2.21(@types/react@19.1.12)
       '@types/deno':
         specifier: ^2.3.0
         version: 2.3.0
@@ -282,17 +282,17 @@ importers:
         specifier: ^20.19.13
         version: 20.19.13
       '@types/react':
-        specifier: ^18.3.24
-        version: 18.3.24
+        specifier: ^19.1.12
+        version: 19.1.12
       '@types/react-dom':
-        specifier: ^18.3.7
-        version: 18.3.7(@types/react@18.3.24)
+        specifier: ^19.1.9
+        version: 19.1.9(@types/react@19.1.12)
       '@universal-middleware/core':
         specifier: ^0.4.10
         version: 0.4.10(@hattip/core@0.0.49)(elysia@1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.6)
       '@vitejs/plugin-react':
-        specifier: ^4.7.0
-        version: 4.7.0(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
+        specifier: ^5.0.2
+        version: 5.0.2(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))
       elysia:
         specifier: ^1.3.21
         version: 1.3.21(exact-mirror@0.1.6(@sinclair/typebox@0.34.40))(file-type@21.0.0)(typescript@5.9.2)
@@ -1629,9 +1629,6 @@ packages:
   '@remix-run/node-fetch-server@0.8.0':
     resolution: {integrity: sha512-8/sKegb4HrM6IdcQeU0KPhj9VOHm5SUqswJDHuMCS3mwbr/NRx078QDbySmn0xslahvvZoOENd7EnK40kWKxkg==}
 
-  '@rolldown/pluginutils@1.0.0-beta.27':
-    resolution: {integrity: sha512-+d0F4MKMCbeVUJwG96uQ4SgAznZNSq93I3V+9NHA4OpvqG8mRCpGdKmK8l/dl02h2CCDHwW2FqilnTyDcAnqjA==}
-
   '@rolldown/pluginutils@1.0.0-beta.34':
     resolution: {integrity: sha512-LyAREkZHP5pMom7c24meKmJCdhf2hEyvam2q0unr3or9ydwDL+DJ8chTF6Av/RFPb3rH8UFBdMzO5MxTZW97oA==}
 
@@ -1917,22 +1914,19 @@ packages:
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
-  '@types/prop-types@15.7.15':
-    resolution: {integrity: sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==}
-
   '@types/qs@6.14.0':
     resolution: {integrity: sha512-eOunJqu0K1923aExK6y8p6fsihYEn/BYuQ4g0CxAAgFc4b/ZLN4CrsRZ55srTdqoiLzU2B2evC+apEIxprEzkQ==}
 
   '@types/range-parser@1.2.7':
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
 
-  '@types/react-dom@18.3.7':
-    resolution: {integrity: sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==}
+  '@types/react-dom@19.1.9':
+    resolution: {integrity: sha512-qXRuZaOsAdXKFyOhRBg6Lqqc0yay13vN7KrIg4L7N4aaHN68ma9OK3NE1BoDFgFOTfM7zg+3/8+2n8rLUH3OKQ==}
     peerDependencies:
-      '@types/react': ^18.0.0
+      '@types/react': ^19.0.0
 
-  '@types/react@18.3.24':
-    resolution: {integrity: sha512-0dLEBsA1kI3OezMBF8nSsb7Nk19ZnsyE1LLhB8r27KbgU5H4pvuqZLdtE+aUkJVoXgTVuA+iLIwmZ0TuK4tx6A==}
+  '@types/react@19.1.12':
+    resolution: {integrity: sha512-cMoR+FoAf/Jyq6+Df2/Z41jISvGZZ2eTlnsaJRptmZ76Caldwy1odD4xTr/gNV9VLj0AWgg/nmkevIyUfIIq5w==}
 
   '@types/send@0.17.5':
     resolution: {integrity: sha512-z6F2D3cOStZvuk2SaP6YrwkNO65iTZcwA2ZkSABegdkAh/lf+Aa/YQndZVfmEXT5vgAp6zv06VQ3ejSVjAny4w==}
@@ -1998,12 +1992,6 @@ packages:
 
   '@universal-middleware/srvx@0.1.0':
     resolution: {integrity: sha512-9LiPniDaBwHl/V+B6ct4ldBWIAQ/fKGLBBKd/6QaJiZqWQNDPekcfNvR4HjyxX8k8XbFfW3FpPJge4QysRGrig==}
-
-  '@vitejs/plugin-react@4.7.0':
-    resolution: {integrity: sha512-gUu9hwfWvvEDBBmgtAowQCojwZmJ5mcLn3aufeCsitijs3+f2NsrPtlAWIR6OPiqljl96GVCUbLe0HyqIpVaoA==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    peerDependencies:
-      vite: ^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
 
   '@vitejs/plugin-react@5.0.2':
     resolution: {integrity: sha512-tmyFgixPZCx2+e6VO9TNITWcCQl8+Nl/E8YbAyPVv85QCc7/A3JrdfG2A8gIzvVhWuzMOVrFW1aReaNxrI6tbw==}
@@ -4668,8 +4656,6 @@ snapshots:
 
   '@remix-run/node-fetch-server@0.8.0': {}
 
-  '@rolldown/pluginutils@1.0.0-beta.27': {}
-
   '@rolldown/pluginutils@1.0.0-beta.34': {}
 
   '@rollup/rollup-android-arm-eabi@4.38.0':
@@ -4857,9 +4843,9 @@ snapshots:
       '@types/connect': 3.4.38
       '@types/node': 20.19.13
 
-  '@types/bun@1.2.21(@types/react@18.3.24)':
+  '@types/bun@1.2.21(@types/react@19.1.12)':
     dependencies:
-      bun-types: 1.2.21(@types/react@18.3.24)
+      bun-types: 1.2.21(@types/react@19.1.12)
     transitivePeerDependencies:
       - '@types/react'
 
@@ -4896,19 +4882,16 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@types/prop-types@15.7.15': {}
-
   '@types/qs@6.14.0': {}
 
   '@types/range-parser@1.2.7': {}
 
-  '@types/react-dom@18.3.7(@types/react@18.3.24)':
+  '@types/react-dom@19.1.9(@types/react@19.1.12)':
     dependencies:
-      '@types/react': 18.3.24
+      '@types/react': 19.1.12
 
-  '@types/react@18.3.24':
+  '@types/react@19.1.12':
     dependencies:
-      '@types/prop-types': 15.7.15
       csstype: 3.1.3
 
   '@types/send@0.17.5':
@@ -5046,18 +5029,6 @@ snapshots:
       - hono
       - srvx
 
-  '@vitejs/plugin-react@4.7.0(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))':
-    dependencies:
-      '@babel/core': 7.28.3
-      '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.3)
-      '@babel/plugin-transform-react-jsx-source': 7.27.1(@babel/core@7.28.3)
-      '@rolldown/pluginutils': 1.0.0-beta.27
-      '@types/babel__core': 7.20.5
-      react-refresh: 0.17.0
-      vite: 7.1.5(@types/node@20.19.13)(jiti@2.5.1)
-    transitivePeerDependencies:
-      - supports-color
-
   '@vitejs/plugin-react@5.0.2(vite@7.1.5(@types/node@20.19.13)(jiti@2.5.1))':
     dependencies:
       '@babel/core': 7.28.3
@@ -5169,10 +5140,10 @@ snapshots:
 
   buffer-from@1.1.2: {}
 
-  bun-types@1.2.21(@types/react@18.3.24):
+  bun-types@1.2.21(@types/react@19.1.12):
     dependencies:
       '@types/node': 20.19.13
-      '@types/react': 18.3.24
+      '@types/react': 19.1.12
 
   bundle-require@5.1.0(esbuild@0.25.9):
     dependencies:

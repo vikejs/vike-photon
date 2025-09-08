@@ -15,7 +15,7 @@
   "devDependencies": {
     "@photonjs/cloudflare": "^0.0.9",
     "@photonjs/runtime": "^0.0.8",
-    "@vitejs/plugin-react": "^4.7.0",
+    "@vitejs/plugin-react": "^5.0.2",
     "vite": "^7.1.5",
     "wrangler": "^4.34.0"
   },
