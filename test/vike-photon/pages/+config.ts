@@ -8,7 +8,7 @@ export default {
   clientRouting: true,
   hydrationCanBeAborted: true,
   extends: [vikePhoton],
-  server: {
+  photon: {
     server: `./server/index-${FRAMEWORK}.ts`,
   },
   redirects: {
