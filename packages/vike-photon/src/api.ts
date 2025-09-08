@@ -1,1 +1,1 @@
-export const pageNamePrefix = '__vike'
+export const pageNamePrefix = "__vike";

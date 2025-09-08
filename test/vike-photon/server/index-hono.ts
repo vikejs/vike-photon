@@ -1,45 +1,45 @@
-import type { Server } from 'node:http'
-import { apply, serve } from '@photonjs/hono'
-import { Hono } from 'hono'
-import { getMiddlewares } from 'vike-photon/universal-middlewares'
-import { init } from '../database/todoItems'
+import type { Server } from "node:http";
+import { apply, serve } from "@photonjs/hono";
+import { Hono } from "hono";
+import { getMiddlewares } from "vike-photon/universal-middlewares";
+import { init } from "../database/todoItems";
 
 async function startServer() {
-  await init()
+  await init();
   const app = new Hono<{
     Variables: {
-      xRuntime: string
-    }
-  }>()
-  const port = process.env.PORT || 3000
+      xRuntime: string;
+    };
+  }>();
+  const port = process.env.PORT || 3000;
 
-  app.use('*', async (ctx, next) => {
-    ctx.set('xRuntime', 'x-runtime')
-    await next()
-    ctx.header('x-test', 'test')
-  })
+  app.use("*", async (ctx, next) => {
+    ctx.set("xRuntime", "x-runtime");
+    await next();
+    ctx.header("x-test", "test");
+  });
 
   apply(
     app,
-    getMiddlewares<'hono'>({
+    getMiddlewares<"hono">({
       pageContext(runtime) {
         return {
-          xRuntime: runtime.hono.get('xRuntime')
-        }
-      }
-    })
-  )
+          xRuntime: runtime.hono.get("xRuntime"),
+        };
+      },
+    }),
+  );
 
   return serve(app, {
     port: +port,
     onReady() {
-      console.log(`Server running at http://localhost:${port}`)
-      console.log('HOOK CALLED: onReady')
+      console.log(`Server running at http://localhost:${port}`);
+      console.log("HOOK CALLED: onReady");
     },
     onCreate(server?: Server) {
-      console.log('HOOK CALLED: onCreate:', server?.constructor.name)
-    }
-  })
+      console.log("HOOK CALLED: onCreate:", server?.constructor.name);
+    },
+  });
 }
 
-export default await startServer()
+export default await startServer();

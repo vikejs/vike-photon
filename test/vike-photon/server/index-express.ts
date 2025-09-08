@@ -1,48 +1,48 @@
-import type { Server } from 'node:http'
-import { apply, serve } from '@photonjs/express'
-import express from 'express'
-import { getMiddlewares } from 'vike-photon/universal-middlewares'
-import { init } from '../database/todoItems.js'
-import { two } from './shared-chunk.js'
+import type { Server } from "node:http";
+import { apply, serve } from "@photonjs/express";
+import express from "express";
+import { getMiddlewares } from "vike-photon/universal-middlewares";
+import { init } from "../database/todoItems.js";
+import { two } from "./shared-chunk.js";
 
 if (two() !== 2) {
-  throw new Error()
+  throw new Error();
 }
 
 async function startServer() {
-  await init()
-  const app = express()
+  await init();
+  const app = express();
   app.use((req, res, next) => {
     // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-    ;(req as any).xRuntime = 'x-runtime'
-    res.set('x-test', 'test')
-    next()
-  })
+    (req as any).xRuntime = "x-runtime";
+    res.set("x-test", "test");
+    next();
+  });
 
   apply(
     app,
-    getMiddlewares<'express'>({
+    getMiddlewares<"express">({
       pageContext(runtime) {
         return {
           // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-          xRuntime: (runtime.req as any).xRuntime
-        }
-      }
-    })
-  )
+          xRuntime: (runtime.req as any).xRuntime,
+        };
+      },
+    }),
+  );
 
-  const port = process.env.PORT || 3000
+  const port = process.env.PORT || 3000;
 
   return serve(app, {
     port: +port,
     onReady() {
-      console.log(`Server running at http://localhost:${port}`)
-      console.log('HOOK CALLED: onReady')
+      console.log(`Server running at http://localhost:${port}`);
+      console.log("HOOK CALLED: onReady");
     },
     onCreate(server?: Server) {
-      console.log('HOOK CALLED: onCreate:', server?.constructor.name)
-    }
-  })
+      console.log("HOOK CALLED: onCreate:", server?.constructor.name);
+    },
+  });
 }
 
-export default await startServer()
+export default await startServer();

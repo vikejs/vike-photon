@@ -1,8 +1,8 @@
-export default Page
+export default Page;
 
-import type { Todo } from '@prisma/client'
-import React, { useState } from 'react'
-import { TodoList } from './TodoList'
+import type { Todo } from "@prisma/client";
+import React, { useState } from "react";
+import { TodoList } from "./TodoList";
 
 function Page({ todoItemsInitial, xRuntime }: { todoItemsInitial: Todo[]; xRuntime?: string }) {
   return (
@@ -12,11 +12,11 @@ function Page({ todoItemsInitial, xRuntime }: { todoItemsInitial: Todo[]; xRunti
       <Counter />
       <h3>{xRuntime}</h3>
     </>
-  )
+  );
 }
 
 function Counter() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   return (
     <div>
       This page is interactive:
@@ -24,5 +24,5 @@ function Counter() {
         Counter {count}
       </button>
     </div>
-  )
+  );
 }

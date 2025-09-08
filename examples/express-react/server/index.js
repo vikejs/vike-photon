@@ -1,12 +1,12 @@
-import { apply, serve } from '@photonjs/express'
-import express from 'express'
+import { apply, serve } from "@photonjs/express";
+import express from "express";
 
 function startServer() {
-  const app = express()
-  apply(app)
-  const port = process.env.PORT || 3000
+  const app = express();
+  apply(app);
+  const port = process.env.PORT || 3000;
 
-  return serve(app, { port })
+  return serve(app, { port });
 }
 
-export default startServer()
+export default startServer();

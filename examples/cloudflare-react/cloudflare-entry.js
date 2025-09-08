@@ -1,3 +1,3 @@
-import handler from 'photon:cloudflare:photon:server-entry'
+import handler from "photon:cloudflare:photon:server-entry";
 
-export default handler
+export default handler;

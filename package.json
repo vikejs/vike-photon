@@ -21,8 +21,9 @@
     "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.2.3",
     "@brillout/test-e2e": "^0.6.18",
+    "@vikejs/biome-config": "^2.0.1",
     "playwright": "^1.55.0"
   },
   "engines": {

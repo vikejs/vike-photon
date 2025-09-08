@@ -1,19 +1,19 @@
 ///<reference types="@photonjs/core" />
 type ValueOf<T> = T extends {
-  [k: string]: infer U
+  [k: string]: infer U;
 }
   ? U
-  : never
+  : never;
 
-declare module '@photonjs/core' {
+declare module "@photonjs/core" {
   namespace Photon {
     interface EntryBase {
       vikeMeta?: {
-        pageId: string
-        page: ValueOf<import('vike/types').VikeConfig['pages']>
-      }
+        pageId: string;
+        page: ValueOf<import("vike/types").VikeConfig["pages"]>;
+      };
     }
   }
 }
 
-export {}
+export {};

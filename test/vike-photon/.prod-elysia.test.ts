@@ -1,6 +1,6 @@
-process.env.VIKE_NODE_FRAMEWORK = 'elysia'
-process.env.NODE_ENV = 'production'
+process.env.VIKE_NODE_FRAMEWORK = "elysia";
+process.env.NODE_ENV = "production";
 
-import { testRun } from './.testRun'
+import { testRun } from "./.testRun";
 
-testRun('bun --bun --silent run prod:bun', { noServerHook: true })
+testRun("bun --bun --silent run prod:bun", { noServerHook: true });

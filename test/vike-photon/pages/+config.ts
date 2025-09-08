@@ -1,18 +1,18 @@
-import vikePhoton from 'vike-photon/config'
-import type { Config } from 'vike/types'
+import vikePhoton from "vike-photon/config";
+import type { Config } from "vike/types";
 
-const FRAMEWORK = process.env.VIKE_NODE_FRAMEWORK || 'hono'
+const FRAMEWORK = process.env.VIKE_NODE_FRAMEWORK || "hono";
 
 export default {
-  passToClient: ['pageProps'],
+  passToClient: ["pageProps"],
   clientRouting: true,
   hydrationCanBeAborted: true,
   extends: [vikePhoton],
   server: {
-    server: `./server/index-${FRAMEWORK}.ts`
+    server: `./server/index-${FRAMEWORK}.ts`,
   },
   redirects: {
-    '/about-redirect': '/about',
-    '/external-redirect': 'https://vike.dev/'
-  }
-} satisfies Config
+    "/about-redirect": "/about",
+    "/external-redirect": "https://vike.dev/",
+  },
+} satisfies Config;

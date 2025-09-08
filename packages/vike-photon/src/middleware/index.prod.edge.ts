@@ -1,12 +1,12 @@
-import type { UniversalMiddleware } from '@universal-middleware/core'
-import { renderPageHandler } from './middlewares/vike.js'
-import type { VikeOptions } from './types.js'
-import { getUniversalMiddlewaresProd } from './utils.js'
+import type { UniversalMiddleware } from "@universal-middleware/core";
+import { renderPageHandler } from "./middlewares/vike.js";
+import type { VikeOptions } from "./types.js";
+import { getUniversalMiddlewaresProd } from "./utils.js";
 
-const vikeMiddlewares = getUniversalMiddlewaresProd()
+const vikeMiddlewares = getUniversalMiddlewaresProd();
 
 export function getMiddlewares<T = unknown>(options?: VikeOptions<T>): UniversalMiddleware[] {
-  return [...vikeMiddlewares, renderPageHandler(options)]
+  return [...vikeMiddlewares, renderPageHandler(options)];
 }
 
-export default getMiddlewares()
+export default getMiddlewares();

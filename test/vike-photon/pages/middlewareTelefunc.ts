@@ -1,10 +1,10 @@
-export { middlewareTelefunc }
+export { middlewareTelefunc };
 
-import { enhance, type UniversalMiddleware } from '@universal-middleware/core'
-import { telefunc } from 'telefunc'
+import { enhance, type UniversalMiddleware } from "@universal-middleware/core";
+import { telefunc } from "telefunc";
 
 const telefuncUniversalMiddleware: UniversalMiddleware = async (request, context, runtime) => {
-  const url = request.url.toString()
+  const url = request.url.toString();
 
   const httpResponse = await telefunc({
     url,
@@ -12,21 +12,21 @@ const telefuncUniversalMiddleware: UniversalMiddleware = async (request, context
     body: await request.text(),
     context: {
       ...context,
-      ...runtime
-    }
-  })
-  const { body, statusCode, contentType } = httpResponse
+      ...runtime,
+    },
+  });
+  const { body, statusCode, contentType } = httpResponse;
 
   return new Response(body, {
     status: statusCode,
     headers: {
-      'content-type': contentType
-    }
-  })
-}
+      "content-type": contentType,
+    },
+  });
+};
 
 const middlewareTelefunc = enhance(telefuncUniversalMiddleware, {
-  name: 'telefunc',
-  method: 'POST',
-  path: '/_telefunc'
-})
+  name: "telefunc",
+  method: "POST",
+  path: "/_telefunc",
+});

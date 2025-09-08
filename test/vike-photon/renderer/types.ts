@@ -1,15 +1,15 @@
-export type { PageProps }
+export type { PageProps };
 
-type Page = (pageProps: PageProps) => React.ReactElement
-type PageProps = Record<string, unknown>
+type Page = (pageProps: PageProps) => React.ReactElement;
+type PageProps = Record<string, unknown>;
 
 // https://vike.dev/pageContext#typescript
 declare global {
   namespace Vike {
     interface PageContext {
-      Page: Page
-      xRuntime?: string
-      pageProps?: PageProps
+      Page: Page;
+      xRuntime?: string;
+      pageProps?: PageProps;
     }
   }
 }

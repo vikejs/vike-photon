@@ -1,46 +1,46 @@
-import type { Server } from 'node:http'
-import { apply, serve } from '@photonjs/h3'
-import { createApp, createRouter, eventHandler } from 'h3'
-import { getMiddlewares } from 'vike-photon/universal-middlewares'
-import { init } from '../database/todoItems'
+import type { Server } from "node:http";
+import { apply, serve } from "@photonjs/h3";
+import { createApp, createRouter, eventHandler } from "h3";
+import { getMiddlewares } from "vike-photon/universal-middlewares";
+import { init } from "../database/todoItems";
 
 async function startServer() {
-  await init()
-  const app = createApp()
-  const port = process.env.PORT || 3000
+  await init();
+  const app = createApp();
+  const port = process.env.PORT || 3000;
 
-  const router = createRouter()
+  const router = createRouter();
 
-  app.use(router)
+  app.use(router);
 
   app.use(
     eventHandler((event) => {
-      event.context.xRuntime = 'x-runtime'
-      event.node.res.setHeader('x-test', 'test')
-    })
-  )
+      event.context.xRuntime = "x-runtime";
+      event.node.res.setHeader("x-test", "test");
+    }),
+  );
 
   apply(
     app,
-    getMiddlewares<'h3'>({
+    getMiddlewares<"h3">({
       pageContext(runtime) {
         return {
-          xRuntime: runtime.h3.context.xRuntime
-        }
-      }
-    })
-  )
+          xRuntime: runtime.h3.context.xRuntime,
+        };
+      },
+    }),
+  );
 
   return serve(app, {
     port: +port,
     onReady() {
-      console.log(`Server running at http://localhost:${port}`)
-      console.log('HOOK CALLED: onReady')
+      console.log(`Server running at http://localhost:${port}`);
+      console.log("HOOK CALLED: onReady");
     },
     onCreate(server?: Server) {
-      console.log('HOOK CALLED: onCreate:', server?.constructor.name)
-    }
-  })
+      console.log("HOOK CALLED: onCreate:", server?.constructor.name);
+    },
+  });
 }
 
-export default await startServer()
+export default await startServer();

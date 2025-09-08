@@ -1,5 +1,5 @@
-export { onCreateImage }
-import sharp from 'sharp'
+export { onCreateImage };
+import sharp from "sharp";
 
 async function onCreateImage() {
   const imageData = await sharp({
@@ -7,11 +7,11 @@ async function onCreateImage() {
       width: 300,
       height: 200,
       channels: 4,
-      background: { r: 255, g: 255, b: 255, alpha: 1 }
-    }
+      background: { r: 255, g: 255, b: 255, alpha: 1 },
+    },
   })
     .raw()
-    .toBuffer()
+    .toBuffer();
 
-  return imageData.byteLength
+  return imageData.byteLength;
 }

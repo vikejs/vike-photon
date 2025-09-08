@@ -1,5 +1,5 @@
-export default Page
+export default Page;
 
 function Page() {
-  return
+  return;
 }

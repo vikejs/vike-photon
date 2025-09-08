@@ -1,18 +1,18 @@
-import { getVikeConfig } from 'vike/plugin'
-import type { Plugin } from 'vite'
+import { getVikeConfig } from "vike/plugin";
+import type { Plugin } from "vite";
 
 // Forward config from Vike to Photon
 export function vikePhotonConfigToPhotonPlugin(): Plugin {
   return {
-    name: 'vike-photon:to-photon-config',
+    name: "vike-photon:to-photon-config",
     config(userConfig) {
-      const vikeConfig = getVikeConfig(userConfig)
+      const vikeConfig = getVikeConfig(userConfig);
 
       if (vikeConfig.config.server) {
         return {
-          photon: vikeConfig.config.server
-        }
+          photon: vikeConfig.config.server,
+        };
       }
-    }
-  }
+    },
+  };
 }

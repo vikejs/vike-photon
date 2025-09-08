@@ -1,61 +1,61 @@
-import type { Server } from 'node:http'
-import { apply, serve } from '@photonjs/fastify'
-import fastify from 'fastify'
-import rawBody from 'fastify-raw-body'
-import { getMiddlewares } from 'vike-photon/universal-middlewares'
-import { init } from '../database/todoItems.js'
-import { two } from './shared-chunk.js'
+import type { Server } from "node:http";
+import { apply, serve } from "@photonjs/fastify";
+import fastify from "fastify";
+import rawBody from "fastify-raw-body";
+import { getMiddlewares } from "vike-photon/universal-middlewares";
+import { init } from "../database/todoItems.js";
+import { two } from "./shared-chunk.js";
 
-Error.stackTraceLimit = Number.POSITIVE_INFINITY
+Error.stackTraceLimit = Number.POSITIVE_INFINITY;
 
 if (two() !== 2) {
-  throw new Error()
+  throw new Error();
 }
 
 async function startServer() {
-  await init()
+  await init();
   const app = fastify({
     // /!\ Mandatory for server HMR support
-    forceCloseConnections: true
-  })
+    forceCloseConnections: true,
+  });
 
   // /!\ Mandatory for vike middleware to operate as intended
-  await app.register(rawBody)
+  await app.register(rawBody);
 
-  app.addHook('onRequest', (request, reply, done) => {
+  app.addHook("onRequest", (request, reply, done) => {
     // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-    ;(request.routeOptions.config as any).xRuntime = 'x-runtime'
-    done()
-  })
+    (request.routeOptions.config as any).xRuntime = "x-runtime";
+    done();
+  });
 
-  app.addHook('onSend', (request, reply, payload, done) => {
-    reply.header('x-test', 'test')
-    done()
-  })
+  app.addHook("onSend", (request, reply, payload, done) => {
+    reply.header("x-test", "test");
+    done();
+  });
 
   await apply(
     app,
-    getMiddlewares<'fastify'>({
+    getMiddlewares<"fastify">({
       pageContext(runtime) {
         return {
           // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-          xRuntime: (runtime.fastify.request.routeOptions.config as any).xRuntime
-        }
-      }
-    })
-  )
+          xRuntime: (runtime.fastify.request.routeOptions.config as any).xRuntime,
+        };
+      },
+    }),
+  );
 
-  const port = process.env.PORT || 3000
+  const port = process.env.PORT || 3000;
   return serve(app, {
     port: +port,
     onReady() {
-      console.log(`Server running at http://localhost:${port}`)
-      console.log('HOOK CALLED: onReady')
+      console.log(`Server running at http://localhost:${port}`);
+      console.log("HOOK CALLED: onReady");
     },
     onCreate(server?: Server) {
-      console.log('HOOK CALLED: onCreate:', server?.constructor.name)
-    }
-  })
+      console.log("HOOK CALLED: onCreate:", server?.constructor.name);
+    },
+  });
 }
 
-export default await startServer()
+export default await startServer();

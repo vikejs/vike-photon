@@ -1,48 +1,48 @@
-import type { Server } from 'node:http'
-import { createRouter, type RouterContext } from '@hattip/router'
-import { apply, serve } from '@photonjs/hattip'
-import { getMiddlewares } from 'vike-photon/universal-middlewares'
-import { init } from '../database/todoItems'
+import type { Server } from "node:http";
+import { createRouter, type RouterContext } from "@hattip/router";
+import { apply, serve } from "@photonjs/hattip";
+import { getMiddlewares } from "vike-photon/universal-middlewares";
+import { init } from "../database/todoItems";
 
-declare module '@hattip/compose' {
+declare module "@hattip/compose" {
   interface Locals {
-    xRuntime: string
+    xRuntime: string;
   }
 }
 
 async function startServer() {
-  await init()
-  const app = createRouter()
-  const port = process.env.PORT || 3000
+  await init();
+  const app = createRouter();
+  const port = process.env.PORT || 3000;
 
-  app.use('*', async (ctx) => {
-    ctx.locals.xRuntime = 'x-runtime'
-    const response = await ctx.next()
-    response.headers.set('x-test', 'test')
-    return response
-  })
+  app.use("*", async (ctx) => {
+    ctx.locals.xRuntime = "x-runtime";
+    const response = await ctx.next();
+    response.headers.set("x-test", "test");
+    return response;
+  });
 
   apply(
     app,
-    getMiddlewares<'hattip'>({
+    getMiddlewares<"hattip">({
       pageContext(runtime) {
         return {
-          xRuntime: (runtime.hattip as RouterContext).locals.xRuntime
-        }
-      }
-    })
-  )
+          xRuntime: (runtime.hattip as RouterContext).locals.xRuntime,
+        };
+      },
+    }),
+  );
 
   return serve(app, {
     port: +port,
     onReady() {
-      console.log(`Server running at http://localhost:${port}`)
-      console.log('HOOK CALLED: onReady')
+      console.log(`Server running at http://localhost:${port}`);
+      console.log("HOOK CALLED: onReady");
     },
     onCreate(server?: Server) {
-      console.log('HOOK CALLED: onCreate:', server?.constructor.name)
-    }
-  })
+      console.log("HOOK CALLED: onCreate:", server?.constructor.name);
+    },
+  });
 }
 
-export default await startServer()
+export default await startServer();

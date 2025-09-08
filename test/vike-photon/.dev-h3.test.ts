@@ -1,6 +1,6 @@
-process.env.VIKE_NODE_FRAMEWORK = 'h3'
-process.env.NODE_ENV = 'development'
+process.env.VIKE_NODE_FRAMEWORK = "h3";
+process.env.NODE_ENV = "development";
 
-import { testRun } from './.testRun'
+import { testRun } from "./.testRun";
 
-testRun('pnpm run dev')
+testRun("pnpm run dev");

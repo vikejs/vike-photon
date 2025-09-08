@@ -1,3 +1,3 @@
 export function isVercel() {
-  return !!process.env.VERCEL
+  return !!process.env.VERCEL;
 }
