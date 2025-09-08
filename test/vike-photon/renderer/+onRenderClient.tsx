@@ -1,20 +1,19 @@
 // https://vike.dev/onRenderClient
 export { onRenderClient };
 
-import React from "react";
 import ReactDOM from "react-dom/client";
-import type { OnRenderClientAsync } from "vike/types";
+import type { PageContextClient } from "vike/types";
 import { PageLayout } from "./PageLayout";
 
 let root: ReactDOM.Root;
-const onRenderClient: OnRenderClientAsync = async (pageContext): ReturnType<OnRenderClientAsync> => {
+async function onRenderClient(pageContext: PageContextClient) {
   const { Page, pageProps } = pageContext;
   const page = (
     <PageLayout>
       <Page {...pageProps} />
     </PageLayout>
   );
-  // biome-ignore lint/style/noNonNullAssertion: <explanation>
+  // biome-ignore lint/style/noNonNullAssertion: we know it exists
   const container = document.getElementById("page-view")!;
   if (pageContext.isHydration) {
     root = ReactDOM.hydrateRoot(container, page);
@@ -24,4 +23,4 @@ const onRenderClient: OnRenderClientAsync = async (pageContext): ReturnType<OnRe
     }
     root.render(page);
   }
-};
+}

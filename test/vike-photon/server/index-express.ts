@@ -13,7 +13,7 @@ async function startServer() {
   await init();
   const app = express();
   app.use((req, res, next) => {
-    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+    // biome-ignore lint/suspicious/noExplicitAny: test file
     (req as any).xRuntime = "x-runtime";
     res.set("x-test", "test");
     next();
@@ -24,7 +24,7 @@ async function startServer() {
     getMiddlewares<"express">({
       pageContext(runtime) {
         return {
-          // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+          // biome-ignore lint/suspicious/noExplicitAny: test file
           xRuntime: (runtime.req as any).xRuntime,
         };
       },

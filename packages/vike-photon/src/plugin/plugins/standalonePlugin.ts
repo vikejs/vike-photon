@@ -20,7 +20,7 @@ export function standalonePlugin(): Plugin {
   let outDir = "";
   let outDirAbs = "";
   let rollupEntryFilePaths: Record<string, string> = {};
-  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  // biome-ignore lint/suspicious/noExplicitAny: simple type
   let rollupResolve: (...args: any[]) => Promise<any>;
 
   return {
@@ -95,7 +95,7 @@ function generateBanner() {
   ].join("\n");
 }
 
-// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+// biome-ignore lint/suspicious/noExplicitAny: any
 function createStandaloneIgnorePlugin(rollupResolve: (...args: any[]) => Promise<any>): esbuild.Plugin {
   return {
     name: "standalone-ignore",
@@ -120,7 +120,7 @@ function findRollupBundleEntries(bundle: Rollup.OutputBundle, vikePhotonConfig: 
 
   const chunks: Rollup.OutputChunk[] = [];
   for (const key in bundle) {
-    // biome-ignore lint/style/noNonNullAssertion: <explanation>
+    // biome-ignore lint/style/noNonNullAssertion: for in check
     const entry = bundle[key]!;
     if (entry?.type !== "chunk") continue;
     if (!entry.isEntry) continue;

@@ -22,13 +22,13 @@ async function startServer() {
   // /!\ Mandatory for vike middleware to operate as intended
   await app.register(rawBody);
 
-  app.addHook("onRequest", (request, reply, done) => {
-    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  app.addHook("onRequest", (request, _reply, done) => {
+    // biome-ignore lint/suspicious/noExplicitAny: test file
     (request.routeOptions.config as any).xRuntime = "x-runtime";
     done();
   });
 
-  app.addHook("onSend", (request, reply, payload, done) => {
+  app.addHook("onSend", (_request, reply, _payload, done) => {
     reply.header("x-test", "test");
     done();
   });
@@ -38,7 +38,7 @@ async function startServer() {
     getMiddlewares<"fastify">({
       pageContext(runtime) {
         return {
-          // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+          // biome-ignore lint/suspicious/noExplicitAny: test file
           xRuntime: (runtime.fastify.request.routeOptions.config as any).xRuntime,
         };
       },

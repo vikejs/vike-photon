@@ -5,7 +5,7 @@
     "target": "ES2022",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "types": ["vite/client"],
-    "jsx": "react",
+    "jsx": "preserve",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "noUncheckedIndexedAccess": true,

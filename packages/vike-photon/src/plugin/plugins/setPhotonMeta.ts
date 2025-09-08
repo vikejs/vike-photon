@@ -7,7 +7,7 @@ export function setPhotonMeta(): Plugin {
       filter: {
         id: [/\+middleware\.[jt]s/],
       },
-      handler(_code, id) {
+      handler() {
         // Forces full-reload on server side when a +middleware file is modified
         return { meta: { photonConfig: { isGlobal: true } } };
       },

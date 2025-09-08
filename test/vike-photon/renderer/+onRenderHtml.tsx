@@ -1,7 +1,6 @@
 // https://vike.dev/onRenderHtml
 export { onRenderHtml };
 
-import React from "react";
 import { renderToString } from "react-dom/server";
 import { dangerouslySkipEscape, escapeInject } from "vike/server";
 import type { PageContextServer } from "vike/types";

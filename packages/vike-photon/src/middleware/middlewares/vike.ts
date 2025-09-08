@@ -13,7 +13,7 @@ export const renderPageHandler = ((options?) =>
         Object.assign(pageContextInit, options.pageContext);
       }
 
-      // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+      // biome-ignore lint/suspicious/noExplicitAny: cast
       return vikeUniversalHandler(request, pageContextInit, runtime as any);
     },
     {
