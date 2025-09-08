@@ -1,6 +1,6 @@
-Source code of Vike Server extension: [Vike Docs > Server](https://vike.dev/vike-server).
+Source code of Vike Photon extension: [Vike Docs > Photon](https://vike.dev/vike-photon).
 
-See [packages/vike-server](packages/vike-server).
+See [packages/vike-photon](packages/vike-photon).
 
 > [!NOTE]
-> Migrating from `vike-node`? Take a look at the [migration doc](MIGRATION.md).
+> Migrating from `vike-server`? Take a look at the [migration doc](MIGRATION.md).
