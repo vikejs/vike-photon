@@ -15,7 +15,7 @@
     "========= Formatting": "",
     "lint": "biome lint .",
     "format": "pnpm run format:biome",
-    "format:biome": "biome format --write .",
+    "format:biome": "biome check --write .",
     "format:check": "biome format . || (echo 'Fix formatting by running `$ pnpm run -w format`.' && exit 1)",
     "========= Only allow pnpm; forbid yarn & npm": "",
     "preinstall": "npx only-allow pnpm"

@@ -1,4 +1,5 @@
 export { onValidatePassword };
+
 import { hashSync, verifySync } from "@node-rs/argon2";
 
 const argon2Opts = {

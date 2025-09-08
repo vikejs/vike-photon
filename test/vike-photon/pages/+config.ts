@@ -1,5 +1,5 @@
-import vikePhoton from "vike-photon/config";
 import type { Config } from "vike/types";
+import vikePhoton from "vike-photon/config";
 
 const FRAMEWORK = process.env.VIKE_NODE_FRAMEWORK || "hono";
 

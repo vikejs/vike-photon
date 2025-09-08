@@ -1,4 +1,5 @@
 export default Page;
+
 import React, { useState } from "react";
 import { onValidatePassword } from "./Page.telefunc";
 

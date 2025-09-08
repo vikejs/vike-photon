@@ -26,7 +26,7 @@ const config = {
   vite: {
     plugins: [photon(), vikePhoton()],
   },
-  // @ts-ignore
+  // @ts-expect-error
   stream: {
     enable: null,
     type: "web",
