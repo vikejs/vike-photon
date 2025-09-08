@@ -2,12 +2,6 @@
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "extends": ["./node_modules/@vikejs/biome-config/config.json"],
   "files": {
-    "includes": [
-      "**",
-      "dist/",
-      ".vercel/",
-      "package.json",
-      "test/vike-photon/build"
-    ]
+    "includes": ["**", "!dist/", "!.vercel/", "!test/vike-photon/build"]
   }
 }
