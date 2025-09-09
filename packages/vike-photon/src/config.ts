@@ -11,7 +11,7 @@ export { config as default };
 // Dynamically load @photonjs/cloudflare plugin
 const loadCloudflarePromise = createDeferred<Plugin[]>();
 
-const config = {
+const _config = {
   name: "vike-photon",
   require: {
     vike: ">=0.4.238",
@@ -62,6 +62,8 @@ const config = {
     },
   },
 } satisfies Config;
+
+const config = _config as Omit<typeof _config, "stream">;
 
 type CloudflareConfig = Parameters<typeof import("@photonjs/cloudflare/vite").cloudflare>[0];
 
