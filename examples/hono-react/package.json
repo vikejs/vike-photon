@@ -5,7 +5,7 @@
     "prod": "vike build && node dist/server/index.mjs"
   },
   "dependencies": {
-    "@photonjs/hono": "^0.0.8",
+    "@photonjs/hono": "^0.0.9",
     "@vitejs/plugin-react": "^5.0.2",
     "hono": "^4.9.6",
     "react": "^19.1.1",
