@@ -21,7 +21,7 @@ export const compressMiddleware = ((options?) =>
       };
     },
     {
-      name: "photonjs:compress",
+      name: "vike-photon:compress",
       immutable: false,
     },
   )) satisfies Get<[options: VikeOptions], UniversalMiddleware>;

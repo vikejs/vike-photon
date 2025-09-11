@@ -71,7 +71,7 @@ export const serveStaticMiddleware = ((options?) =>
       return serveStaticFiles(request);
     },
     {
-      name: "photonjs:sirv",
+      name: "vike-photon:sirv",
       immutable: false,
     },
   )) satisfies Get<[options: VikeOptions], UniversalMiddleware>;
