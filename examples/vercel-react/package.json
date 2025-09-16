@@ -13,11 +13,10 @@
     "vike-react": "^0.6.5"
   },
   "devDependencies": {
-    "@photonjs/runtime": "^0.0.10",
+    "@photonjs/runtime": "^0.0.11",
     "@vitejs/plugin-react": "^5.0.2",
     "vite": "^7.1.5",
-    "vite-plugin-vercel": "10.0.0-beta.1",
-    "wrangler": "^4.35.0"
+    "vite-plugin-vercel": "^10.0.0-beta.2"
   },
   "type": "module"
 }
