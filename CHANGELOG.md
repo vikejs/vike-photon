@@ -1,3 +1,12 @@
+## [0.1.4](https://github.com/vikejs/vike-photon/compare/v0.1.3...v0.1.4) (2025-09-16)
+
+
+### Features
+
+* complete vercel integration ([b8c3b38](https://github.com/vikejs/vike-photon/commit/b8c3b389e76930edc9e386e546a3e03b98504904))
+
+
+
 ## [0.1.3](https://github.com/vikejs/vike-photon/compare/v0.1.2...v0.1.3) (2025-09-16)
 
 
