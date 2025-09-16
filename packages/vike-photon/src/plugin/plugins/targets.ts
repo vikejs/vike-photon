@@ -2,7 +2,6 @@ import path from "node:path";
 import { isPackageExists } from "local-pkg";
 import { getVikeConfig } from "vike/plugin";
 import { normalizePath, type PluginOption } from "vite";
-import { getVercelAPI } from "vite-plugin-vercel/api";
 import { setTargetVercel } from "../../targets/vercel/index.js";
 
 export async function targetsPlugin(): Promise<PluginOption[] | undefined> {
@@ -12,6 +11,7 @@ export async function targetsPlugin(): Promise<PluginOption[] | undefined> {
 
   if (isPackageExists("vite-plugin-vercel")) {
     const vpv = await import("vite-plugin-vercel").then((p) => p.vercel());
+    const { getVercelAPI } = await import("vite-plugin-vercel/api");
 
     let vikePrerenderOutdir: string | undefined;
 
