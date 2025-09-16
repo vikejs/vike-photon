@@ -64,11 +64,6 @@ const _config = {
       env: { server: true, config: true },
       eager: true,
     },
-    // FIXME
-    headers: {
-      env: { server: true, config: true },
-      eager: true,
-    },
   },
 } satisfies Config;
 
@@ -85,8 +80,6 @@ declare global {
       // Vercel
       isr?: boolean | { expiration: number };
       edge?: boolean;
-      // TODO reuse +headersResponse https://vike.dev/headersResponse
-      headers?: Record<string, string>;
     }
   }
 }

@@ -12,7 +12,6 @@ export function updateVercelEntry<T extends Photon.Entry>(entry: T): T {
   const rawIsr = extractIsr(page.config);
   let isr = assertIsr(page.config);
   const edge = assertEdge(page.config);
-  const headers = assertHeaders(page.config);
 
   if (typeof page.route === "function" && isr) {
     console.warn(
@@ -27,18 +26,13 @@ export function updateVercelEntry<T extends Photon.Entry>(entry: T): T {
     );
   }
 
-  if (!entry.route && headers !== null && headers !== undefined) {
-    console.warn(
-      `Page ${pageId}: { headers } are not supported when using route function. Remove \`{ headers }\` config or use a route string if possible.`,
-    );
-  }
-
   // Compute Vercel-specific metadata
   entry.vercel = {
     ...entry.vercel,
     destination: normalizePath(entry.name),
     isr: isr ? { expiration: isr } : undefined,
-    headers: headers,
+    // This is handled directly by Vike. See https://vike.dev/headersResponse
+    // headers: headers,
     route: entry.route ? `${routeToRegExp(entry.route)}(?:\\/index\\.pageContext\\.json)?` : undefined,
     edge: Boolean(edge),
   };
@@ -107,24 +101,6 @@ function assertEdge(exports: unknown): boolean | null {
   assertUsage(typeof edge === "boolean", " `{ edge }` must be a boolean");
 
   return edge;
-}
-
-function assertHeaders(exports: unknown): Record<string, string> | null {
-  if (exports === null || typeof exports !== "object") return null;
-  if (!("headers" in exports)) return null;
-  const headers = (exports as { headers: unknown }).headers;
-
-  if (headers === null || headers === undefined) {
-    return null;
-  }
-
-  assertUsage(typeof headers === "object", " `{ headers }` must be an object");
-
-  for (const value of Object.values(headers)) {
-    assertUsage(typeof value === "string", " `{ headers }` must only contains string values");
-  }
-
-  return headers as Record<string, string>;
 }
 
 // TODO move to https://github.com/magne4000/convert-route
