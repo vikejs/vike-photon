@@ -1,3 +1,12 @@
+## [0.1.5](https://github.com/vikejs/vike-photon/compare/v0.1.4...v0.1.5) (2025-09-16)
+
+
+### Bug Fixes
+
+* bump vite-plugin-vercel ([90e3831](https://github.com/vikejs/vike-photon/commit/90e3831886bb80e6c1ac1c5941b032bc00b0443e))
+
+
+
 ## [0.1.4](https://github.com/vikejs/vike-photon/compare/v0.1.3...v0.1.4) (2025-09-16)
 
 
