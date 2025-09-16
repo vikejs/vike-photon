@@ -40,6 +40,11 @@
     "vike-photon": "workspace:*",
     "vite": "^7.1.5"
   },
+  "dependenciesMeta": {
+    "vike-photon": {
+      "injected": true
+    }
+  },
   "type": "module",
   "devDependencies": {
     "@hattip/router": "^0.0.49"
