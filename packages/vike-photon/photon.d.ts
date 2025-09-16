@@ -1,4 +1,5 @@
 ///<reference types="@photonjs/core" />
+///<reference types="vite-plugin-vercel/types"/>
 type ValueOf<T> = T extends {
   [k: string]: infer U;
 }

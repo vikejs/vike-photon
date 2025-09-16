@@ -3,5 +3,15 @@
   "extends": ["./node_modules/@vikejs/biome-config/config.json"],
   "files": {
     "includes": ["**", "!dist/", "!.vercel/", "!test/vike-photon/build"]
+  },
+  "linter": {
+    "rules": {
+      "correctness": {
+        "noUnusedImports": {
+          "level": "warn",
+          "fix": "safe"
+        }
+      }
+    }
   }
 }
