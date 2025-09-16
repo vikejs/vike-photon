@@ -3,7 +3,7 @@ packages:
   - 'packages/*'
   - 'examples/*'
 
-# Ensure that tests folders do not include those packages only because they are dev dependencies
+# Ensure that tests folders do not include those packages only because they are dev dependencies of `vike-photon`.
 # This must be combined with `dependenciesMeta.*.injected = true`. See https://pnpm.io/package_json#dependenciesmetainjected
 # vike-photon `build` script has also been updated to always finish with a `pnpm install`, so that the tests always have the latest vike-photon version installed
 hoistPattern:
