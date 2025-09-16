@@ -1,9 +1,10 @@
-import { isPackageExists } from "local-pkg";
+import { getPackageInfoSync, isPackageExists } from "local-pkg";
 import type { PluginOption } from "vite";
 import { setTargetVercel } from "../../targets/vercel/index.js";
 
 export async function targetsPlugin(): Promise<PluginOption[] | undefined> {
   if (isPackageExists("@photonjs/cloudflare")) {
+    console.log(getPackageInfoSync("@photonjs/cloudflare"));
     return await import("@photonjs/cloudflare/vite").then((p) => p.cloudflare());
   }
 

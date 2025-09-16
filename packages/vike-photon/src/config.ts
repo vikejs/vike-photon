@@ -3,7 +3,6 @@ import { photon } from "@photonjs/core/vite";
 import type { BuildOptions } from "esbuild";
 import type { Config } from "vike/types";
 import { vikePhoton } from "./plugin/index.js";
-import type { CloudflareConfig } from "./targets/cloudflare/index.js";
 
 export { config as default };
 
@@ -42,11 +41,13 @@ const _config = {
       env: { config: true },
       global: true,
     },
-    // Cloudflare configs
-    cloudflare: {
-      env: { config: true },
-      global: true,
-    },
+
+    // TODO Cloudflare configs
+    // cloudflare: {
+    //   env: { config: true },
+    //   global: true,
+    // },
+
     // Vercel configs
     isr: {
       env: { server: true, config: true },
@@ -74,8 +75,8 @@ declare global {
     interface Config {
       photon?: Photon.Config & { standalone?: boolean | null | { esbuild: BuildOptions } };
 
-      // Cloudflare
-      cloudflare?: CloudflareConfig;
+      // TODO
+      // cloudflare?: CloudflareConfig;
 
       // Vercel
       isr?: boolean | { expiration: number };
