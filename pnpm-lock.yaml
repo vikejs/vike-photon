@@ -186,10 +186,10 @@ importers:
         specifier: ^0.7.15
         version: 0.7.15
       '@photonjs/core':
-        specifier: ^0.0.15
+        specifier: 0.0.*
         version: 0.0.15(@hattip/core@0.0.49)(elysia@1.4.5(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.7)(vite@7.1.5(@types/node@20.19.16)(jiti@2.5.1))
       '@photonjs/runtime':
-        specifier: ^0.0.13
+        specifier: 0.0.*
         version: 0.0.13(@hattip/core@0.0.49)(elysia@1.4.5(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.7)(vite@7.1.5(@types/node@20.19.16)(jiti@2.5.1))
       '@universal-middleware/compress':
         specifier: ^0.2.31
@@ -220,7 +220,7 @@ importers:
         specifier: ^1.19.3
         version: 1.19.3(hono@4.9.7)
       '@photonjs/cloudflare':
-        specifier: ^0.0.15
+        specifier: 0.0.*
         version: 0.0.15(@hattip/core@0.0.49)(crossws@0.3.5)(elysia@1.4.5(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(typescript@5.9.2))(fastify@5.6.0)(h3@1.15.4)(hono@4.9.7)(vite@7.1.5(@types/node@20.19.16)(jiti@2.5.1))(workerd@1.20250913.0)(wrangler@4.37.1)
       '@types/bun':
         specifier: ^1.2.22
@@ -356,7 +356,7 @@ importers:
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(vite@7.1.5(@types/node@20.19.16)(jiti@2.5.1))
       vike-photon:
         specifier: workspace:*
-        version: file:packages/vike-photon(42778ffc367e1218707051a594ad456b)
+        version: file:packages/vike-photon(4cde930fefff694bec8a4585fa547357)
       vite:
         specifier: ^7.1.5
         version: 7.1.5(@types/node@20.19.16)(jiti@2.5.1)
@@ -3607,6 +3607,8 @@ packages:
     resolution: {directory: packages/vike-photon, type: directory}
     peerDependencies:
       '@photonjs/cloudflare': '>=0.0.9'
+      '@photonjs/core': 0.0.*
+      '@photonjs/runtime': 0.0.*
       vike: 0.4.239-commit-4d0d950
       vite: '>=7.1'
       vite-plugin-vercel: ^10.0.0-beta.4
@@ -7006,7 +7008,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vike-photon@file:packages/vike-photon(42778ffc367e1218707051a594ad456b):
+  vike-photon@file:packages/vike-photon(4cde930fefff694bec8a4585fa547357):
     dependencies:
       '@brillout/picocolors': 1.0.28
       '@brillout/vite-plugin-server-entry': 0.7.15
