@@ -24,7 +24,8 @@ export async function targetsPlugin(): Promise<PluginOption[] | undefined> {
         buildStart: {
           order: "pre",
           handler() {
-            const api = getVercelAPI(this);
+            // biome-ignore lint/suspicious/noExplicitAny: TODO PluginContext type should be simplified
+            const api = getVercelAPI(this as any);
             // Override `vite-plugin-vercel` config
             api.defaultSupportsResponseStreaming = true;
           },
