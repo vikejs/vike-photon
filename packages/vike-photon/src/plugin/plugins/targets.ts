@@ -1,15 +1,26 @@
 import path from "node:path";
-import { isPackageExists } from "local-pkg";
+import { type PackageJson, readPackage } from "pkg-types";
 import { getVikeConfig } from "vike/plugin";
 import { normalizePath, type PluginOption } from "vite";
 import { setTargetVercel } from "../../targets/vercel/index.js";
 
+function isDependencyInstalledByUser(localPackage: PackageJson, pkg: string) {
+  for (const prop of ["devDependencies", "dependencies"]) {
+    if (localPackage[prop] && Object.keys(localPackage[prop]).includes(pkg)) {
+      return true;
+    }
+  }
+  return false;
+}
+
 export async function targetsPlugin(): Promise<PluginOption[] | undefined> {
-  if (isPackageExists("@photonjs/cloudflare")) {
+  const localPackage = await readPackage();
+
+  if (isDependencyInstalledByUser(localPackage, "@photonjs/cloudflare")) {
     return await import("@photonjs/cloudflare/vite").then((p) => p.cloudflare());
   }
 
-  if (isPackageExists("vite-plugin-vercel")) {
+  if (isDependencyInstalledByUser(localPackage, "vite-plugin-vercel")) {
     const vpv = await import("vite-plugin-vercel").then((p) => p.vercel());
     const { getVercelAPI } = await import("vite-plugin-vercel/api");
 
