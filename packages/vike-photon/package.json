@@ -52,7 +52,7 @@
     "@photonjs/cloudflare": ">=0.0.9",
     "vike": ">=0.4.238",
     "vite": ">=7.1",
-    "vite-plugin-vercel": "^10.0.0-beta.3"
+    "vite-plugin-vercel": "^10.0.0-beta.4"
   },
   "peerDependenciesMeta": {
     "vite": {
@@ -84,7 +84,7 @@
     "typescript": "^5.9.2",
     "vike": "^0.4.240",
     "vite": "^7.1.5",
-    "vite-plugin-vercel": "^10.0.0-beta.3"
+    "vite-plugin-vercel": "^10.0.0-beta.4"
   },
   "files": [
     "dist/",
