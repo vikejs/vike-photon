@@ -1,5 +1,5 @@
 name = "photon-cloudflare-react-example"
-main = "cloudflare-entry.js"
+main = "photon:cloudflare:photon:server-entry"
 compatibility_date = "2025-08-28"
-# Require during dev and build process
+# Required during dev and build process
 compatibility_flags = [ "nodejs_compat" ]

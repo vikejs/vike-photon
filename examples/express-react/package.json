@@ -5,7 +5,7 @@
     "prod": "vike build && node dist/server/index.mjs"
   },
   "dependencies": {
-    "@photonjs/express": "^0.0.10",
+    "@photonjs/express": "^0.0.12",
     "@vitejs/plugin-react": "^5.0.3",
     "express": "^5.1.0",
     "react": "^19.1.1",

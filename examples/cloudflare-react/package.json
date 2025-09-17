@@ -13,8 +13,8 @@
     "vike-react": "^0.6.6"
   },
   "devDependencies": {
-    "@photonjs/cloudflare": "^0.0.14",
-    "@photonjs/runtime": "^0.0.12",
+    "@photonjs/cloudflare": "^0.0.15",
+    "@photonjs/runtime": "^0.0.13",
     "@vitejs/plugin-react": "^5.0.3",
     "vite": "^7.1.5",
     "wrangler": "^4.37.1"
