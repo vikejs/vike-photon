@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.4",
-    "@brillout/test-e2e": "^0.6.18",
+    "@brillout/test-e2e": "^0.6.19",
     "@vikejs/biome-config": "^2.0.1",
     "playwright": "^1.55.0"
   },
@@ -31,7 +31,7 @@
   },
   "pnpm": {
     "overrides": {
-      "@types/node": "^20.19.13",
+      "@types/node": "^20.19.16",
       "vike": "0.4.239-commit-4d0d950"
     },
     "onlyBuiltDependencies": [

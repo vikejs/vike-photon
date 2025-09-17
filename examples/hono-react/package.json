@@ -5,14 +5,14 @@
     "prod": "vike build && node dist/server/index.mjs"
   },
   "dependencies": {
-    "@photonjs/hono": "^0.0.10",
-    "@vitejs/plugin-react": "^5.0.2",
-    "hono": "^4.9.6",
+    "@photonjs/hono": "^0.0.11",
+    "@vitejs/plugin-react": "^5.0.3",
+    "hono": "^4.9.7",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "vike": "^0.4.239",
+    "vike": "^0.4.240",
     "vike-photon": "^0.1.6",
-    "vike-react": "^0.6.5",
+    "vike-react": "^0.6.6",
     "vite": "^7.1.5"
   },
   "type": "module"
