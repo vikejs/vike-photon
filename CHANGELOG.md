@@ -1,3 +1,12 @@
+## [0.1.8](https://github.com/vikejs/vike-photon/compare/v0.1.7...v0.1.8) (2025-09-17)
+
+
+### Bug Fixes
+
+* only load target packages if they are installed in the containing project ([05e96be](https://github.com/vikejs/vike-photon/commit/05e96be72b9b634bf2e20294b61cccc6b841e475))
+
+
+
 ## [0.1.7](https://github.com/vikejs/vike-photon/compare/v0.1.6...v0.1.7) (2025-09-17)
 
 
