@@ -7,34 +7,33 @@ import { vikePhoton } from "./plugin/index.js";
 export { config as default };
 
 const _config = {
-  name: "vike-photon",
+  name: "vike-photon" as const,
   require: {
-    vike: ">=0.4.238",
+    vike: ">=0.4.238" as const,
     "vike-react": {
-      version: ">=0.6.4",
+      version: ">=0.6.4" as const,
       optional: true,
     },
     "vike-vue": {
-      version: ">=0.9.2",
+      version: ">=0.9.2" as const,
       optional: true,
     },
     "vike-solid": {
-      version: ">=0.7.11",
+      version: ">=0.7.11" as const,
       optional: true,
     },
   },
   vite: {
     plugins: [photon(), vikePhoton()],
   },
-  // @ts-expect-error
+  // @ts-expect-error Defined by vike-react/vike-vue/vike-solid (see comment below)
   stream: {
     enable: null,
-    type: "web",
+    type: "web" as const,
   },
   meta: {
     // +stream is defined by vike-{react,vue,solid} but we define it again here to avoid Vike throwing the "unknown config" error if the user doesn't use vike-{react,vue,solid}
     stream: {
-      env: { config: true },
       isDefinedByPeerDependency: true,
     },
     photon: {
