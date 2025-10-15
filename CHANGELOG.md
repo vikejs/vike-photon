@@ -1,3 +1,12 @@
+## [0.1.10](https://github.com/vikejs/vike-photon/compare/v0.1.9...v0.1.10) (2025-10-15)
+
+
+### Bug Fixes
+
+* proper dependency range ([01e5a48](https://github.com/vikejs/vike-photon/commit/01e5a483a74a293a8e1336e7506e091c8adfacf2))
+
+
+
 ## [0.1.9](https://github.com/vikejs/vike-photon/compare/v0.1.8...v0.1.9) (2025-10-15)
 
 

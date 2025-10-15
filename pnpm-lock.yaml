@@ -37,7 +37,7 @@ importers:
         specifier: 0.4.239-commit-4d0d950
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.9
+        specifier: ^0.1.10
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.9
@@ -80,7 +80,7 @@ importers:
         specifier: 0.4.239-commit-4d0d950
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.9
+        specifier: ^0.1.10
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.9
@@ -107,7 +107,7 @@ importers:
         specifier: 0.4.239-commit-4d0d950
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.9
+        specifier: ^0.1.10
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.9
@@ -137,7 +137,7 @@ importers:
         specifier: 0.4.239-commit-4d0d950
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.9
+        specifier: ^0.1.10
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.9
@@ -158,7 +158,7 @@ importers:
         specifier: 0.4.239-commit-4d0d950
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.9
+        specifier: ^0.1.10
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.9
@@ -169,7 +169,7 @@ importers:
         version: 0.1.0(@hattip/core@0.0.49)(elysia@1.4.12(@sinclair/typebox@0.34.41)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.1)(h3@1.15.4)(hono@4.9.12)(srvx@0.8.16)(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       '@photonjs/vercel':
         specifier: ^0.1.1
-        version: 0.1.1(701905988425cca4b5254cb729deb638)
+        version: 0.1.1(34579394752d3c98eeb9640df6d5eba3)
       '@vitejs/plugin-react':
         specifier: ^5.0.4
         version: 5.0.4(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
@@ -356,7 +356,7 @@ importers:
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
         specifier: workspace:*
-        version: file:packages/vike-photon(857bdefc2b050ecb9a408b38d9f774a5)
+        version: file:packages/vike-photon(79499bad8b4b27b3f820629426974039)
       vite:
         specifier: ^7.1.10
         version: 7.1.10(@types/node@20.19.21)(jiti@2.6.1)
@@ -4859,41 +4859,6 @@ snapshots:
       - srvx
       - supports-color
 
-  '@photonjs/vercel@0.1.1(701905988425cca4b5254cb729deb638)':
-    dependencies:
-      '@brillout/libassert': 0.5.8
-      '@manypkg/find-root': 3.1.0
-      '@photonjs/core': 0.1.0(@hattip/core@0.0.49)(elysia@1.4.12(@sinclair/typebox@0.34.41)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.1)(h3@1.15.4)(hono@4.9.12)(srvx@0.8.16)(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
-      '@photonjs/runtime': 0.1.0(@hattip/core@0.0.49)(elysia@1.4.12(@sinclair/typebox@0.34.41)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.1)(h3@1.15.4)(hono@4.9.12)(srvx@0.8.16)(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
-      '@universal-middleware/core': 0.4.11(@hattip/core@0.0.49)(elysia@1.4.12(@sinclair/typebox@0.34.41)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.1)(h3@1.15.4)(hono@4.9.12)(srvx@0.8.16)
-      '@universal-middleware/vercel': 0.4.23(@hattip/core@0.0.49)(@universal-middleware/h3@0.4.14(@hattip/core@0.0.49)(elysia@1.4.12(@sinclair/typebox@0.34.41)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.1)(h3@1.15.4)(hono@4.9.12)(srvx@0.8.16))(elysia@1.4.12(@sinclair/typebox@0.34.41)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(express@5.1.0)(fastify@5.6.1)(h3@1.15.4)(hono@4.9.12)(srvx@0.8.16)
-      '@vercel/build-utils': 12.1.2
-      '@vercel/nft': 0.30.2(rollup@4.52.4)
-      '@vercel/routing-utils': 5.2.0
-      '@vite-plugin-vercel/schemas': 1.0.0
-      convert-route: 0.1.1
-      esbuild: 0.25.11
-      fast-glob: 3.3.3
-      magicast: 0.3.5
-      path-to-regexp: 8.3.0
-      strip-ansi: 7.1.2
-      vite: 7.1.10(@types/node@20.19.21)(jiti@2.6.1)
-      vite-plugin-wasm: 3.5.0(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
-    transitivePeerDependencies:
-      - '@cloudflare/workers-types'
-      - '@hattip/core'
-      - '@universal-middleware/h3'
-      - '@webroute/route'
-      - elysia
-      - encoding
-      - express
-      - fastify
-      - h3
-      - hono
-      - rollup
-      - srvx
-      - supports-color
-
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
@@ -4957,14 +4922,6 @@ snapshots:
       picomatch: 4.0.3
     optionalDependencies:
       rollup: 4.38.0
-
-  '@rollup/pluginutils@5.3.0(rollup@4.52.4)':
-    dependencies:
-      '@types/estree': 1.0.8
-      estree-walker: 2.0.2
-      picomatch: 4.0.3
-    optionalDependencies:
-      rollup: 4.52.4
 
   '@rollup/rollup-android-arm-eabi@4.38.0':
     optional: true
@@ -5370,25 +5327,6 @@ snapshots:
     dependencies:
       '@mapbox/node-pre-gyp': 2.0.0
       '@rollup/pluginutils': 5.3.0(rollup@4.38.0)
-      acorn: 8.15.0
-      acorn-import-attributes: 1.9.5(acorn@8.15.0)
-      async-sema: 3.1.1
-      bindings: 1.5.0
-      estree-walker: 2.0.2
-      glob: 10.4.5
-      graceful-fs: 4.2.11
-      node-gyp-build: 4.8.4
-      picomatch: 4.0.3
-      resolve-from: 5.0.0
-    transitivePeerDependencies:
-      - encoding
-      - rollup
-      - supports-color
-
-  '@vercel/nft@0.30.2(rollup@4.52.4)':
-    dependencies:
-      '@mapbox/node-pre-gyp': 2.0.0
-      '@rollup/pluginutils': 5.3.0(rollup@4.52.4)
       acorn: 8.15.0
       acorn-import-attributes: 1.9.5(acorn@8.15.0)
       async-sema: 3.1.1
@@ -7081,7 +7019,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vike-photon@file:packages/vike-photon(857bdefc2b050ecb9a408b38d9f774a5):
+  vike-photon@file:packages/vike-photon(79499bad8b4b27b3f820629426974039):
     dependencies:
       '@brillout/picocolors': 1.0.28
       '@brillout/vite-plugin-server-entry': 0.7.15
@@ -7095,7 +7033,7 @@ snapshots:
       vike: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
     optionalDependencies:
       '@photonjs/cloudflare': 0.1.0(@hattip/core@0.0.49)(crossws@0.4.1(srvx@0.8.16))(elysia@1.4.12(@sinclair/typebox@0.34.41)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.1)(h3@1.15.4)(hono@4.9.12)(srvx@0.8.16)(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))(workerd@1.20251008.0)(wrangler@4.43.0)
-      '@photonjs/vercel': 0.1.1(701905988425cca4b5254cb729deb638)
+      '@photonjs/vercel': 0.1.1(34579394752d3c98eeb9640df6d5eba3)
       vite: 7.1.10(@types/node@20.19.21)(jiti@2.6.1)
     transitivePeerDependencies:
       - '@cloudflare/workers-types'
