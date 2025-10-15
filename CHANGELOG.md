@@ -1,3 +1,13 @@
+## [0.1.9](https://github.com/vikejs/vike-photon/compare/v0.1.8...v0.1.9) (2025-10-15)
+
+
+### Bug Fixes
+
+* avoid type mismatch ([d700e84](https://github.com/vikejs/vike-photon/commit/d700e84b059ee6da064d773b581ea0ec545979bb))
+* bump deps ([df932a7](https://github.com/vikejs/vike-photon/commit/df932a7f79785033d5b20a700fec1ed4ad752add))
+
+
+
 ## [0.1.8](https://github.com/vikejs/vike-photon/compare/v0.1.7...v0.1.8) (2025-09-17)
 
 

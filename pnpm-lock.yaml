@@ -37,7 +37,7 @@ importers:
         specifier: 0.4.239-commit-4d0d950
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.8
+        specifier: ^0.1.9
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.9
@@ -80,7 +80,7 @@ importers:
         specifier: 0.4.239-commit-4d0d950
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.8
+        specifier: ^0.1.9
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.9
@@ -107,7 +107,7 @@ importers:
         specifier: 0.4.239-commit-4d0d950
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.8
+        specifier: ^0.1.9
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.9
@@ -137,7 +137,7 @@ importers:
         specifier: 0.4.239-commit-4d0d950
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.8
+        specifier: ^0.1.9
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.9
@@ -158,7 +158,7 @@ importers:
         specifier: 0.4.239-commit-4d0d950
         version: 0.4.239-commit-4d0d950(react-streaming@0.4.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.10(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.8
+        specifier: ^0.1.9
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.9
