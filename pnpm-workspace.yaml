@@ -10,9 +10,11 @@ hoistPattern:
 - "!@photonjs/cloudflare"
 - "!vike-vercel"
 - "!vite-plugin-vercel"
+- "!@photonjs/vercel"
 publicHoistPattern:
 - "!@photonjs/cloudflare"
 - "!vike-vercel"
 - "!vite-plugin-vercel"
+- "!@photonjs/vercel"
 linkWorkspacePackages: true
 preferWorkspacePackages: true

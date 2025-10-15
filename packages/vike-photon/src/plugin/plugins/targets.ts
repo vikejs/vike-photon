@@ -20,9 +20,9 @@ export async function targetsPlugin(): Promise<PluginOption[] | undefined> {
     return await import("@photonjs/cloudflare/vite").then((p) => p.cloudflare());
   }
 
-  if (isDependencyInstalledByUser(localPackage, "vite-plugin-vercel")) {
-    const vpv = await import("vite-plugin-vercel").then((p) => p.vercel());
-    const { getVercelAPI } = await import("vite-plugin-vercel/api");
+  if (isDependencyInstalledByUser(localPackage, "@photonjs/vercel")) {
+    const vpv = await import("@photonjs/vercel/vite").then((p) => p.vercel());
+    const { getVercelAPI } = await import("@photonjs/vercel/api");
 
     let vikePrerenderOutdir: string | undefined;
 
@@ -37,7 +37,7 @@ export async function targetsPlugin(): Promise<PluginOption[] | undefined> {
           handler() {
             // biome-ignore lint/suspicious/noExplicitAny: TODO PluginContext type should be simplified
             const api = getVercelAPI(this as any);
-            // Override `vite-plugin-vercel` config
+            // Override `@photonjs/vercel` config
             api.defaultSupportsResponseStreaming = true;
           },
         },

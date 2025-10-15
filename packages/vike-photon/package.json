@@ -42,10 +42,10 @@
     "@brillout/vite-plugin-server-entry": "^0.7.15",
     "@photonjs/core": "0.0.*",
     "@photonjs/runtime": "0.0.*",
-    "@universal-middleware/compress": "^0.2.31",
-    "@universal-middleware/core": "^0.4.10",
-    "@universal-middleware/sirv": "^0.1.21",
-    "esbuild": "^0.25.9",
+    "@universal-middleware/compress": "^0.2.32",
+    "@universal-middleware/core": "^0.4.11",
+    "@universal-middleware/sirv": "^0.1.22",
+    "esbuild": "^0.25.11",
     "pkg-types": "^2.3.0"
   },
   "peerDependencies": {
@@ -54,7 +54,7 @@
     "@photonjs/runtime": "0.0.*",
     "vike": ">=0.4.238",
     "vite": ">=7.1",
-    "vite-plugin-vercel": "^10.0.0-beta.4"
+    "@photonjs/vercel": "^0.1.1"
   },
   "peerDependenciesMeta": {
     "vite": {
@@ -63,30 +63,30 @@
     "@photonjs/cloudflare": {
       "optional": true
     },
-    "vite-plugin-vercel": {
+    "@photonjs/vercel": {
       "optional": true
     }
   },
   "devDependencies": {
     "@brillout/release-me": "^0.4.8",
-    "@elysiajs/node": "^1.4.0",
+    "@elysiajs/node": "^1.4.1",
     "@hattip/adapter-node": "^0.0.49",
-    "@hono/node-server": "^1.19.3",
+    "@hono/node-server": "^1.19.5",
     "@photonjs/cloudflare": "0.0.*",
-    "@types/bun": "^1.2.22",
-    "@types/deno": "^2.3.0",
-    "@types/node": "^20.19.16",
-    "elysia": "^1.4.5",
-    "fastify": "^5.6.0",
+    "@types/bun": "^1.3.0",
+    "@types/deno": "^2.5.0",
+    "@types/node": "^20.19.21",
+    "elysia": "^1.4.12",
+    "fastify": "^5.6.1",
     "h3": "^1.15.4",
-    "hono": "^4.9.7",
+    "hono": "^4.9.12",
     "magic-string": "^0.30.19",
     "rollup": "4.38.0",
     "tsup": "^8.5.0",
-    "typescript": "^5.9.2",
-    "vike": "^0.4.240",
-    "vite": "^7.1.5",
-    "vite-plugin-vercel": "^10.0.0-beta.4"
+    "typescript": "^5.9.3",
+    "vike": "^0.4.242",
+    "vite": "^7.1.10",
+    "@photonjs/vercel": "^0.1.1"
   },
   "files": [
     "dist/",

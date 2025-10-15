@@ -6,17 +6,17 @@
     "deploy": "vike build && wrangler deploy"
   },
   "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "vike": "^0.4.240",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "vike": "^0.4.242",
     "vike-photon": "^0.1.8",
-    "vike-react": "^0.6.6"
+    "vike-react": "^0.6.9"
   },
   "devDependencies": {
-    "@photonjs/runtime": "^0.0.13",
-    "@vitejs/plugin-react": "^5.0.3",
-    "vite": "^7.1.5",
-    "vite-plugin-vercel": "^10.0.0-beta.4"
+    "@photonjs/runtime": "^0.1.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.10",
+    "@photonjs/vercel": "^0.1.1"
   },
   "type": "module"
 }

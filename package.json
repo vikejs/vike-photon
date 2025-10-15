@@ -21,17 +21,17 @@
     "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.4",
+    "@biomejs/biome": "^2.2.6",
     "@brillout/test-e2e": "^0.6.19",
     "@vikejs/biome-config": "^2.0.1",
-    "playwright": "^1.55.0"
+    "playwright": "^1.56.0"
   },
   "engines": {
     "node": ">=20"
   },
   "pnpm": {
     "overrides": {
-      "@types/node": "^20.19.16",
+      "@types/node": "^20.19.21",
       "vike": "0.4.239-commit-4d0d950"
     },
     "onlyBuiltDependencies": [
