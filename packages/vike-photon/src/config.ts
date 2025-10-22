@@ -3,6 +3,7 @@ import { photon } from "@photonjs/core/vite";
 import type { BuildOptions } from "esbuild";
 import type { Config } from "vike/types";
 import { vikePhoton } from "./plugin/index.js";
+import { isDependencyInstalledByUser } from "./utils/isDependencyInstalledByUser.js";
 
 export { config as default };
 
@@ -30,6 +31,17 @@ const _config = {
   stream: {
     enable: null,
     type: "web" as const,
+  },
+  cli: {
+    async preview() {
+      if (await isDependencyInstalledByUser("@photonjs/cloudflare")) {
+        return "vite";
+      }
+      if (await isDependencyInstalledByUser("@photonjs/vercel")) {
+        return false;
+      }
+      return undefined;
+    },
   },
   meta: {
     // +stream is defined by vike-{react,vue,solid} but we define it again here to avoid Vike throwing the "unknown config" error if the user doesn't use vike-{react,vue,solid}
