@@ -80,9 +80,6 @@ declare global {
     interface Config {
       photon?: Photon.Config & { standalone?: boolean | null | { esbuild: BuildOptions } };
 
-      // TODO
-      // cloudflare?: CloudflareConfig;
-
       // Vercel
       isr?: boolean | { expiration: number };
       edge?: boolean;
