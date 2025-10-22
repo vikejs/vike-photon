@@ -10,7 +10,7 @@
     "hono": "^4.9.12",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "vike": "0.4.243-commit-0e44b70",
+    "vike": "0.4.243-commit-0d0395a",
     "vike-photon": "^0.1.10",
     "vike-react": "^0.6.9",
     "vite": "^7.1.10"
