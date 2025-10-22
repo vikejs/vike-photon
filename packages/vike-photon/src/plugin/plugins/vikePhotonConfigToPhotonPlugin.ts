@@ -23,8 +23,9 @@ export function vikePhotonConfigToPhotonPlugin(): Plugin {
           }
 
           if (!isAbsolute(serverPath)) {
-            const photonConfigUser =
-              vikeConfig.ignoreWarning("_pageConfigGlobal")?.configValueSources?.photon?.[0];
+            const photonConfigUser:
+              | { definedAt?: { filePathAbsoluteFilesystem?: string }; value?: unknown }
+              | undefined = vikeConfig.ignoreWarning("_pageConfigGlobal")?.configValueSources?.photon?.[0];
 
             if (
               photonConfigUser?.definedAt?.filePathAbsoluteFilesystem &&
