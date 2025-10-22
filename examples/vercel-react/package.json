@@ -2,8 +2,7 @@
   "scripts": {
     "dev": "vike dev",
     "build": "vike build",
-    "preview": "vike build && vite preview",
-    "deploy": "vike build && wrangler deploy"
+    "preview": "vike build && vike preview"
   },
   "dependencies": {
     "react": "^19.2.0",
