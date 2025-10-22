@@ -1,8 +1,7 @@
 {
   "scripts": {
     "dev": "vike dev",
-    "build": "vike build",
-    "preview": "vike build && vike preview"
+    "build": "vike build"
   },
   "dependencies": {
     "react": "^19.2.0",
