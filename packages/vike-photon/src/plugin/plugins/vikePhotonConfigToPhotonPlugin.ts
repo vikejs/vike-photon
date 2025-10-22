@@ -1,3 +1,5 @@
+import { accessSync } from "node:fs";
+import { dirname, isAbsolute, join } from "node:path";
 import { getVikeConfig } from "vike/plugin";
 import type { Plugin } from "vite";
 
@@ -10,6 +12,51 @@ export function vikePhotonConfigToPhotonPlugin(): Plugin {
 
       if (vikeConfig.config.photon) {
         const { standalone: _, ...photonConfig } = vikeConfig.config.photon;
+
+        if (photonConfig.server) {
+          const serverPath = typeof photonConfig.server === "string" ? photonConfig.server : photonConfig.server.id;
+          const possiblePaths: string[] = [serverPath];
+
+          if (!serverPath.startsWith("..")) {
+            // Try to resolve server path from project's root folder
+            possiblePaths.push(join(userConfig.root ?? process.cwd(), serverPath));
+          }
+
+          if (!isAbsolute(serverPath)) {
+            const photonConfigUser =
+              vikeConfig.dangerouslyUseInternals._pageConfigGlobal.configValueSources.photon?.[0];
+
+            if (
+              photonConfigUser &&
+              "filePathAbsoluteFilesystem" in photonConfigUser.definedAt &&
+              photonConfigUser.definedAt.filePathAbsoluteFilesystem &&
+              "value" in photonConfigUser &&
+              typeof photonConfigUser.value === "object" &&
+              photonConfigUser.value &&
+              "server" in photonConfigUser.value
+            ) {
+              // Try to resolve server path relative to config path
+              possiblePaths.push(join(dirname(photonConfigUser.definedAt.filePathAbsoluteFilesystem), serverPath));
+            }
+          }
+
+          for (const possiblePath of possiblePaths) {
+            try {
+              accessSync(possiblePath);
+
+              if (typeof photonConfig.server === "string") {
+                photonConfig.server = possiblePath;
+              } else {
+                photonConfig.server.id = possiblePath;
+              }
+
+              // exit for-loop
+              break;
+            } catch {
+              // only testing if file exists, so we ignore errors
+            }
+          }
+        }
 
         return {
           photon: photonConfig,

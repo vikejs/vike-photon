@@ -9,7 +9,7 @@ export default {
   hydrationCanBeAborted: true,
   extends: [vikePhoton],
   photon: {
-    server: `./server/index-${FRAMEWORK}.ts`,
+    server: `../server/index-${FRAMEWORK}.ts`,
   },
   redirects: {
     "/about-redirect": "/about",
