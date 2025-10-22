@@ -3,13 +3,14 @@ import { photon } from "@photonjs/core/vite";
 import type { BuildOptions } from "esbuild";
 import type { Config } from "vike/types";
 import { vikePhoton } from "./plugin/index.js";
+import { isDependencyInstalledByUser } from "./utils/isDependencyInstalledByUser.js";
 
 export { config as default };
 
 const _config = {
   name: "vike-photon" as const,
   require: {
-    vike: ">=0.4.238" as const,
+    vike: ">=0.4.244" as const,
     "vike-react": {
       version: ">=0.6.4" as const,
       optional: true,
@@ -31,6 +32,17 @@ const _config = {
     enable: null,
     type: "web" as const,
   },
+  cli: {
+    async preview() {
+      if (await isDependencyInstalledByUser("@photonjs/cloudflare")) {
+        return "vite";
+      }
+      if (await isDependencyInstalledByUser("@photonjs/vercel")) {
+        return false;
+      }
+      return undefined;
+    },
+  },
   meta: {
     // +stream is defined by vike-{react,vue,solid} but we define it again here to avoid Vike throwing the "unknown config" error if the user doesn't use vike-{react,vue,solid}
     stream: {
@@ -40,12 +52,6 @@ const _config = {
       env: { config: true },
       global: true,
     },
-
-    // TODO Cloudflare configs
-    // cloudflare: {
-    //   env: { config: true },
-    //   global: true,
-    // },
 
     // Vercel configs
     isr: {
@@ -73,9 +79,6 @@ declare global {
   namespace Vike {
     interface Config {
       photon?: Photon.Config & { standalone?: boolean | null | { esbuild: BuildOptions } };
-
-      // TODO
-      // cloudflare?: CloudflareConfig;
 
       // Vercel
       isr?: boolean | { expiration: number };

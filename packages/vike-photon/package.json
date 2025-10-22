@@ -52,7 +52,7 @@
     "@photonjs/cloudflare": ">=0.0.9",
     "@photonjs/core": "^0.1.0",
     "@photonjs/runtime": "^0.1.0",
-    "vike": ">=0.4.238",
+    "vike": ">=0.4.244",
     "vite": ">=7.1",
     "@photonjs/vercel": "^0.1.1"
   },
