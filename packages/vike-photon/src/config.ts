@@ -10,7 +10,7 @@ export { config as default };
 const _config = {
   name: "vike-photon" as const,
   require: {
-    vike: ">=0.4.238" as const,
+    vike: ">=0.4.244" as const,
     "vike-react": {
       version: ">=0.6.4" as const,
       optional: true,
