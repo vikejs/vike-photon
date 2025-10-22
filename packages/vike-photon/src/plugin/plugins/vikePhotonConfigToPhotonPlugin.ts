@@ -23,13 +23,14 @@ export function vikePhotonConfigToPhotonPlugin(): Plugin {
           }
 
           if (!isAbsolute(serverPath)) {
-            const photonConfigUser = vikeConfig.dangerouslyUseInternals._pageConfigGlobal.configValueSources.photon?.[0]
+            const photonConfigUser =
+              vikeConfig.dangerouslyUseInternals._pageConfigGlobal.configValueSources.photon?.[0];
 
             if (
               photonConfigUser &&
-              'filePathAbsoluteFilesystem' in photonConfigUser.definedAt &&
+              "filePathAbsoluteFilesystem" in photonConfigUser.definedAt &&
               photonConfigUser.definedAt.filePathAbsoluteFilesystem &&
-              'value' in photonConfigUser &&
+              "value" in photonConfigUser &&
               typeof photonConfigUser.value === "object" &&
               photonConfigUser.value &&
               "server" in photonConfigUser.value
