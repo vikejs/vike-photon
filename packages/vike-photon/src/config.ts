@@ -53,12 +53,6 @@ const _config = {
       global: true,
     },
 
-    // TODO Cloudflare configs
-    // cloudflare: {
-    //   env: { config: true },
-    //   global: true,
-    // },
-
     // Vercel configs
     isr: {
       env: { server: true, config: true },
