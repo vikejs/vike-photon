@@ -23,7 +23,7 @@ export function vikePhotonConfigToPhotonPlugin(): Plugin {
           }
 
           if (!isAbsolute(serverPath)) {
-            const photonConfigUser = vikeConfig.dangerouslyUseInternals!._pageConfigGlobal.configValueSources.photon?.[0]
+            const photonConfigUser = vikeConfig.dangerouslyUseInternals._pageConfigGlobal.configValueSources.photon?.[0]
 
             if (
               photonConfigUser &&
