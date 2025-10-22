@@ -23,28 +23,34 @@ export function vikePhotonConfigToPhotonPlugin(): Plugin {
           }
 
           if (!isAbsolute(serverPath)) {
-            const photonConfigUser = vikeConfig.ignoreWarning("_pageConfigGlobal")?.configValueSources?.photon?.[0];
+            const photonConfigUser =
+              vikeConfig.ignoreWarning("_pageConfigGlobal")?.configValueSources?.photon?.[0];
 
-            if (photonConfigUser.definedAt.filePathAbsoluteFilesystem && photonConfigUser?.value?.server) {
+            if (
+              photonConfigUser?.definedAt?.filePathAbsoluteFilesystem &&
+              typeof photonConfigUser?.value === "object" &&
+              photonConfigUser.value &&
+              "server" in photonConfigUser.value
+            ) {
               // Try to resolve server path relative to config path
               possiblePaths.push(join(dirname(photonConfigUser.definedAt.filePathAbsoluteFilesystem), serverPath));
             }
+          }
 
-            for (const possiblePath of possiblePaths) {
-              try {
-                accessSync(possiblePath);
+          for (const possiblePath of possiblePaths) {
+            try {
+              accessSync(possiblePath);
 
-                if (typeof photonConfig.server === "string") {
-                  photonConfig.server = possiblePath;
-                } else {
-                  photonConfig.server.id = possiblePath;
-                }
-
-                // exit for-loop
-                break;
-              } catch {
-                // only testing if file exists, so we ignore errors
+              if (typeof photonConfig.server === "string") {
+                photonConfig.server = possiblePath;
+              } else {
+                photonConfig.server.id = possiblePath;
               }
+
+              // exit for-loop
+              break;
+            } catch {
+              // only testing if file exists, so we ignore errors
             }
           }
         }
