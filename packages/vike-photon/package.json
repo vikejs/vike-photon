@@ -84,7 +84,7 @@
     "rollup": "4.38.0",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3",
-    "vike": "0.4.243-commit-6ce9ef3",
+    "vike": "0.4.243-commit-0e44b70",
     "vite": "^7.1.10",
     "@photonjs/vercel": "^0.1.1"
   },
