@@ -24,7 +24,8 @@ export function vikePhotonConfigToPhotonPlugin(): Plugin {
 
           if (!isAbsolute(serverPath)) {
             // biome-ignore lint/suspicious/noExplicitAny: internal Vike types
-            const photonConfigUser: any = (vikeConfig as any)._pageConfigGlobal?.configValueSources?.photon?.[0];
+            const photonConfigUser: any = (vikeConfig as any).ignoreWarning("_pageConfigGlobal")?.configValueSources
+              ?.photon?.[0];
 
             if (photonConfigUser.definedAt.filePathAbsoluteFilesystem && photonConfigUser?.value?.server) {
               // Try to resolve server path relative to config path
