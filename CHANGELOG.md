@@ -1,3 +1,13 @@
+## [0.1.11](https://github.com/vikejs/vike-photon/compare/v0.1.10...v0.1.11) (2025-10-23)
+
+
+### Features
+
+* add support for new `cli.preview` option ([#9](https://github.com/vikejs/vike-photon/issues/9)) ([ec79e5a](https://github.com/vikejs/vike-photon/commit/ec79e5aa6e64c741e01c29a364d633e9ddf786a2))
+* resolve server relative path ([#8](https://github.com/vikejs/vike-photon/issues/8)) ([62bbdf8](https://github.com/vikejs/vike-photon/commit/62bbdf88ae1fa79b0ebbb27c33ae1f8271a030cb))
+
+
+
 ## [0.1.10](https://github.com/vikejs/vike-photon/compare/v0.1.9...v0.1.10) (2025-10-15)
 
 
