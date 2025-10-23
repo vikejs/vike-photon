@@ -7,6 +7,13 @@
 * resolve server relative path ([#8](https://github.com/vikejs/vike-photon/issues/8)) ([62bbdf8](https://github.com/vikejs/vike-photon/commit/62bbdf88ae1fa79b0ebbb27c33ae1f8271a030cb))
 
 
+### MINOR BREAKING CHANGES
+
+* Update `vike` to `0.4.244` or above.
+
+> [!NOTE]
+> We recommend always updating `vike` and `vike-*` extensions together.
+
 
 ## [0.1.10](https://github.com/vikejs/vike-photon/compare/v0.1.9...v0.1.10) (2025-10-15)
 
