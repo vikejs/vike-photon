@@ -3,6 +3,7 @@
     "========= Basics": "",
     "dev": "cd ./packages/vike-photon/ && pnpm run dev",
     "build": "pnpm --recursive --filter {packages/*} run build",
+    "build:vercel-demo": " pnpm run -C ./examples/vercel-demo build && cp -rf examples/vercel-demo/public examples/vercel-demo/.vercel .",
     "========= Test": "",
     "test": "test-e2e && pnpm --recursive test:types",
     "========= Release": "",
