@@ -8,7 +8,7 @@ function Layout({ children }: PropsWithChildren) {
   return (
     <PageLayout>
       <Sidebar>
-        <img width={48} src="/vike.svg" alt="Vike logo" />
+        <img width={48} src="/assets/logo.svg" alt="Vike logo" />
         <a className="navitem" href="/">
           Home
         </a>
