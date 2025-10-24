@@ -1,5 +1,6 @@
 import type { Photon } from "@photonjs/core";
 import { photon } from "@photonjs/core/vite";
+import type { RuntimeAdapterTarget } from "@universal-middleware/core";
 import type { BuildOptions } from "esbuild";
 import type { Config } from "vike/types";
 import { vikePhoton } from "./plugin/index.js";
@@ -83,6 +84,14 @@ declare global {
       // Vercel
       isr?: boolean | { expiration: number };
       edge?: boolean;
+    }
+
+    interface Photon {
+      // server: 'express' | 'hono' | ...
+    }
+
+    interface PageContextServer {
+      runtime: RuntimeAdapterTarget<Photon extends { server: string } ? Photon["server"] : "srvx">;
     }
   }
 }
