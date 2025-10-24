@@ -79,7 +79,10 @@ const config = _config as Omit<typeof _config, "stream">;
 declare global {
   namespace Vike {
     interface Config {
-      photon?: Photon.Config & { standalone?: boolean | null | { esbuild: BuildOptions } };
+      photon?: Photon.Config & {
+        standalone?: boolean | null | { esbuild: BuildOptions };
+        sirv?: boolean | (import("@universal-middleware/sirv").ServeOptions & { root?: string });
+      };
 
       // Vercel
       isr?: boolean | { expiration: number };
