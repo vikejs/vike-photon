@@ -1,3 +1,12 @@
+## [0.1.12](https://github.com/vikejs/vike-photon/compare/v0.1.11...v0.1.12) (2025-10-24)
+
+
+### Bug Fixes
+
+* Vercel Edge build without side-effects ([872fa08](https://github.com/vikejs/vike-photon/commit/872fa082cab16a14aa15545278e3b1d9968a7bad))
+
+
+
 ## [0.1.11](https://github.com/vikejs/vike-photon/compare/v0.1.10...v0.1.11) (2025-10-23)
 
 

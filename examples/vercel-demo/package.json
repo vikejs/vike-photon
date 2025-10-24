@@ -38,7 +38,7 @@
     "@vite-plugin-vercel/schemas": "^1.0.0",
     "fast-glob": "^3.3.3",
     "playwright": "^1.56.1",
-    "vike-photon": "^0.1.11",
+    "vike-photon": "^0.1.12",
     "vitest": "^3.2.4",
     "zod": "^4.1.12"
   }
