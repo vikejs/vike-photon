@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
-import { goto, isDeployed, testISRDates } from "./utils";
 import { expect } from "playwright/test";
+import { goto, isDeployed, testISRDates } from "./utils";
 
 test("has ISR pages (static override)", async ({ page }) => {
   test.skip(!isDeployed);

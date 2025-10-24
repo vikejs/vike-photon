@@ -1,6 +1,6 @@
 import { useData } from "vike-react/useData";
 
-export default function Page() {
+export function Page() {
   const data = useData<{ d: string }>();
 
   return (

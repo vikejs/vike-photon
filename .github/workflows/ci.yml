@@ -26,9 +26,9 @@ jobs:
         with:
           node-version: 20
           cache: "pnpm"
-      - uses: oven-sh/setup-bun@v2
 
       - run: pnpm install
       - run: pnpm exec playwright install chromium
       - run: pnpm run build
+      - run: pnpm run build:examples
       - run: pnpm run test

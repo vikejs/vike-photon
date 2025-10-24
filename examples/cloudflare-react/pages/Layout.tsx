@@ -1,12 +1,14 @@
 export { Layout };
 
+import type { PropsWithChildren } from "react";
+
 import "./Layout.css";
 
-function Layout({ children }) {
+function Layout({ children }: PropsWithChildren) {
   return (
     <PageLayout>
       <Sidebar>
-        <img width={48} src="/vike.svg" alt="Vike logo" />
+        <img width={48} src="/assets/logo.svg" alt="Vike logo" />
         <a className="navitem" href="/">
           Home
         </a>
@@ -19,7 +21,7 @@ function Layout({ children }) {
   );
 }
 
-function PageLayout({ children }) {
+function PageLayout({ children }: PropsWithChildren) {
   return (
     <div
       style={{
@@ -33,7 +35,7 @@ function PageLayout({ children }) {
   );
 }
 
-function Sidebar({ children }) {
+function Sidebar({ children }: PropsWithChildren) {
   return (
     <div
       style={{
@@ -51,7 +53,7 @@ function Sidebar({ children }) {
   );
 }
 
-function Content({ children }) {
+function Content({ children }: PropsWithChildren) {
   return (
     <div
       style={{

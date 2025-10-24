@@ -13,5 +13,17 @@
         }
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["examples/vercel-demo/tests/**"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noExplicitAny": "off"
+          }
+        }
+      }
+    }
+  ]
 }
