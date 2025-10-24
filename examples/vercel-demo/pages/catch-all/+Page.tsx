@@ -1,7 +1,7 @@
-import { Link } from "../../components/Link";
 import { useData } from "vike-react/useData";
+import { Link } from "../../components/Link";
 
-export default function Page() {
+export function Page() {
   const data = useData<{ d: string }>();
 
   return (

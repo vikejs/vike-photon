@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "vike dev",
     "build": "vike build",
-    "prod": "vike build && node dist/server/index.mjs"
+    "prod": "vike build && node dist/server/index.mjs",
+    "test:types": "tsc --noEmit"
   },
   "dependencies": {
     "@photonjs/express": "^0.1.4",

@@ -1,6 +1,6 @@
-import { Counter } from "./Counter.js";
+import { Counter } from "./Counter";
 
-export default function Page() {
+export function Page() {
   return (
     <>
       <h1>Welcome</h1>

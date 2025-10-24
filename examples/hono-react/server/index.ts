@@ -4,7 +4,7 @@ import { Hono } from "hono";
 function startServer() {
   const app = new Hono();
   apply(app);
-  const port = process.env.PORT || 3000;
+  const port = process.env.PORT ? Number.parseInt(process.env.PORT, 10) : 3000;
 
   return serve(app, { port });
 }

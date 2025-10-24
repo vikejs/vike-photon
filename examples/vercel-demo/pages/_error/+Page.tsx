@@ -1,7 +1,7 @@
 import type React from "react";
 import { usePageContext } from "vike-react/usePageContext";
 
-export default function Page() {
+export function Page() {
   const ctx = usePageContext();
   let { is404, abortReason } = ctx;
   if (!abortReason) {

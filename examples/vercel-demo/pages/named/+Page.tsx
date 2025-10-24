@@ -5,7 +5,7 @@ function isISR(someId: string) {
   return someId !== "id-1" && someId !== "id-2";
 }
 
-export default function Page() {
+export function Page() {
   const data = useData<{ d: string; someId: string }>();
 
   return (

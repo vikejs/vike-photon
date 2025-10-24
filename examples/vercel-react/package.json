@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "vike dev",
-    "build": "vike build"
+    "build": "vike build",
+    "test:types": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^19.2.0",

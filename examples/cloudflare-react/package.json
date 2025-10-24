@@ -3,7 +3,8 @@
     "dev": "vike dev",
     "build": "vike build",
     "preview": "vike build && vike preview",
-    "deploy": "vike build && wrangler deploy"
+    "deploy": "vike build && wrangler deploy",
+    "test:types": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^19.2.0",

@@ -1,4 +1,4 @@
-export default Page;
+export { Page };
 
 import { Counter } from "./Counter";
 
