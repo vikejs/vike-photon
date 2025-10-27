@@ -41,6 +41,12 @@ function resolveStaticConfig(
   sirvOptions: SirvOptions | undefined,
   deprecatedStatic: VikeOptions["static"] | undefined,
 ): false | SirvOptionsWithRoot {
+  if (deprecatedStatic || typeof deprecatedStatic === "boolean") {
+    console.warn(
+      "[vike-photon][warning][deprecation] Replace `getMiddlewares(...)` usage with `photon.sirv` setting. See https://vike.dev/vike-photon#sirv",
+    );
+  }
+
   // Disable static file serving for Vercel,
   // as it will serve static files on its own
   // See vercel.json > outputDirectory
