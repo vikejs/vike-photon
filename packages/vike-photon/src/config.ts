@@ -82,7 +82,7 @@ declare global {
       photon?: PhotonCore.Config & {
         standalone?: boolean | null | { esbuild: BuildOptions };
         compress?: boolean | "static";
-        sirv?: boolean | (import("@universal-middleware/sirv").ServeOptions & { root?: string });
+        static?: boolean | (import("@universal-middleware/sirv").ServeOptions & { root?: string });
       };
 
       // Vercel

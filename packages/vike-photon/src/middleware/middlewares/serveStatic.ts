@@ -8,7 +8,7 @@ import { assert } from "../../utils/assert.js";
 import { isVercel } from "../../utils/isVercel.js";
 import type { VikeOptions } from "../types.js";
 
-type SirvOptions = NonNullable<Vike.Config["photon"]>["sirv"];
+type SirvOptions = NonNullable<Vike.Config["photon"]>["static"];
 type SirvOptionsWithRoot = NonNullable<Omit<SirvOptions, "root">> & { root: string };
 
 async function removeBaseUrl(req: Request) {
@@ -43,7 +43,7 @@ function resolveStaticConfig(
 ): false | SirvOptionsWithRoot {
   if (deprecatedStatic || typeof deprecatedStatic === "boolean") {
     console.warn(
-      "[vike-photon][warning][deprecation] Replace `getMiddlewares(...)` usage with `photon.sirv` setting. See https://vike.dev/vike-photon#sirv",
+      "[vike-photon][warning][deprecation] Replace `getMiddlewares(...)` usage with `photon.static` setting. See https://vike.dev/vike-photon#static-files",
     );
   }
 
@@ -84,7 +84,7 @@ export const serveStaticMiddleware = ((options?) =>
   enhance(
     async (request, context, runtime) => {
       const globalContext = (await getGlobalContext()) as GlobalContextServer;
-      const sirvOptions = globalContext.config.photon?.sirv;
+      const sirvOptions = globalContext.config.photon?.static;
       const deprecatedStaticOptions = options?.static;
       const staticConfig = resolveStaticConfig(sirvOptions, deprecatedStaticOptions);
 
