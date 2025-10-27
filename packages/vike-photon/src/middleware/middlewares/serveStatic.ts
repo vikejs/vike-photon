@@ -80,34 +80,33 @@ function resolveStaticConfig(
   };
 }
 
-export const serveStaticMiddleware = ((options?) =>
-  enhance(
+export const serveStaticMiddleware = ((options?) => {
+  let staticConfig: SirvOptionsWithRoot | false | null = null;
+  let staticMiddleware: UniversalMiddleware | null = null;
+
+  return enhance(
     async (request, context, runtime) => {
-      const globalContext = (await getGlobalContext()) as GlobalContextServer;
-      const sirvOptions = globalContext.config.photon?.static;
-      const deprecatedStaticOptions = options?.static;
-      const staticConfig = resolveStaticConfig(sirvOptions, deprecatedStaticOptions);
+      if (staticConfig === null) {
+        const globalContext = (await getGlobalContext()) as GlobalContextServer;
+        const sirvOptions = globalContext.config.photon?.static;
+        const deprecatedStaticOptions = options?.static;
+        staticConfig = resolveStaticConfig(sirvOptions, deprecatedStaticOptions);
+      }
 
       if (staticConfig === false) return;
 
-      let staticMiddleware: UniversalMiddleware;
-
-      async function serveStaticFiles(req: Request) {
-        const newReq = await removeBaseUrl(req);
-
-        if (!staticMiddleware) {
-          const { default: sirv } = await import("@universal-middleware/sirv");
-          const { root, ...sirvOptions } = staticConfig as SirvOptionsWithRoot;
-          staticMiddleware = sirv(root, { etag: true, ...sirvOptions });
-        }
-
-        return staticMiddleware(newReq, context, runtime);
+      if (staticMiddleware === null) {
+        const { default: sirv } = await import("@universal-middleware/sirv");
+        const { root, ...sirvOptions } = staticConfig as SirvOptionsWithRoot;
+        staticMiddleware = sirv(root, { etag: true, ...sirvOptions });
       }
 
-      return serveStaticFiles(request);
+      const newReq = await removeBaseUrl(request);
+      return staticMiddleware(newReq, context, runtime);
     },
     {
       name: "vike-photon:sirv",
       immutable: false,
     },
-  )) satisfies Get<[options: VikeOptions], UniversalMiddleware>;
+  );
+}) satisfies Get<[options: VikeOptions], UniversalMiddleware>;
