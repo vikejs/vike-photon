@@ -17,7 +17,13 @@ import {
 
 function testRun(
   cmd: `${"pnpm" | "bun --bun --silent"} run ${"dev" | "prod" | "prod:bun"}`,
-  options?: { skipServerHMR?: boolean; https?: boolean; isFlaky?: boolean; noServerHook?: boolean },
+  options?: {
+    skipServerHMR?: boolean;
+    skipStatic?: boolean;
+    https?: boolean;
+    isFlaky?: boolean;
+    noServerHook?: boolean;
+  },
 ) {
   run(cmd, {
     serverUrl: options?.https ? "https://localhost:3000" : "http://127.0.0.1:3000",
@@ -197,7 +203,16 @@ function testRun(
     });
   }
 
-  if (isProd)
+  if (!options?.skipStatic) {
+    test("Serving static files", async () => {
+      const response: Response = await fetch(`${getServerUrl()}/assets/logo.svg`);
+
+      expect(response.status).toBe(200);
+      expect(response.headers.get("content-type")).toBe("image/svg+xml");
+    });
+  }
+
+  if (isProd) {
     test("Compression and headers in production", async () => {
       const response = await page.goto(`${getServerUrl()}/`);
       const contentEncoding = await response.headerValue("content-encoding");
@@ -205,6 +220,7 @@ function testRun(
       const varyHeader = await response.headerValue("vary");
       expect(varyHeader).toContain("Accept-Encoding");
     });
+  }
 }
 
 async function getNumberOfItems() {

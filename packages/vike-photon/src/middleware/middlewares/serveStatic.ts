@@ -8,6 +8,9 @@ import { assert } from "../../utils/assert.js";
 import { isVercel } from "../../utils/isVercel.js";
 import type { VikeOptions } from "../types.js";
 
+type SirvOptions = NonNullable<Vike.Config["photon"]>["static"];
+type SirvOptionsWithRoot = NonNullable<Omit<SirvOptions, "root">> & { root: string };
+
 async function removeBaseUrl(req: Request) {
   if (!req.url) return req;
   const globalContext = (await getGlobalContext()) as GlobalContextServer;
@@ -26,52 +29,84 @@ async function removeBaseUrl(req: Request) {
   });
 }
 
-function resolveStaticConfig(static_: VikeOptions["static"]): false | { root: string; cache: boolean } {
-  // Disable static file serving for Vercel,
-  // as it will serve static files on its own
-  // See vercel.json > outputDirectory
-  if (isVercel()) return false;
-  if (static_ === false) return false;
-
+function getDefaultStaticDir() {
   const argv1 = process.argv[1];
   const entrypointDirAbs = argv1
     ? dirname(isAbsolute(argv1) ? argv1 : join(process.cwd(), argv1))
     : dirname(fileURLToPath(import.meta.url));
-  const defaultStaticDir = join(entrypointDirAbs, "..", "client");
+  return join(entrypointDirAbs, "..", "client");
+}
 
-  if (static_ === true || static_ === undefined) {
-    return { root: defaultStaticDir, cache: true };
+function resolveStaticConfig(
+  sirvOptions: SirvOptions | undefined,
+  deprecatedStatic: VikeOptions["static"] | undefined,
+): false | SirvOptionsWithRoot {
+  if (deprecatedStatic || typeof deprecatedStatic === "boolean") {
+    console.warn(
+      "[vike-photon][warning][deprecation] Replace `getMiddlewares(...)` usage with `photon.static` setting. See https://vike.dev/vike-photon#static-files",
+    );
   }
-  if (typeof static_ === "string") {
-    return { root: static_, cache: true };
+
+  // Disable static file serving for Vercel,
+  // as it will serve static files on its own
+  // See vercel.json > outputDirectory
+  if (isVercel()) return false;
+
+  if (sirvOptions === false) return false;
+
+  if (sirvOptions === true) {
+    return { root: getDefaultStaticDir() };
+  }
+
+  if (sirvOptions) {
+    return {
+      ...sirvOptions,
+      root: sirvOptions.root ?? getDefaultStaticDir(),
+    };
+  }
+
+  // Fallback to `deprecatedStatic`
+  if (deprecatedStatic === false) return false;
+
+  if (typeof deprecatedStatic === "string") {
+    return { root: deprecatedStatic };
+  }
+
+  if (deprecatedStatic === true || deprecatedStatic === undefined) {
+    return { root: getDefaultStaticDir() };
   }
   return {
-    root: static_.root ?? defaultStaticDir,
-    cache: static_.cache ?? true,
+    root: deprecatedStatic.root ?? getDefaultStaticDir(),
   };
 }
 
-export const serveStaticMiddleware = ((options?) =>
-  enhance(
+export const serveStaticMiddleware = ((options?) => {
+  let staticConfig: SirvOptionsWithRoot | false | null = null;
+  let staticMiddleware: UniversalMiddleware | null = null;
+
+  return enhance(
     async (request, context, runtime) => {
-      const staticConfig = resolveStaticConfig(options?.static);
-      let staticMiddleware: UniversalMiddleware;
-
-      async function serveStaticFiles(req: Request) {
-        const newReq = await removeBaseUrl(req);
-
-        if (!staticMiddleware) {
-          const { default: sirv } = await import("@universal-middleware/sirv");
-          staticMiddleware = sirv((staticConfig as { root: string; cache: boolean }).root, { etag: true });
-        }
-
-        return staticMiddleware(newReq, context, runtime);
+      if (staticConfig === null) {
+        const globalContext = (await getGlobalContext()) as GlobalContextServer;
+        const sirvOptions = globalContext.config.photon?.static;
+        const deprecatedStaticOptions = options?.static;
+        staticConfig = resolveStaticConfig(sirvOptions, deprecatedStaticOptions);
       }
 
-      return serveStaticFiles(request);
+      if (staticConfig === false) return;
+
+      if (staticMiddleware === null) {
+        const { default: sirv } = await import("@universal-middleware/sirv");
+        const { root, ...sirvOptions } = staticConfig as SirvOptionsWithRoot;
+        staticMiddleware = sirv(root, { etag: true, ...sirvOptions });
+      }
+
+      const newReq = await removeBaseUrl(request);
+      return staticMiddleware(newReq, context, runtime);
     },
     {
       name: "vike-photon:sirv",
       immutable: false,
     },
-  )) satisfies Get<[options: VikeOptions], UniversalMiddleware>;
+  );
+}) satisfies Get<[options: VikeOptions], UniversalMiddleware>;

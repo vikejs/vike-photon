@@ -1,4 +1,4 @@
-import type { Photon } from "@photonjs/core";
+import type { Photon as PhotonCore } from "@photonjs/core";
 import { photon } from "@photonjs/core/vite";
 import type { RuntimeAdapterTarget } from "@universal-middleware/core";
 import type { BuildOptions } from "esbuild";
@@ -50,7 +50,7 @@ const _config = {
       isDefinedByPeerDependency: true,
     },
     photon: {
-      env: { config: true },
+      env: { server: true, config: true },
       global: true,
     },
 
@@ -79,7 +79,11 @@ const config = _config as Omit<typeof _config, "stream">;
 declare global {
   namespace Vike {
     interface Config {
-      photon?: Photon.Config & { standalone?: boolean | null | { esbuild: BuildOptions } };
+      photon?: PhotonCore.Config & {
+        standalone?: boolean | null | { esbuild: BuildOptions };
+        compress?: boolean | "static";
+        static?: boolean | (import("@universal-middleware/sirv").ServeOptions & { root?: string });
+      };
 
       // Vercel
       isr?: boolean | { expiration: number };
