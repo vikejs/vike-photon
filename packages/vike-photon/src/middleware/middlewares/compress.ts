@@ -13,7 +13,7 @@ export const compressMiddleware = ((options?) =>
       const deprecatedCompressOptions = options?.compress;
       const compressionType = resolveCompressConfig(compressOptions, deprecatedCompressOptions);
 
-      if (compressionType === false || process.env.NODE_ENV === "production") return;
+      if (compressionType === false || process.env.NODE_ENV !== "production") return;
 
       const compressMiddlewareInternal = compressMiddlewareFactory()(request);
 
@@ -35,17 +35,15 @@ function resolveCompressConfig(
   compressOptions: boolean | "static" | undefined,
   deprecatedCompressOptions: boolean | "static" | undefined,
 ): boolean | "static" {
-  if (deprecatedCompressOptions || typeof deprecatedCompressOptions === "boolean") {
-    console.warn(
-      "[vike-photon][warning][deprecation] Replace `getMiddlewares(...)` usage with `photon.compress` setting. See https://vike.dev/vike-photon#compression",
-    );
-  }
-
   if (typeof compressOptions !== "undefined") {
     return compressOptions;
   }
 
   if (typeof deprecatedCompressOptions !== "undefined") {
+    console.warn(
+      "[vike-photon][warning][deprecation] Replace `getMiddlewares(...)` usage with `photon.compress` setting. See https://vike.dev/vike-photon#compression",
+    );
+
     return deprecatedCompressOptions;
   }
 
