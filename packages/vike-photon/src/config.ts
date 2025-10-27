@@ -81,6 +81,7 @@ declare global {
     interface Config {
       photon?: PhotonCore.Config & {
         standalone?: boolean | null | { esbuild: BuildOptions };
+        compress?: boolean | "static";
         sirv?: boolean | (import("@universal-middleware/sirv").ServeOptions & { root?: string });
       };
 
