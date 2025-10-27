@@ -36,7 +36,7 @@ importers:
         specifier: ^0.4.244
         version: 0.4.244(react-streaming@0.4.11(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.12(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.12
+        specifier: ^0.1.13
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.10
@@ -79,7 +79,7 @@ importers:
         specifier: ^0.4.244
         version: 0.4.244(react-streaming@0.4.11(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.12(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.12
+        specifier: ^0.1.13
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.10
@@ -106,7 +106,7 @@ importers:
         specifier: ^0.4.244
         version: 0.4.244(react-streaming@0.4.11(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.12(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.12
+        specifier: ^0.1.13
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.10
@@ -136,7 +136,7 @@ importers:
         specifier: ^0.4.244
         version: 0.4.244(react-streaming@0.4.11(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.12(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.12
+        specifier: ^0.1.13
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.10
@@ -218,7 +218,7 @@ importers:
         specifier: ^1.56.1
         version: 1.56.1
       vike-photon:
-        specifier: ^0.1.12
+        specifier: ^0.1.13
         version: link:../../packages/vike-photon
       vitest:
         specifier: ^3.2.4
@@ -239,7 +239,7 @@ importers:
         specifier: ^0.4.244
         version: 0.4.244(react-streaming@0.4.11(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.12(@types/node@20.19.21)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.12
+        specifier: ^0.1.13
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.10

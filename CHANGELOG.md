@@ -1,3 +1,17 @@
+## [0.1.13](https://github.com/vikejs/vike-photon/compare/v0.1.12...v0.1.13) (2025-10-27)
+
+
+### Bug Fixes
+
+* add typing to `pageContext.runtime` ([#13](https://github.com/vikejs/vike-photon/issues/13)) ([fb34059](https://github.com/vikejs/vike-photon/commit/fb340591e7074b092effd6949499ccc48389555d))
+
+
+### Features
+
+* new `photon.static` and `photon.compress` options ([#14](https://github.com/vikejs/vike-photon/issues/14)) ([d8a12bf](https://github.com/vikejs/vike-photon/commit/d8a12bf313e2eee4ce09c5c7a324c379a02167e0))
+
+
+
 ## [0.1.12](https://github.com/vikejs/vike-photon/compare/v0.1.11...v0.1.12) (2025-10-24)
 
 
