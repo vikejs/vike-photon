@@ -2,14 +2,23 @@ import path from "node:path";
 import { getVikeConfig } from "vike/plugin";
 import { normalizePath, type PluginOption } from "vite";
 import { setTargetVercel } from "../../targets/vercel/index.js";
+import { assertUsage } from "../../utils/assert.js";
 import { isDependencyInstalledByUser } from "../../utils/isDependencyInstalledByUser.js";
 
 export async function targetsPlugin(): Promise<PluginOption[] | undefined> {
-  if (await isDependencyInstalledByUser("@photonjs/cloudflare")) {
+  const [photonVercel, photonCloudflare, vitePluginVercel] = await Promise.all([
+    isDependencyInstalledByUser("@photonjs/vercel"),
+    isDependencyInstalledByUser("@photonjs/cloudflare"),
+    isDependencyInstalledByUser("vite-plugin-vercel"),
+  ]);
+
+  assertUsage(!vitePluginVercel, "Replace `vite-plugin-vercel` by `@photonjs/vercel`. See https://vike.dev/vercel");
+
+  if (photonCloudflare) {
     return await import("@photonjs/cloudflare/vite").then((p) => p.cloudflare());
   }
 
-  if (await isDependencyInstalledByUser("@photonjs/vercel")) {
+  if (photonVercel) {
     const vpv = await import("@photonjs/vercel/vite").then((p) => p.vercel());
     const { getVercelAPI } = await import("@photonjs/vercel/api");
 
