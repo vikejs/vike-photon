@@ -1,0 +1,40 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    // config:recommended without excluding folders
+    ":dependencyDashboard",
+    ":semanticPrefixFixDepsChoreOthers",
+    "group:monorepos",
+    "group:recommended",
+    "replacements:all",
+    "workarounds:all",
+
+    "schedule:weekly",
+    "group:allNonMajor"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "rangeStrategy": "bump",
+  "assignees": [
+    "@magne4000"
+  ],
+  "ignoreDeps": [
+    // manually bumping
+    "node",
+    "@types/node",
+    "pnpm"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+  ],
+  "postUpdateOptions": [
+    "pnpmDedupe"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": ["peerDependencies"],
+      "enabled": false
+    }
+  ]
+}
