@@ -1,5 +1,5 @@
 import { accessSync } from "node:fs";
-import { dirname, isAbsolute, join } from "node:path";
+import { dirname, isAbsolute, join, resolve } from "node:path";
 import { getVikeConfig } from "vike/plugin";
 import type { Plugin } from "vite";
 
@@ -19,7 +19,7 @@ export function vikePhotonConfigToPhotonPlugin(): Plugin {
 
           if (!serverPath.startsWith("..")) {
             // Try to resolve server path from project's root folder
-            possiblePaths.push(join(userConfig.root ?? process.cwd(), serverPath));
+            possiblePaths.push(join(resolve(userConfig.root ?? process.cwd()), serverPath));
           }
 
           if (!isAbsolute(serverPath)) {
