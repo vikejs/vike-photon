@@ -1,3 +1,12 @@
+## [0.1.14](https://github.com/vikejs/vike-photon/compare/v0.1.13...v0.1.14) (2025-11-03)
+
+
+### Bug Fixes
+
+* cannot resolve entry relative to root. Fixes [#16](https://github.com/vikejs/vike-photon/issues/16) ([da97eb2](https://github.com/vikejs/vike-photon/commit/da97eb28507e7ee3c57641eaf7841c44d65f1bbf))
+
+
+
 ## [0.1.13](https://github.com/vikejs/vike-photon/compare/v0.1.12...v0.1.13) (2025-10-27)
 
 
