@@ -23,7 +23,8 @@
     // manually bumping
     "node",
     "@types/node",
-    "pnpm"
+    "pnpm",
+    "@vercel/og"
   ],
   "ignorePaths": [
     "**/node_modules/**",
