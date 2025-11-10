@@ -8,7 +8,7 @@
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@elysiajs/node": "^1.4.1",
+    "@elysiajs/node": "^1.4.2",
     "@hono/node-server": "^1.19.6",
     "@node-rs/argon2": "^2.0.2",
     "@photonjs/elysia": "^0.1.4",
@@ -17,7 +17,7 @@
     "@photonjs/h3": "^0.1.4",
     "@photonjs/hattip": "^0.1.4",
     "@photonjs/hono": "^0.1.4",
-    "@prisma/client": "^6.18.0",
+    "@prisma/client": "^6.19.0",
     "@types/express": "^5.0.5",
     "@types/node": "^20.19.21",
     "@types/react": "^19.2.2",
@@ -26,19 +26,19 @@
     "@vitejs/plugin-react": "^5.1.0",
     "elysia": "^1.4.15",
     "express": "^5.1.0",
-    "fastify": "^5.6.1",
+    "fastify": "^5.6.2",
     "fastify-raw-body": "^5.0.0",
     "h3": "^1.15.4",
     "hono": "^4.10.4",
-    "prisma": "^6.18.0",
+    "prisma": "^6.19.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "sharp": "^0.34.4",
+    "sharp": "^0.34.5",
     "telefunc": "^0.2.15",
     "typescript": "^5.9.3",
-    "vike": "^0.4.244",
+    "vike": "^0.4.245",
     "vike-photon": "workspace:*",
-    "vite": "^7.1.12"
+    "vite": "^7.2.2"
   },
   "dependenciesMeta": {
     "vike-photon": {
