@@ -11,17 +11,17 @@
     "@types/react-dom": "^19.2.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "vike": "^0.4.244",
+    "vike": "^0.4.245",
     "vike-photon": "^0.1.14",
-    "vike-react": "^0.6.10"
+    "vike-react": "^0.6.12"
   },
   "devDependencies": {
-    "@photonjs/cloudflare": "^0.1.4",
+    "@photonjs/cloudflare": "^0.1.5",
     "@photonjs/runtime": "^0.1.4",
     "@vitejs/plugin-react": "^5.1.0",
     "typescript": "^5.9.3",
-    "vite": "^7.1.12",
-    "wrangler": "^4.45.3"
+    "vite": "^7.2.2",
+    "wrangler": "^4.46.0"
   },
   "type": "module"
 }
