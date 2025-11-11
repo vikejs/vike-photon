@@ -1,3 +1,12 @@
+## [0.1.16](https://github.com/vikejs/vike-photon/compare/v0.1.15...v0.1.16) (2025-11-11)
+
+
+### Bug Fixes
+
+* bump Photon ([b42c6da](https://github.com/vikejs/vike-photon/commit/b42c6da2e563c83cb82a7cf931aaa479f48034c9))
+
+
+
 ## [0.1.15](https://github.com/vikejs/vike-photon/compare/v0.1.14...v0.1.15) (2025-11-11)
 
 
