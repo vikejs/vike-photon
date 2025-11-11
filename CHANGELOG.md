@@ -1,3 +1,12 @@
+## [0.1.15](https://github.com/vikejs/vike-photon/compare/v0.1.14...v0.1.15) (2025-11-11)
+
+
+### Features
+
+* upgrade dependencies ([#29](https://github.com/vikejs/vike-photon/issues/29)) ([168975b](https://github.com/vikejs/vike-photon/commit/168975b06154165b0b2a45b9718c2300f540dace))
+
+
+
 ## [0.1.14](https://github.com/vikejs/vike-photon/compare/v0.1.13...v0.1.14) (2025-11-03)
 
 
