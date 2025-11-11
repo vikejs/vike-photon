@@ -34,7 +34,7 @@
   },
   "pnpm": {
     "overrides": {
-      "@types/node": "^20.19.21"
+      "@types/node": "^20.19.24"
     },
     "onlyBuiltDependencies": [
       "@biomejs/biome",

@@ -28,10 +28,10 @@
   "version": null,
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.27.1",
-    "@photonjs/vercel": "^0.1.5",
+    "@photonjs/vercel": "^0.1.6",
     "@playwright/test": "^1.56.1",
-    "@types/node": "^20.19.16",
-    "@types/react": "^19.2.2",
+    "@types/node": "^20.19.24",
+    "@types/react": "^19.2.3",
     "@types/react-dom": "^19.2.2",
     "@universal-middleware/core": "^0.4.13",
     "@vercel/node": "^5.5.5",
