@@ -6,7 +6,7 @@
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@photonjs/express": "^0.1.5",
+    "@photonjs/express": "^0.1.6",
     "@vitejs/plugin-react": "^5.1.0",
     "express": "^5.1.0",
     "react": "^19.2.0",
