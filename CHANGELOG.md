@@ -1,3 +1,12 @@
+## [0.1.17](https://github.com/vikejs/vike-photon/compare/v0.1.16...v0.1.17) (2025-11-24)
+
+
+### Bug Fixes
+
+* upgrade deps ([#35](https://github.com/vikejs/vike-photon/issues/35)) ([4aca364](https://github.com/vikejs/vike-photon/commit/4aca36443abdcb002e82c98608611927fd745fd8))
+
+
+
 ## [0.1.16](https://github.com/vikejs/vike-photon/compare/v0.1.15...v0.1.16) (2025-11-11)
 
 
