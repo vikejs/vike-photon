@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@photonjs/runtime": "^0.1.7",
-    "@photonjs/vercel": "^0.1.13",
+    "@photonjs/vercel": "^0.1.14",
     "@vitejs/plugin-react": "^5.1.1",
     "typescript": "^5.9.3",
     "vite": "^7.2.4"
