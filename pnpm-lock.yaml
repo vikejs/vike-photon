@@ -205,8 +205,8 @@ importers:
         specifier: ^7.27.1
         version: 7.27.1(@babel/core@7.28.5)
       '@photonjs/vercel':
-        specifier: ^0.1.12
-        version: 0.1.12(11f7627ee5aee51199abafd1389f80b5)
+        specifier: ^0.1.13
+        version: 0.1.13(11f7627ee5aee51199abafd1389f80b5)
       '@playwright/test':
         specifier: ^1.56.1
         version: 1.56.1
@@ -275,8 +275,8 @@ importers:
         specifier: ^0.1.7
         version: 0.1.7(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@photonjs/vercel':
-        specifier: ^0.1.12
-        version: 0.1.12(11f7627ee5aee51199abafd1389f80b5)
+        specifier: ^0.1.13
+        version: 0.1.13(11f7627ee5aee51199abafd1389f80b5)
       '@vitejs/plugin-react':
         specifier: ^5.1.1
         version: 5.1.1(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
@@ -333,8 +333,8 @@ importers:
         specifier: ^0.1.8
         version: 0.1.8(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))(workerd@1.20251118.0)(wrangler@4.50.0)
       '@photonjs/vercel':
-        specifier: ^0.1.12
-        version: 0.1.12(11f7627ee5aee51199abafd1389f80b5)
+        specifier: ^0.1.13
+        version: 0.1.13(11f7627ee5aee51199abafd1389f80b5)
       '@types/bun':
         specifier: ^1.3.3
         version: 1.3.3
@@ -1906,8 +1906,8 @@ packages:
       vite:
         optional: true
 
-  '@photonjs/vercel@0.1.12':
-    resolution: {integrity: sha512-VSWKX+tPuvfAN9O5E5E890w1wFxhMhbfNE/CBb8MfOB6LqLI6zsRoOUOiyEFonAKzEggoPc3r0CNDfMEbwaTrQ==}
+  '@photonjs/vercel@0.1.13':
+    resolution: {integrity: sha512-seHGCCQGa3K7EDto67SCE+VN5naY8gQD+yu+llBskTAGYYr8TMftSK2hGxT1zeKbphqB2c+L1J2YzzR/b53f/Q==}
     peerDependencies:
       '@photonjs/core': ^0.1.12
       '@photonjs/runtime': ^0.1.7
@@ -2316,8 +2316,8 @@ packages:
   '@universal-middleware/srvx@0.1.1':
     resolution: {integrity: sha512-nTy4BZvaEI+rFO8sWEVvZrZWwFuqEXlXPNvIBAfl16+nKcorwiwm1x+qzuDrSqLd/kr5LSsGR3/KenTvESS9dQ==}
 
-  '@universal-middleware/vercel@0.4.27':
-    resolution: {integrity: sha512-y3XGAtCeHolvxJXDXuLZ3qqXGCpwN8Aa9LUZX/3v12FmV2AFzD+L6PNEz2/iIOCQO6+vbpLbTXvYiKgnw4tvfQ==}
+  '@universal-middleware/vercel@0.4.28':
+    resolution: {integrity: sha512-QHYS6dGwEvRhDoCSeFq3zjyEcSfSb/2H/FPK6I506oqR2Jp0J+sk4Yc+CnTCKddejKkRZefTx5j97MvlwbQNyA==}
     peerDependencies:
       '@hattip/core': ^0.0.49
       '@universal-middleware/h3': ^0.4.14
@@ -6009,14 +6009,14 @@ snapshots:
       - hono
       - srvx
 
-  '@photonjs/vercel@0.1.12(11f7627ee5aee51199abafd1389f80b5)':
+  '@photonjs/vercel@0.1.13(11f7627ee5aee51199abafd1389f80b5)':
     dependencies:
       '@brillout/libassert': 0.5.8
       '@manypkg/find-root': 3.1.0
       '@photonjs/core': 0.1.12(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@photonjs/runtime': 0.1.7(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/core': 0.4.13(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6)
-      '@universal-middleware/vercel': 0.4.27(@hattip/core@0.0.49)(@types/express@5.0.5)(@universal-middleware/h3@0.4.14(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6))(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(express@5.1.0)(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6)
+      '@universal-middleware/vercel': 0.4.28(@hattip/core@0.0.49)(@types/express@5.0.5)(@universal-middleware/h3@0.4.14(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6))(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(express@5.1.0)(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6)
       '@vercel/build-utils': 12.2.4
       '@vercel/nft': 0.30.4(rollup@4.53.3)
       '@vercel/routing-utils': 5.3.0
@@ -6498,7 +6498,7 @@ snapshots:
       - hono
       - srvx
 
-  '@universal-middleware/vercel@0.4.27(@hattip/core@0.0.49)(@types/express@5.0.5)(@universal-middleware/h3@0.4.14(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6))(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(express@5.1.0)(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6)':
+  '@universal-middleware/vercel@0.4.28(@hattip/core@0.0.49)(@types/express@5.0.5)(@universal-middleware/h3@0.4.14(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6))(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(express@5.1.0)(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6)':
     dependencies:
       '@universal-middleware/core': 0.4.13(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6)
       '@universal-middleware/express': 0.4.22(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.6)(srvx@0.9.6)
