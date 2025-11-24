@@ -159,12 +159,19 @@ function testRun(
       expect(await page.textContent("h3")).toBe("x-runtime");
 
       editFile(entry, (content) => content.replaceAll("x-runtime", "x-runtime-edited"));
+      await sleep(500);
+
+      await page.reload();
 
       await autoRetry(async () => {
         expect(await page.textContent("h3")).toBe("x-runtime-edited");
       });
-      await sleep(300);
+
       editFileRevert();
+      await sleep(500);
+
+      await page.reload();
+
       await autoRetry(async () => {
         expect(await page.textContent("h3")).toBe("x-runtime");
       });
