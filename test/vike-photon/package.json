@@ -4,7 +4,7 @@
     "build": "vike build",
     "prepare": "pnpm prisma generate && pnpm prisma db push",
     "prod": "vike build && node build/server/index.mjs",
-    "prod:bun": "vike build && bun --bun --silent build/server/bun-index.mjs",
+    "prod:bun": "vike build && bun --bun --silent build/server/index.mjs",
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
@@ -12,7 +12,7 @@
     "@hono/node-server": "^1.19.6",
     "@node-rs/argon2": "^2.0.2",
     "@photonjs/elysia": "^0.1.7",
-    "@photonjs/express": "^0.1.7",
+    "@photonjs/express": "^0.1.8",
     "@photonjs/fastify": "^0.1.7",
     "@photonjs/h3": "^0.1.7",
     "@photonjs/hattip": "^0.1.7",
