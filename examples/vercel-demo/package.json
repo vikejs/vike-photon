@@ -27,9 +27,9 @@
   "version": null,
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.27.1",
-    "@photonjs/vercel": "^0.1.7",
+    "@photonjs/vercel": "^0.1.8",
     "@playwright/test": "^1.56.1",
-    "@types/node": "^20.19.24",
+    "@types/node": "^20.19.25",
     "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",
     "@universal-middleware/core": "^0.4.13",
