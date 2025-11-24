@@ -33,8 +33,7 @@ export async function targetsPlugin(): Promise<PluginOption[] | undefined> {
         buildStart: {
           order: "pre",
           handler() {
-            // biome-ignore lint/suspicious/noExplicitAny: TODO PluginContext type should be simplified
-            const api = getVercelAPI(this as any);
+            const api = getVercelAPI(this);
             // Override `@photonjs/vercel` config
             api.defaultSupportsResponseStreaming = true;
           },
