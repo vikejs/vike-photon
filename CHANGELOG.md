@@ -1,3 +1,12 @@
+## [0.1.20](https://github.com/vikejs/vike-photon/compare/v0.1.19...v0.1.20) (2025-11-25)
+
+
+### Features
+
+* `photon.standalone` now based on standaloner by [@nitedani](https://github.com/nitedani) ([#36](https://github.com/vikejs/vike-photon/issues/36)) ([ba41307](https://github.com/vikejs/vike-photon/commit/ba413073df0cb01feabaaba91ab63e1197cee53e))
+
+
+
 ## [0.1.19](https://github.com/vikejs/vike-photon/compare/v0.1.18...v0.1.19) (2025-11-24)
 
 
