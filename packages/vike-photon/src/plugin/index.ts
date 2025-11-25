@@ -5,19 +5,17 @@ import { configPlugin } from "./plugins/configPlugin.js";
 import { routesPlugins } from "./plugins/routes.js";
 import { serverEntryPlugin } from "./plugins/serverEntryPlugin.js";
 import { setPhotonMeta } from "./plugins/setPhotonMeta.js";
-import { standalonePlugin } from "./plugins/standalonePlugin.js";
 import { targetsPlugin } from "./plugins/targets.js";
 import { vikePhotonConfigToPhotonPlugin } from "./plugins/vikePhotonConfigToPhotonPlugin.js";
 
 export { vikePhoton, vikePhoton as default };
 
-type PluginInterop = Record<string, unknown> & { name: string };
+export type PluginInterop = Record<string, unknown> & { name: string };
 function vikePhoton(): (PluginInterop | Promise<PluginInterop | PluginInterop[]>)[] {
   return [
     configPlugin(),
     vikePhotonConfigToPhotonPlugin(),
     ...serverEntryPlugin(),
-    standalonePlugin(),
     setPhotonMeta(),
     ...installPhoton("vike-photon", {
       resolveMiddlewares() {
