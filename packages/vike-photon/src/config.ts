@@ -29,7 +29,12 @@ const _config = {
     },
   },
   vite: {
-    plugins: [photon(), vikePhoton(), loadStandalonePlugin.promise],
+    get plugins() {
+      if (!loadStandalonePlugin.isResolved) {
+        loadStandalonePlugin.resolve([]);
+      }
+      return [photon(), vikePhoton(), loadStandalonePlugin.promise];
+    },
   },
   // @ts-expect-error Defined by vike-react/vike-vue/vike-solid (see comment below)
   stream: {
