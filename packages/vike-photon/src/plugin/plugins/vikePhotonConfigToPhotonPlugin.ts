@@ -9,6 +9,10 @@ export function vikePhotonConfigToPhotonPlugin(): Plugin {
     name: "vike-photon:to-photon-config",
     config(userConfig) {
       const vikeConfig = getVikeConfig(userConfig);
+      if (vikeConfig.config.port) {
+        userConfig.server ??= {};
+        userConfig.server.port = vikeConfig.config.port;
+      }
 
       if (vikeConfig.config.photon) {
         const { standalone: _, ...photonConfig } = vikeConfig.config.photon;

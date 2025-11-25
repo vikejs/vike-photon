@@ -4,9 +4,8 @@ import express from "express";
 function startServer() {
   const app = express();
   apply(app);
-  const port = process.env.PORT ? Number.parseInt(process.env.PORT, 10) : 3000;
 
-  return serve(app, { port });
+  return serve(app);
 }
 
 export default startServer();
