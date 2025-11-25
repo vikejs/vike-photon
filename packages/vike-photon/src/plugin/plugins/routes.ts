@@ -3,7 +3,7 @@ import { getVikeConfig } from "vike/plugin";
 import type { Plugin } from "vite";
 import { pageNamePrefix } from "../../api.js";
 
-// Here, we programatically declare all Vike's routes into Photon
+// Here, we programmatically declare all Vike's routes into Photon
 // Further vike-* packages, like vike-vercel, can update those entries (for instance, setting vercel specific metadata)
 export function routesPlugins(): Plugin[] {
   return [

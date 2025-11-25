@@ -1,12 +1,15 @@
 import type { Photon as PhotonCore } from "@photonjs/core";
 import { photon } from "@photonjs/core/vite";
 import type { RuntimeAdapterTarget } from "@universal-middleware/core";
-import type { BuildOptions } from "esbuild";
+import standaloner from "standaloner/vite";
 import type { Config } from "vike/types";
-import { vikePhoton } from "./plugin/index.js";
+import { type PluginInterop, vikePhoton } from "./plugin/index.js";
+import { createDeferred } from "./utils/deferred.js";
 import { isDependencyInstalledByUser } from "./utils/isDependencyInstalledByUser.js";
 
 export { config as default };
+
+const loadStandalonePlugin = createDeferred<PluginInterop[]>();
 
 const _config = {
   name: "vike-photon" as const,
@@ -26,7 +29,12 @@ const _config = {
     },
   },
   vite: {
-    plugins: [photon(), vikePhoton()],
+    get plugins() {
+      if (!loadStandalonePlugin.isResolved) {
+        loadStandalonePlugin.resolve([]);
+      }
+      return [photon(), vikePhoton(), loadStandalonePlugin.promise];
+    },
   },
   // @ts-expect-error Defined by vike-react/vike-vue/vike-solid (see comment below)
   stream: {
@@ -52,6 +60,30 @@ const _config = {
     photon: {
       env: { server: true, config: true },
       global: true,
+      effect({ configValue }) {
+        if (
+          typeof configValue === "object" &&
+          configValue !== null &&
+          "standalone" in configValue &&
+          configValue.standalone
+        ) {
+          if (typeof configValue.standalone === "object") {
+            if ("esbuild" in configValue.standalone) {
+              console.warn(
+                "[vike-photon][warning] 'photon.standalone.esbuild' is not supported anymore. Refer to https://github.com/nitedani/standaloner/tree/main/standaloner for supported options",
+              );
+            }
+
+            // biome-ignore lint/suspicious/noExplicitAny: cast
+            loadStandalonePlugin.resolve(standaloner(configValue.standalone as any) as PluginInterop[]);
+          } else {
+            loadStandalonePlugin.resolve(standaloner() as PluginInterop[]);
+          }
+        } else {
+          loadStandalonePlugin.resolve([]);
+        }
+        return undefined;
+      },
     },
 
     // Vercel configs
@@ -78,9 +110,13 @@ const config = _config as Omit<typeof _config, "stream">;
 
 declare global {
   namespace Vike {
+    type StandaloneOptions = NonNullable<
+      Parameters<typeof import("@photonjs/runtime/vite")["photon"]>[0]
+    >["standalone"];
+
     interface Config {
       photon?: PhotonCore.Config & {
-        standalone?: boolean | null | { esbuild: BuildOptions };
+        standalone?: boolean | StandaloneOptions;
         compress?: boolean | "static";
         static?: boolean | (import("@universal-middleware/sirv").ServeOptions & { root?: string });
       };
