@@ -27,19 +27,19 @@
   "version": null,
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.27.1",
-    "@photonjs/vercel": "^0.1.14",
-    "@playwright/test": "^1.56.1",
+    "@photonjs/vercel": "^0.1.15",
+    "@playwright/test": "^1.57.0",
     "@types/node": "^20.19.25",
-    "@types/react": "^19.2.6",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@universal-middleware/core": "^0.4.13",
-    "@vercel/node": "^5.5.9",
+    "@vercel/node": "^5.5.13",
     "@vite-plugin-vercel/schemas": "^1.0.0",
     "fast-glob": "^3.3.3",
-    "playwright": "^1.56.1",
+    "playwright": "^1.57.0",
     "typescript": "^5.9.3",
     "vike-photon": "^0.1.20",
-    "vitest": "^4.0.13",
+    "vitest": "^4.0.14",
     "zod": "^4.1.13"
   }
 }
