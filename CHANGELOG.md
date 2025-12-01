@@ -1,3 +1,12 @@
+## [0.1.21](https://github.com/vikejs/vike-photon/compare/v0.1.20...v0.1.21) (2025-12-01)
+
+
+### Features
+
+* forward --dev to server in dev ([dab6495](https://github.com/vikejs/vike-photon/commit/dab64954bd82e50c3e37ac9e03acacc3ea52b00c))
+
+
+
 ## [0.1.20](https://github.com/vikejs/vike-photon/compare/v0.1.19...v0.1.20) (2025-11-25)
 
 
