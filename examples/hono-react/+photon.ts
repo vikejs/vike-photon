@@ -5,6 +5,6 @@ export default {
   server: "./server/index",
   // Build
   standalone: {
-    singlefile: true,
+    bundle: true,
   },
 } satisfies Config["photon"];
