@@ -49,11 +49,11 @@ importers:
         version: 0.6.13(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vike@0.4.247(react-streaming@0.4.11(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1)))
     devDependencies:
       '@photonjs/cloudflare':
-        specifier: ^0.1.10
-        version: 0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))(workerd@1.20251125.0)(wrangler@4.51.0)
+        specifier: ^0.1.11
+        version: 0.1.11(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))(workerd@1.20251125.0)(wrangler@4.51.0)
       '@photonjs/runtime':
-        specifier: ^0.1.12
-        version: 0.1.12(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(rollup@4.53.3)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.1.13
+        version: 0.1.13(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(rollup@4.53.3)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@vitejs/plugin-react':
         specifier: ^5.1.1
         version: 5.1.1(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
@@ -70,8 +70,8 @@ importers:
   examples/express-react:
     dependencies:
       '@photonjs/express':
-        specifier: ^0.1.10
-        version: 0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.1.11
+        version: 0.1.11(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@vitejs/plugin-react':
         specifier: ^5.1.1
         version: 5.1.1(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
@@ -134,8 +134,8 @@ importers:
   examples/hono-react:
     dependencies:
       '@photonjs/hono':
-        specifier: ^0.1.9
-        version: 0.1.9(@hattip/core@0.0.49)(@hono/node-server@1.19.6(hono@4.10.7))(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.1.10
+        version: 0.1.10(@hattip/core@0.0.49)(@hono/node-server@1.19.6(hono@4.10.7))(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@vitejs/plugin-react':
         specifier: ^5.1.1
         version: 5.1.1(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
@@ -205,8 +205,8 @@ importers:
         specifier: ^7.27.1
         version: 7.27.1(@babel/core@7.28.5)
       '@photonjs/vercel':
-        specifier: ^0.1.17
-        version: 0.1.17(3e47030c0d43ed551f1f808badbc8f7d)
+        specifier: ^0.1.18
+        version: 0.1.18(7975662f8df5ac8c3a216aa3452cf8c3)
       '@playwright/test':
         specifier: ^1.57.0
         version: 1.57.0
@@ -272,11 +272,11 @@ importers:
         version: 0.6.13(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vike@0.4.247(react-streaming@0.4.11(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1)))
     devDependencies:
       '@photonjs/runtime':
-        specifier: ^0.1.12
-        version: 0.1.12(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(rollup@4.53.3)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.1.13
+        version: 0.1.13(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(rollup@4.53.3)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@photonjs/vercel':
-        specifier: ^0.1.17
-        version: 0.1.17(3e47030c0d43ed551f1f808badbc8f7d)
+        specifier: ^0.1.18
+        version: 0.1.18(7975662f8df5ac8c3a216aa3452cf8c3)
       '@vitejs/plugin-react':
         specifier: ^5.1.1
         version: 5.1.1(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
@@ -296,11 +296,11 @@ importers:
         specifier: ^0.7.15
         version: 0.7.15
       '@photonjs/core':
-        specifier: ^0.1.15
-        version: 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.1.16
+        version: 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@photonjs/runtime':
-        specifier: ^0.1.12
-        version: 0.1.12(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(rollup@4.53.3)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.1.13
+        version: 0.1.13(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(rollup@4.53.3)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/compress':
         specifier: ^0.2.34
         version: 0.2.34
@@ -330,11 +330,11 @@ importers:
         specifier: ^1.19.6
         version: 1.19.6(hono@4.10.7)
       '@photonjs/cloudflare':
-        specifier: ^0.1.10-beta.0
-        version: 0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))(workerd@1.20251125.0)(wrangler@4.51.0)
+        specifier: ^0.1.11
+        version: 0.1.11(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))(workerd@1.20251125.0)(wrangler@4.51.0)
       '@photonjs/vercel':
-        specifier: ^0.1.17-beta.0
-        version: 0.1.17(3e47030c0d43ed551f1f808badbc8f7d)
+        specifier: ^0.1.18
+        version: 0.1.18(7975662f8df5ac8c3a216aa3452cf8c3)
       '@types/bun':
         specifier: ^1.3.3
         version: 1.3.3
@@ -387,23 +387,23 @@ importers:
         specifier: ^2.0.2
         version: 2.0.2
       '@photonjs/elysia':
-        specifier: ^0.1.9
-        version: 0.1.9(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
-      '@photonjs/express':
         specifier: ^0.1.10
         version: 0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/express':
+        specifier: ^0.1.11
+        version: 0.1.11(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@photonjs/fastify':
-        specifier: ^0.1.9
-        version: 0.1.9(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.1.10
+        version: 0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@photonjs/h3':
-        specifier: ^0.1.9
-        version: 0.1.9(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.1.10
+        version: 0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@photonjs/hattip':
-        specifier: ^0.1.9
-        version: 0.1.9(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.1.10
+        version: 0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@photonjs/hono':
-        specifier: ^0.1.9
-        version: 0.1.9(@hattip/core@0.0.49)(@hono/node-server@1.19.6(hono@4.10.7))(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.1.10
+        version: 0.1.10(@hattip/core@0.0.49)(@hono/node-server@1.19.6(hono@4.10.7))(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@prisma/client':
         specifier: ^6.19.0
         version: 6.19.0(prisma@6.19.0(magicast@0.3.5)(typescript@5.9.3))(typescript@5.9.3)
@@ -1834,59 +1834,59 @@ packages:
   '@oxc-project/types@0.98.0':
     resolution: {integrity: sha512-Vzmd6FsqVuz5HQVcRC/hrx7Ujo3WEVeQP7C2UNP5uy1hUY4SQvMB+93jxkI1KRHz9a/6cni3glPOtvteN+zpsw==}
 
-  '@photonjs/cloudflare@0.1.10':
-    resolution: {integrity: sha512-h7sm5Fd1T6oeFTaEDBpK7+eAJkcRCmZRBSqVeVg5NppM0twzjARbBM6TjHcFNWqoWQj+sEnXRE6qAF1zrF8k1g==}
+  '@photonjs/cloudflare@0.1.11':
+    resolution: {integrity: sha512-EYsusJEWf8JGDOEqJC6F5C/sa99hRsmtCYbmdvaR/YmIc767HiYvaKVp0ejcVfbJ8gifSXSmPGpYe8BTDmWGuA==}
 
-  '@photonjs/core@0.1.15':
-    resolution: {integrity: sha512-+aNrpRywvr3rivGWnPerr0K73ifw4+Y36eoRwZihZi5rruGHCltO5on14+5yAFTFNNVmH7p7A/QB3Wew166hEQ==}
+  '@photonjs/core@0.1.16':
+    resolution: {integrity: sha512-YlKLFGb6UUHcIphHeKl9uvAudAueU18UhMt79XQJQbwlg6OXn5pfgJMT5+uYRFD8B1BZ6p4Up0CYMvzV+RNPAA==}
     peerDependencies:
       vite: '>=7.1'
     peerDependenciesMeta:
       vite:
         optional: true
 
-  '@photonjs/elysia@0.1.9':
-    resolution: {integrity: sha512-CPO9HkZzrzDjc2uSSqLB6AqmB3PbwceILt6suX3lii4bjN6coIQMqaLBIH7tyYbIlLK0qFQN7lijxmQ+H0ACUw==}
+  '@photonjs/elysia@0.1.10':
+    resolution: {integrity: sha512-pStRAgYWOPj4wMEVH7r7VnPR0b77CACofm8TFq8p2R/PoK99o/LZzHDR5NMQo8Yy6JGykVOatoANfsngVr6Www==}
     peerDependencies:
       vite: '>=7.1'
     peerDependenciesMeta:
       vite:
         optional: true
 
-  '@photonjs/express@0.1.10':
-    resolution: {integrity: sha512-+8CH//DYkgLYlN1321bSIXhBckPzMp0CLzH6UwznRWaDp9XMOv09zBTUHhEHSAU2TwAjEJn+6iTF3tq8h4Z7xg==}
+  '@photonjs/express@0.1.11':
+    resolution: {integrity: sha512-dkK8m+3aBQGr1EBOOsC+LSsk/7THPt6N5eqrUK1E1yVa0z0Vo5zlWw4r/hhHWcA0INS/0R49EWxdWGiKPVynwA==}
     peerDependencies:
       vite: '>=7.1'
     peerDependenciesMeta:
       vite:
         optional: true
 
-  '@photonjs/fastify@0.1.9':
-    resolution: {integrity: sha512-tvA1n+I7zl0DvFEsmw2u+rVpQHNRUmieUXrV2xvxMqnLN8kROvuOQpH4oYJc9L/BnrwHHiNFMnod8MY2q/nzTA==}
+  '@photonjs/fastify@0.1.10':
+    resolution: {integrity: sha512-L8LUXjjFv9MYHvhYZ+7bsI6KtlFkVitDBUlI1xiQyABW2urU50mrQDu6Psw8ZJ3JJAu5mYTqj1fWeUCOTgyqeA==}
     peerDependencies:
       vite: '>=7.1'
     peerDependenciesMeta:
       vite:
         optional: true
 
-  '@photonjs/h3@0.1.9':
-    resolution: {integrity: sha512-YZfc34IxMofTf4EF+fAvk1ISOEfoak+nkK475jQVKXLUQwvLR6N+K90nKTWkpMkOL5otb1BPjc365gwyiJIlCA==}
+  '@photonjs/h3@0.1.10':
+    resolution: {integrity: sha512-AWawtVzAFUccDEMoU3ggszswP88coiaWY1RWYg7YeI5BlAtRzNjBMT3ArL90uA2uZ3yrZ/fzUCPMbKEYF6rg0A==}
     peerDependencies:
       vite: '>=7.1'
     peerDependenciesMeta:
       vite:
         optional: true
 
-  '@photonjs/hattip@0.1.9':
-    resolution: {integrity: sha512-rJEIo8qQaVub2chI8dvvAi3zgiw9yDXliPO/F1lt0E+2UqByIM7suuhi+TB4MdEaPWJ5Z3/Ug7zOAfC1I/vBTQ==}
+  '@photonjs/hattip@0.1.10':
+    resolution: {integrity: sha512-NvQtDin2XWIB/PaKBLwG0KDEUu/oicbMlCLfsFm+l1V8Ok/oT3eXMBO4oxVMFwqbBKBufJPUENleEToqrpofxQ==}
     peerDependencies:
       vite: '>=7.1'
     peerDependenciesMeta:
       vite:
         optional: true
 
-  '@photonjs/hono@0.1.9':
-    resolution: {integrity: sha512-6iZF9nAzJHSoHaWanI4ayTkM7Lg8QgNyTSPR11DXvJ3KLKp+G/TRXxLX1eUvOHCga3YYecEKJiwBvdp8OEDmzw==}
+  '@photonjs/hono@0.1.10':
+    resolution: {integrity: sha512-mhanSQSZ7Xnq4avAFIw+jQoIWF7hvsrR0vuFfzJkJE67T9XMsCp9XrFT+O4yixUaYQrA0mCwkffnZliSxqNWVw==}
     peerDependencies:
       '@hono/node-server': ^1
       vite: '>=7.1'
@@ -1896,27 +1896,27 @@ packages:
       vite:
         optional: true
 
-  '@photonjs/runtime@0.1.12':
-    resolution: {integrity: sha512-xOtX9wDRmH6fDEqH1NM0MaO5grEH2qynnCLEiHKyeVWYpPiHF4Mq0CKhM0LWYjs7IRgELiwTT1joSOlGeK18Hw==}
+  '@photonjs/runtime@0.1.13':
+    resolution: {integrity: sha512-fbohN2OYVRFnRGOoLCTRjNkZGYoHp8DiOn2HpRTOr70WQdkus7JMoiAFB8R1PmsP1dOnN6AdFQxKwgIBYdbL9Q==}
     peerDependencies:
       vite: '>=7.1'
     peerDependenciesMeta:
       vite:
         optional: true
 
-  '@photonjs/srvx@0.1.9':
-    resolution: {integrity: sha512-t6xCzwy6gLPOGYLYmGjfnVtvSyuAFUaIgZH+XP801sQVwqUOjozGwESflF+7Nbx209lvFtuelptWMI5VtSN0cQ==}
+  '@photonjs/srvx@0.1.10':
+    resolution: {integrity: sha512-fAW6ZTY5BffguYBUsj2HcSc9K7DTwgMFVl5B6HVU96ayYgIqGEu5sIxJV9Iq5wV2eF1AkkASSxWC4GfjLCCu+A==}
     peerDependencies:
       vite: '>=7.1'
     peerDependenciesMeta:
       vite:
         optional: true
 
-  '@photonjs/vercel@0.1.17':
-    resolution: {integrity: sha512-V+DED9KmRIc7g1xgjF1meHSoMWK3QMA5xreu5DDWV59QAyEXUA2xzBT/MvVgsuEbrkJgj5MM5qFxCbLgzyn0aQ==}
+  '@photonjs/vercel@0.1.18':
+    resolution: {integrity: sha512-Uec/MQzPL0PyWP8zAPb6u6c/ACnDPCqqTNrRil7bvJXfk2/wHb8HYyi18oCaOePNhPW+Mql8NjQ1s0aYwr8bOQ==}
     peerDependencies:
-      '@photonjs/core': ^0.1.15
-      '@photonjs/runtime': ^0.1.12
+      '@photonjs/core': ^0.1.16
+      '@photonjs/runtime': ^0.1.13
       vite: '>=7.1'
 
   '@pinojs/redact@0.4.0':
@@ -5948,10 +5948,10 @@ snapshots:
 
   '@oxc-project/types@0.98.0': {}
 
-  '@photonjs/cloudflare@0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))(workerd@1.20251125.0)(wrangler@4.51.0)':
+  '@photonjs/cloudflare@0.1.11(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))(workerd@1.20251125.0)(wrangler@4.51.0)':
     dependencies:
       '@cloudflare/vite-plugin': 1.15.3(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))(workerd@1.20251125.0)(wrangler@4.51.0)
-      '@photonjs/core': 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/core': 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/cloudflare': 0.4.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
     transitivePeerDependencies:
       - '@cloudflare/workers-types'
@@ -5969,7 +5969,7 @@ snapshots:
       - workerd
       - wrangler
 
-  '@photonjs/core@0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
+  '@photonjs/core@0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
       '@brillout/vite-plugin-server-entry': 0.7.15
       '@universal-middleware/cloudflare': 0.4.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
@@ -5993,9 +5993,9 @@ snapshots:
       - hono
       - srvx
 
-  '@photonjs/elysia@0.1.9(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
+  '@photonjs/elysia@0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
-      '@photonjs/core': 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/core': 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/elysia': 0.6.1(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
     optionalDependencies:
       vite: 7.2.4(@types/node@20.19.25)(jiti@2.6.1)
@@ -6010,9 +6010,9 @@ snapshots:
       - hono
       - srvx
 
-  '@photonjs/express@0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
+  '@photonjs/express@0.1.11(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
-      '@photonjs/core': 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/core': 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/express': 0.4.22(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
     optionalDependencies:
       vite: 7.2.4(@types/node@20.19.25)(jiti@2.6.1)
@@ -6027,9 +6027,9 @@ snapshots:
       - hono
       - srvx
 
-  '@photonjs/fastify@0.1.9(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
+  '@photonjs/fastify@0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
-      '@photonjs/core': 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/core': 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/fastify': 0.5.22(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
     optionalDependencies:
       vite: 7.2.4(@types/node@20.19.25)(jiti@2.6.1)
@@ -6044,9 +6044,9 @@ snapshots:
       - hono
       - srvx
 
-  '@photonjs/h3@0.1.9(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
+  '@photonjs/h3@0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
-      '@photonjs/core': 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/core': 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/h3': 0.4.14(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
     optionalDependencies:
       vite: 7.2.4(@types/node@20.19.25)(jiti@2.6.1)
@@ -6061,9 +6061,9 @@ snapshots:
       - hono
       - srvx
 
-  '@photonjs/hattip@0.1.9(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
+  '@photonjs/hattip@0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
-      '@photonjs/core': 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/core': 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/hattip': 0.4.13(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
     optionalDependencies:
       vite: 7.2.4(@types/node@20.19.25)(jiti@2.6.1)
@@ -6078,9 +6078,9 @@ snapshots:
       - hono
       - srvx
 
-  '@photonjs/hono@0.1.9(@hattip/core@0.0.49)(@hono/node-server@1.19.6(hono@4.10.7))(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
+  '@photonjs/hono@0.1.10(@hattip/core@0.0.49)(@hono/node-server@1.19.6(hono@4.10.7))(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
-      '@photonjs/core': 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/core': 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/hono': 0.4.17(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
     optionalDependencies:
       '@hono/node-server': 1.19.6(hono@4.10.7)
@@ -6096,10 +6096,10 @@ snapshots:
       - hono
       - srvx
 
-  '@photonjs/runtime@0.1.12(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(rollup@4.53.3)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
+  '@photonjs/runtime@0.1.13(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(rollup@4.53.3)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
-      '@photonjs/core': 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
-      '@photonjs/srvx': 0.1.9(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/core': 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/srvx': 0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/core': 0.4.13(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
       '@universal-middleware/sirv': 0.1.23
       srvx: 0.9.7
@@ -6119,9 +6119,9 @@ snapshots:
       - rollup
       - supports-color
 
-  '@photonjs/srvx@0.1.9(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
+  '@photonjs/srvx@0.1.10(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
-      '@photonjs/core': 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/core': 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/srvx': 0.1.1(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
     optionalDependencies:
       vite: 7.2.4(@types/node@20.19.25)(jiti@2.6.1)
@@ -6136,12 +6136,12 @@ snapshots:
       - hono
       - srvx
 
-  '@photonjs/vercel@0.1.17(3e47030c0d43ed551f1f808badbc8f7d)':
+  '@photonjs/vercel@0.1.18(7975662f8df5ac8c3a216aa3452cf8c3)':
     dependencies:
       '@brillout/libassert': 0.5.8
       '@manypkg/find-root': 3.1.0
-      '@photonjs/core': 0.1.15(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
-      '@photonjs/runtime': 0.1.12(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(rollup@4.53.3)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/core': 0.1.16(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
+      '@photonjs/runtime': 0.1.13(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(rollup@4.53.3)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1))
       '@universal-middleware/core': 0.4.13(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
       '@universal-middleware/vercel': 0.4.29(@hattip/core@0.0.49)(@types/express@5.0.5)(@universal-middleware/h3@0.4.14(@hattip/core@0.0.49)(@types/express@5.0.5)(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7))(elysia@1.4.16(@sinclair/typebox@0.34.41)(@types/bun@1.3.3)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))(express@5.1.0)(fastify@5.6.2)(h3@1.15.4)(hono@4.10.7)(srvx@0.9.7)
       '@vercel/build-utils': 13.2.1
