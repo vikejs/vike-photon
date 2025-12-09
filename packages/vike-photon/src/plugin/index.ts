@@ -5,13 +5,13 @@ import { configPlugin } from "./plugins/configPlugin.js";
 import { routesPlugins } from "./plugins/routes.js";
 import { serverEntryPlugin } from "./plugins/serverEntryPlugin.js";
 import { setPhotonMeta } from "./plugins/setPhotonMeta.js";
-import { targetsPlugin } from "./plugins/targets.js";
+import { targetsPlugin, type VikePhotonOptions } from "./plugins/targets.js";
 import { vikePhotonConfigToPhotonPlugin } from "./plugins/vikePhotonConfigToPhotonPlugin.js";
 
 export { vikePhoton, vikePhoton as default };
 
 export type PluginInterop = Record<string, unknown> & { name: string };
-function vikePhoton(): (PluginInterop | Promise<PluginInterop | PluginInterop[]>)[] {
+function vikePhoton(options?: VikePhotonOptions): (PluginInterop | Promise<PluginInterop | PluginInterop[]>)[] {
   return [
     configPlugin(),
     vikePhotonConfigToPhotonPlugin(),
@@ -38,7 +38,7 @@ function vikePhoton(): (PluginInterop | Promise<PluginInterop | PluginInterop[]>
       },
     }),
     ...routesPlugins(),
-    targetsPlugin(),
+    targetsPlugin(options),
     // biome-ignore lint/suspicious/noExplicitAny: cast
   ] satisfies PluginOption as any;
 }

@@ -5,7 +5,23 @@ import { setTargetVercel } from "../../targets/vercel/index.js";
 import { assertUsage } from "../../utils/assert.js";
 import { isDependencyInstalledByUser } from "../../utils/isDependencyInstalledByUser.js";
 
-export async function targetsPlugin(): Promise<PluginOption[] | undefined> {
+export interface VikePhotonOptions {
+  /**
+   * Specifies the target mode for the operation.
+   *
+   * The target determines where the operation will be applied:
+   * - 'auto': Automatically selects the appropriate target based on installed packages.
+   * - 'node': Specifically targets a node environment.
+   *
+   * @default 'auto'
+   */
+  target?: "auto" | "node";
+}
+
+export async function targetsPlugin(options?: { target?: string }): Promise<PluginOption[] | undefined> {
+  const target = options?.target ?? "auto";
+  if (target === "node") return;
+
   const [photonVercel, photonCloudflare, vitePluginVercel] = await Promise.all([
     isDependencyInstalledByUser("@photonjs/vercel"),
     isDependencyInstalledByUser("@photonjs/cloudflare"),

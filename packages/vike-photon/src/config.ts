@@ -10,6 +10,7 @@ import { isDependencyInstalledByUser } from "./utils/isDependencyInstalledByUser
 export { config as default };
 
 const loadStandalonePlugin = createDeferred<PluginInterop[]>();
+const vikePhotonOptions: Parameters<typeof vikePhoton>[0] = {};
 
 const _config = {
   name: "vike-photon" as const,
@@ -33,7 +34,7 @@ const _config = {
       if (!loadStandalonePlugin.isResolved) {
         loadStandalonePlugin.resolve([]);
       }
-      return [photon(), vikePhoton(), loadStandalonePlugin.promise];
+      return [photon(), vikePhoton(vikePhotonOptions), loadStandalonePlugin.promise];
     },
   },
   // @ts-expect-error Defined by vike-react/vike-vue/vike-solid (see comment below)
@@ -61,26 +62,29 @@ const _config = {
       env: { server: true, config: true },
       global: true,
       effect({ configValue }) {
-        if (
-          typeof configValue === "object" &&
-          configValue !== null &&
-          "standalone" in configValue &&
-          configValue.standalone
-        ) {
-          if (typeof configValue.standalone === "object") {
-            if ("esbuild" in configValue.standalone) {
-              console.warn(
-                "[vike-photon][warning] 'photon.standalone.esbuild' is not supported anymore. Refer to https://github.com/nitedani/standaloner/tree/main/standaloner for supported options",
-              );
-            }
-
+        if (typeof configValue === "object" && configValue !== null) {
+          // target
+          if ("target" in configValue) {
             // biome-ignore lint/suspicious/noExplicitAny: cast
-            loadStandalonePlugin.resolve(standaloner(configValue.standalone as any) as PluginInterop[]);
-          } else {
-            loadStandalonePlugin.resolve(standaloner() as PluginInterop[]);
+            vikePhotonOptions.target = configValue.target as any;
           }
-        } else {
-          loadStandalonePlugin.resolve([]);
+          // standalone
+          if ("standalone" in configValue && configValue.standalone) {
+            if (typeof configValue.standalone === "object") {
+              if ("esbuild" in configValue.standalone) {
+                console.warn(
+                  "[vike-photon][warning] 'photon.standalone.esbuild' is not supported anymore. Refer to https://github.com/nitedani/standaloner/tree/main/standaloner for supported options",
+                );
+              }
+
+              // biome-ignore lint/suspicious/noExplicitAny: cast
+              loadStandalonePlugin.resolve(standaloner(configValue.standalone as any) as PluginInterop[]);
+            } else {
+              loadStandalonePlugin.resolve(standaloner() as PluginInterop[]);
+            }
+          } else {
+            loadStandalonePlugin.resolve([]);
+          }
         }
         return undefined;
       },
