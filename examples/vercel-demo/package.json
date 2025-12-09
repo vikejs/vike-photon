@@ -38,7 +38,7 @@
     "fast-glob": "^3.3.3",
     "playwright": "^1.57.0",
     "typescript": "^5.9.3",
-    "vike-photon": "^0.1.22",
+    "vike-photon": "^0.1.23",
     "vitest": "^4.0.15",
     "zod": "^4.1.13"
   }

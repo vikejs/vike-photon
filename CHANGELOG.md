@@ -1,3 +1,12 @@
+## [0.1.23](https://github.com/vikejs/vike-photon/compare/v0.1.22...v0.1.23) (2025-12-09)
+
+
+### Features
+
+* add ability to disable auto loading target packages ([#42](https://github.com/vikejs/vike-photon/issues/42)) ([3f2cf32](https://github.com/vikejs/vike-photon/commit/3f2cf325944cfc71762a8279bce4b1fc76785f63))
+
+
+
 ## [0.1.22](https://github.com/vikejs/vike-photon/compare/v0.1.21...v0.1.22) (2025-12-05)
 
 
