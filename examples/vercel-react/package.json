@@ -14,8 +14,8 @@
     "vike-react": "^0.6.17"
   },
   "devDependencies": {
-    "@photonjs/runtime": "^0.1.15",
-    "@photonjs/vercel": "^0.1.21",
+    "@photonjs/runtime": "^0.1.16",
+    "@photonjs/vercel": "^0.1.22",
     "@vitejs/plugin-react": "^5.1.2",
     "typescript": "^5.9.3",
     "vite": "^7.3.0"

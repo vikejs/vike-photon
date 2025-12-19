@@ -6,7 +6,7 @@
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@photonjs/hono": "^0.1.11",
+    "@photonjs/hono": "^0.1.12",
     "@vitejs/plugin-react": "^5.1.2",
     "hono": "^4.11.1",
     "react": "^19.2.3",
