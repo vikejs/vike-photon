@@ -24,7 +24,7 @@
     "@types/react-dom": "^19.2.3",
     "@universal-middleware/core": "^0.4.14",
     "@vitejs/plugin-react": "^5.1.2",
-    "elysia": "^1.4.19",
+    "elysia": "^1.4.21",
     "express": "^5.2.1",
     "fastify": "^5.6.2",
     "fastify-raw-body": "^5.0.0",
