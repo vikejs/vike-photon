@@ -36,7 +36,7 @@
     "sharp": "^0.34.5",
     "telefunc": "^0.2.17",
     "typescript": "^5.9.3",
-    "vike": "0.4.251-commit-9c5fb90",
+    "vike": "^0.4.252",
     "vike-photon": "workspace:*",
     "vite": "^7.3.0"
   },
