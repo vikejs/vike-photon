@@ -39,14 +39,14 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(react@19.2.3)
       vike:
-        specifier: ^0.4.250
-        version: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.4.251
+        version: 0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
         specifier: ^0.1.24
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.18
-        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
+        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
     devDependencies:
       '@photonjs/cloudflare':
         specifier: ^0.1.13
@@ -88,14 +88,14 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
       vike:
-        specifier: ^0.4.250
-        version: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.4.251
+        version: 0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
         specifier: ^0.1.24
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.18
-        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
+        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
       vite:
         specifier: ^7.3.0
         version: 7.3.0(@types/node@20.19.25)(jiti@2.6.1)
@@ -115,14 +115,14 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(react@19.2.3)
       vike:
-        specifier: ^0.4.250
-        version: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.4.251
+        version: 0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
         specifier: ^0.1.24
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.18
-        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
+        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
       vite:
         specifier: ^7.3.0
         version: 7.3.0(@types/node@20.19.25)(jiti@2.6.1)
@@ -149,14 +149,14 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(react@19.2.3)
       vike:
-        specifier: ^0.4.250
-        version: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.4.251
+        version: 0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
         specifier: ^0.1.24
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.18
-        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
+        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
       vite:
         specifier: ^7.3.0
         version: 7.3.0(@types/node@20.19.25)(jiti@2.6.1)
@@ -192,11 +192,11 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(react@19.2.3)
       vike:
-        specifier: ^0.4.250
-        version: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.4.251
+        version: 0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-react:
         specifier: ^0.6.18
-        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
+        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
       vite:
         specifier: ^7.3.0
         version: 7.3.0(@types/node@20.19.25)(jiti@2.6.1)
@@ -262,14 +262,14 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(react@19.2.3)
       vike:
-        specifier: ^0.4.250
-        version: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.4.251
+        version: 0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
         specifier: ^0.1.24
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.18
-        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
+        version: 0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)))
     devDependencies:
       '@photonjs/runtime':
         specifier: ^0.1.16
@@ -369,8 +369,8 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
       vike:
-        specifier: ^0.4.250
-        version: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.4.251
+        version: 0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vite:
         specifier: ^7.3.0
         version: 7.3.0(@types/node@20.19.25)(jiti@2.6.1)
@@ -462,8 +462,8 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
       vike:
-        specifier: ^0.4.250
-        version: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
+        specifier: ^0.4.251
+        version: 0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
         specifier: workspace:*
         version: link:../../packages/vike-photon
@@ -4565,8 +4565,8 @@ packages:
       react-dom: '>=19'
       vike: '>=0.4.250'
 
-  vike@0.4.250:
-    resolution: {integrity: sha512-ZTsVEL3V4JT7hHqRbvjiQotoIGrwWTmh2RIzkbpNtUDhzbrMIVljcFuzLjzAvjpiL86gRL/bHSKS0DSnFPlmqw==}
+  vike@0.4.251:
+    resolution: {integrity: sha512-GCm3pymumvDpfo7/cjakW4or5NTjXLj2RSF7zFxOLM30GNYb23EpoOkZpQ/P56ua/WM5mdRLefMj5zOd/2PmIQ==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -9146,14 +9146,14 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vike-react@0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))):
+  vike-react@0.6.18(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vike@0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))):
     dependencies:
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
       react-streaming: 0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      vike: 0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
+      vike: 0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
 
-  vike@0.4.250(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)):
+  vike@0.4.251(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1)):
     dependencies:
       '@babel/core': 7.28.5
       '@babel/types': 7.28.5
