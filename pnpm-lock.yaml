@@ -471,6 +471,9 @@ importers:
       vite:
         specifier: ^7.3.1
         version: 7.3.1(@types/node@20.19.29)(jiti@2.6.1)
+    dependenciesMeta:
+      vike-photon:
+        injected: true
     devDependencies:
       '@hattip/router':
         specifier: ^0.0.49
