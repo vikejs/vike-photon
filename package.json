@@ -45,7 +45,10 @@
       "prisma",
       "sharp",
       "workerd"
-    ]
+    ],
+    "patchedDependencies": {
+      "@photonjs/core": "patches/@photonjs__core.patch"
+    }
   },
   "packageManager": "pnpm@10.15.1"
 }

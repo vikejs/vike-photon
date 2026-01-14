@@ -1,0 +1,13 @@
+diff --git a/dist/plugin.js b/dist/plugin.js
+index e0a5d748013268af414f29c958f5198a358a0d52..fa290b1d386ed196824b16fc7903ade6ec6c5709 100644
+--- a/dist/plugin.js
++++ b/dist/plugin.js
+@@ -1858,7 +1858,7 @@ function resolvePhotonConfigPlugin(pluginConfig) {
+ 			order: "pre",
+ 			handler(config) {
+ 				if (resolvedPhotonConfig === null) if (Array.isArray(config.photon.entries)) {
+-					console.warn(yellow("[photon] Multiple versions of @photonjs/core detected. This may cause unexpected behavior. Try running 'npm dedupe' or 'yarn dedupe' to resolve version conflicts."));
++					// console.warn(yellow("[photon] Multiple versions of @photonjs/core detected. This may cause unexpected behavior. Try running 'npm dedupe' or 'yarn dedupe' to resolve version conflicts."));
+ 					resolvedPhotonConfig = config.photon;
+ 				} else resolvedPhotonConfig = resolvePhotonConfig(config.photon);
+ 				if (resolvedPhotonConfig.codeSplitting.framework) {
