@@ -3,18 +3,7 @@ packages:
   - 'packages/*'
   - 'examples/*'
 
-# Ensure that tests folders do not include those packages only because they are dev dependencies of `vike-photon`.
-# This must be combined with `dependenciesMeta.*.injected = true` in the tests package. See https://pnpm.io/package_json#dependenciesmetainjected
-# vike-photon `build` script has also been updated to always finish with a `pnpm install`, so that the tests always have the latest vike-photon version installed
-hoistPattern:
-- "!@photonjs/cloudflare"
-- "!vike-vercel"
-- "!vite-plugin-vercel"
-- "!@photonjs/vercel"
-publicHoistPattern:
-- "!@photonjs/cloudflare"
-- "!vike-vercel"
-- "!vite-plugin-vercel"
-- "!@photonjs/vercel"
+dedupePeerDependents: true
+dedupeDirectDeps: true
 linkWorkspacePackages: true
 preferWorkspacePackages: true

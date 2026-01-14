@@ -34,7 +34,8 @@
   },
   "pnpm": {
     "overrides": {
-      "@types/node": "^20.19.25"
+      "@types/node": "^20.19.25",
+      "srvx": "^0.9.8"
     },
     "onlyBuiltDependencies": [
       "@biomejs/biome",
@@ -45,10 +46,7 @@
       "prisma",
       "sharp",
       "workerd"
-    ],
-    "patchedDependencies": {
-      "@photonjs/core": "patches/@photonjs__core.patch"
-    }
+    ]
   },
-  "packageManager": "pnpm@10.15.1"
+  "packageManager": "pnpm@10.28.0"
 }
