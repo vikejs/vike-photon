@@ -13,7 +13,7 @@ export function configPlugin(): Plugin {
           optimizeDeps: {
             // Those are ESM packages, no need to optimize them
             exclude: ["vike-photon", "vike"],
-            // Still optimize this dual-format dependency
+            // TO-DO/eventually: remove this line — vike@0.4.254 removed @brillout/require-shim https://github.com/vikejs/vike/pull/3091
             include: ["vike > @brillout/require-shim"],
           },
         },
