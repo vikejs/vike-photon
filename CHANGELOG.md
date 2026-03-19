@@ -1,3 +1,12 @@
+## [0.1.25](https://github.com/vikejs/vike-photon/compare/v0.1.24...v0.1.25) (2026-03-19)
+
+
+### Bug Fixes
+
+* vike preview ([a878005](https://github.com/vikejs/vike-photon/commit/a878005874a1ef8c2a3ea015471d462177711186))
+
+
+
 ## [0.1.24](https://github.com/vikejs/vike-photon/compare/v0.1.23...v0.1.24) (2025-12-19)
 
 

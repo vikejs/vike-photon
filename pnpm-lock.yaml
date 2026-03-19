@@ -42,7 +42,7 @@ importers:
         specifier: ^0.4.252
         version: 0.4.252(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.24
+        specifier: ^0.1.25
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.18
@@ -91,7 +91,7 @@ importers:
         specifier: ^0.4.252
         version: 0.4.252(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.24
+        specifier: ^0.1.25
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.18
@@ -118,7 +118,7 @@ importers:
         specifier: ^0.4.252
         version: 0.4.252(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.24
+        specifier: ^0.1.25
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.18
@@ -152,7 +152,7 @@ importers:
         specifier: ^0.4.252
         version: 0.4.252(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.24
+        specifier: ^0.1.25
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.18
@@ -238,7 +238,7 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
       vike-photon:
-        specifier: ^0.1.24
+        specifier: ^0.1.25
         version: link:../../packages/vike-photon
       vitest:
         specifier: ^4.0.16
@@ -265,7 +265,7 @@ importers:
         specifier: ^0.4.252
         version: 0.4.252(react-streaming@0.4.15(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))
       vike-photon:
-        specifier: ^0.1.24
+        specifier: ^0.1.25
         version: link:../../packages/vike-photon
       vike-react:
         specifier: ^0.6.18
@@ -2371,6 +2371,9 @@ packages:
 
   '@vite-plugin-vercel/schemas@1.0.0':
     resolution: {integrity: sha512-iUEJwHmAD4wFem5iI1Jmtcj4CO49PVBBUGDA8R8yWKC72/n1FLiQ6AgaetLqFTTT7KCbA32o9T6P3XJow4vCsg==}
+
+  '@vite-plugin-vercel/schemas@1.1.0':
+    resolution: {integrity: sha512-Vl7r+Itu7oS2/Ypo0wyPOB87AHdoU4EsmDNkSjTeKc7wl9xxHafCMd2Uc9qLOcX0tlDtcwJkjvB4A//ObqL8/w==}
 
   '@vitejs/plugin-react@5.1.2':
     resolution: {integrity: sha512-EcA07pHJouywpzsoTUqNh5NwGayl2PPVEJKUSinGGSxFGYn+shYbqMGBg6FXDqgXum9Ou/ecb+411ssw8HImJQ==}
@@ -4795,6 +4798,9 @@ packages:
   zod@4.3.5:
     resolution: {integrity: sha512-k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==}
 
+  zod@4.3.6:
+    resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -5982,7 +5988,7 @@ snapshots:
       '@vercel/build-utils': 13.2.4
       '@vercel/nft': 1.1.1(rollup@4.54.0)
       '@vercel/routing-utils': 5.3.1
-      '@vite-plugin-vercel/schemas': 1.0.0
+      '@vite-plugin-vercel/schemas': 1.1.0
       convert-route: 0.1.2
       esbuild: 0.27.2
       fast-glob: 3.3.3
@@ -6622,6 +6628,10 @@ snapshots:
   '@vite-plugin-vercel/schemas@1.0.0':
     dependencies:
       zod: 4.3.5
+
+  '@vite-plugin-vercel/schemas@1.1.0':
+    dependencies:
+      zod: 4.3.6
 
   '@vitejs/plugin-react@5.1.2(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
@@ -9406,5 +9416,7 @@ snapshots:
   zod@3.25.76: {}
 
   zod@4.3.5: {}
+
+  zod@4.3.6: {}
 
   zwitch@2.0.4: {}
