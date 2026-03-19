@@ -31,9 +31,10 @@ async function removeBaseUrl(req: Request) {
 
 function getDefaultStaticDir() {
   const argv1 = process.argv[1];
-  const entrypointDirAbs = argv1 && !argv1.endsWith('vike/bin.js')
-    ? dirname(isAbsolute(argv1) ? argv1 : join(process.cwd(), argv1))
-    : dirname(fileURLToPath(import.meta.url));
+  const entrypointDirAbs =
+    argv1 && !argv1.endsWith("vike/bin.js")
+      ? dirname(isAbsolute(argv1) ? argv1 : join(process.cwd(), argv1))
+      : dirname(fileURLToPath(import.meta.url));
   return join(entrypointDirAbs, "..", "client");
 }
 
