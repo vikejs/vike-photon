@@ -40,7 +40,7 @@
   "dependencies": {
     "@brillout/picocolors": "^1.0.30",
     "@brillout/vite-plugin-server-entry": "^0.7.17",
-    "@photonjs/core": "^0.1.21",
+    "@photonjs/core": "^0.1.22",
     "@photonjs/runtime": "^0.1.16",
     "@universal-middleware/compress": "^0.2.35",
     "@universal-middleware/core": "^0.4.15",
@@ -73,7 +73,7 @@
     "@hattip/adapter-node": "^0.0.49",
     "@hono/node-server": "^1.19.7",
     "@photonjs/cloudflare": "^0.1.13",
-    "@photonjs/vercel": "^0.1.22",
+    "@photonjs/vercel": "^0.1.23",
     "@types/bun": "^1.3.5",
     "@types/deno": "^2.5.0",
     "@types/node": "^20.19.25",
