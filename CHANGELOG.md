@@ -1,3 +1,12 @@
+## [0.1.26](https://github.com/vikejs/vike-photon/compare/v0.1.25...v0.1.26) (2026-03-26)
+
+
+### Bug Fixes
+
+* support Vite 8 ([#59](https://github.com/vikejs/vike-photon/issues/59)) ([77fb937](https://github.com/vikejs/vike-photon/commit/77fb93716af80195856d7f558a8bc07a8f948b53))
+
+
+
 ## [0.1.25](https://github.com/vikejs/vike-photon/compare/v0.1.24...v0.1.25) (2026-03-19)
 
 

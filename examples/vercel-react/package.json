@@ -10,7 +10,7 @@
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "vike": "^0.4.252",
-    "vike-photon": "^0.1.25",
+    "vike-photon": "^0.1.26",
     "vike-react": "^0.6.18"
   },
   "devDependencies": {
