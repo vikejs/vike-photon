@@ -1,4 +1,4 @@
-> ⚠️ **Alpha Stage**: `vike-photon` is currently in alpha. APIs may change before stable release.
+> ⚠️ **DEPRECATED**: see [Introducing Universal Deploy](https://vike.dev/blog/universal-deploy)
 
 Documentation: [Vike Docs > `vike-photon`](https://vike.dev/vike-photon)  
 Source code: [packages/vike-photon](packages/vike-photon)  
