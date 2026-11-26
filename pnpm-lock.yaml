@@ -14,6 +14,9 @@ importers:
       '@biomejs/biome':
         specifier: ^2.3.11
         version: 2.3.11
+      '@brillout/release-me':
+        specifier: ^0.5.2
+        version: 0.5.2(conventional-commits-filter@5.0.0)
       '@brillout/test-e2e':
         specifier: ^0.6.21
         version: 0.6.21
@@ -22,7 +25,7 @@ importers:
         version: 2.0.1(@biomejs/biome@2.3.11)
       playwright:
         specifier: ^1.57.0
-        version: 1.57.0
+        version: 1.65.1
 
   examples/cloudflare-react:
     dependencies:
@@ -209,7 +212,7 @@ importers:
         version: 0.1.23(4088f29d7cc86ab4ce0fe19cae50d1db)
       '@playwright/test':
         specifier: ^1.57.0
-        version: 1.57.0
+        version: 1.65.1
       '@types/node':
         specifier: ^20.19.25
         version: 20.19.25
@@ -233,7 +236,7 @@ importers:
         version: 3.3.3
       playwright:
         specifier: ^1.57.0
-        version: 1.57.0
+        version: 1.65.1
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -317,9 +320,6 @@ importers:
         specifier: ^0.2.2
         version: 0.2.2(rollup@4.54.0)
     devDependencies:
-      '@brillout/release-me':
-        specifier: ^0.4.12
-        version: 0.4.12(conventional-commits-filter@5.0.0)
       '@elysiajs/node':
         specifier: ^1.4.2
         version: 1.4.2(elysia@1.4.21(@sinclair/typebox@0.34.41)(@types/bun@1.3.5)(exact-mirror@0.2.2(@sinclair/typebox@0.34.41))(file-type@21.0.0)(openapi-types@12.1.3)(typescript@5.9.3))
@@ -650,8 +650,8 @@ packages:
   '@brillout/picocolors@1.0.30':
     resolution: {integrity: sha512-xJjdgyN1H0qh2nB2xlzazIipiDixuUd9oD5msh/Qv5bXJG9j8MSD/m4lREt6Z10ej6FF31b8vB4tdT7lDUbiyA==}
 
-  '@brillout/release-me@0.4.12':
-    resolution: {integrity: sha512-0ONZeh7jt+7sZ94bZs0tnGaCQxFTgj7XFybG4jZkQxJJV81DXxzS1WT8aw86j37vO9irw9sShnqJzWE8/aPEqQ==}
+  '@brillout/release-me@0.5.2':
+    resolution: {integrity: sha512-pnndlG4jU3VghSCI7e1y2ZOc+92rVESt8KNJGKvPkEckxb085DydxLSvHGnRhx1JthjjcszlN4Lih8afMrRWKQ==}
     hasBin: true
 
   '@brillout/require-shim@0.1.2':
@@ -1815,9 +1815,9 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@playwright/test@1.57.0':
-    resolution: {integrity: sha512-6TyEnHgd6SArQO8UO2OMTxshln3QMWBtPGrOCgs3wVEmQmwyuNtB10IZMfmYDE0riwNR1cu4q+pPcxMVtaG3TA==}
-    engines: {node: '>=18'}
+  '@playwright/test@1.65.1':
+    resolution: {integrity: sha512-y+NCIRm2LvY4slUVWvGh1nujJ8RF/hEisIsq2mtUPgdQC4L701bq5hZGMhrpeXjACvwvO9tj5dJqhvM6TP9lbw==}
+    engines: {node: '>=20'}
     hasBin: true
 
   '@polka/url@1.0.0-next.29':
@@ -2371,6 +2371,9 @@ packages:
 
   '@vite-plugin-vercel/schemas@1.1.0':
     resolution: {integrity: sha512-Vl7r+Itu7oS2/Ypo0wyPOB87AHdoU4EsmDNkSjTeKc7wl9xxHafCMd2Uc9qLOcX0tlDtcwJkjvB4A//ObqL8/w==}
+
+  '@vite-plugin-vercel/schemas@1.1.1':
+    resolution: {integrity: sha512-Gkk5QUET2Rj6K0faYoYSh+R9D1XkqHJS/Eoh9emBYYimfKibtiFccVL37P4O6DBtosxoXXvxxgYT0ahVz3XF3g==}
 
   '@vitejs/plugin-react@5.1.2':
     resolution: {integrity: sha512-EcA07pHJouywpzsoTUqNh5NwGayl2PPVEJKUSinGGSxFGYn+shYbqMGBg6FXDqgXum9Ou/ecb+411ssw8HImJQ==}
@@ -3231,11 +3234,6 @@ packages:
     resolution: {integrity: sha512-Rx/WycZ60HOaqLKAi6cHRKKI7zxWbJ31MhntmtwMoaTeF7XFH9hhBp8vITaMidfljRQ6eYWCKkaTK+ykVJHP2A==}
     engines: {node: '>= 0.8'}
 
-  fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -3919,24 +3917,19 @@ packages:
   pkg-types@2.3.0:
     resolution: {integrity: sha512-SIqCzDRg0s9npO5XQ3tNZioRY1uK06lA41ynBC1YmFTmnY6FjUjVt6s4LoADmwoig1qqD0oK8h1p/8mlMx8Oig==}
 
-  playwright-chromium@1.56.0:
-    resolution: {integrity: sha512-Zgph8yT2/QzhozuY8PXKV7PXSg3f0YLyI3mE9ljaqh37RtckmZJBfiqeasJVhsCgYe3P63HbdDhUQkUMNT+nog==}
-    engines: {node: '>=18'}
+  playwright-chromium@1.65.1:
+    resolution: {integrity: sha512-XsGj9GBKk20UQVlwjbiSmArmTfNTrqbEw5SzTnV3J1uQCztQRsiPScSdiC2KoYuN3ItTN8/+IciM9/t/e9GctA==}
+    engines: {node: '>=20'}
     hasBin: true
 
-  playwright-core@1.56.0:
-    resolution: {integrity: sha512-1SXl7pMfemAMSDn5rkPeZljxOCYAmQnYLBTExuh6E8USHXGSX3dx6lYZN/xPpTz1vimXmPA9CDnILvmJaB8aSQ==}
-    engines: {node: '>=18'}
+  playwright-core@1.65.1:
+    resolution: {integrity: sha512-hqPpz7blSMPxWVdoeE1yiBSzXsKiVOd2k+kjCvmUywD2GPO2Dd9HfcWnq9NN0GHbNZDFgZ9JfBFr+X5/BLo0qw==}
+    engines: {node: '>=20'}
     hasBin: true
 
-  playwright-core@1.57.0:
-    resolution: {integrity: sha512-agTcKlMw/mjBWOnD6kFZttAAGHgi/Nw0CZ2o6JqWSbMlI219lAFLZZCyqByTsvVAJq5XA5H8cA6PrvBRpBWEuQ==}
-    engines: {node: '>=18'}
-    hasBin: true
-
-  playwright@1.57.0:
-    resolution: {integrity: sha512-ilYQj1s8sr2ppEJ2YVadYBN0Mb3mdo9J0wQ+UuDhzYqURwSoW4n1Xs5vs7ORwgDGmyEh33tRMeS8KhdkMoLXQw==}
-    engines: {node: '>=18'}
+  playwright@1.65.1:
+    resolution: {integrity: sha512-vJ1FuoOrNwOKHUIVEvSt3jT1L+wjjDpwhwIstKtfvTh8XIG4FG4bIFuvNdMxi81LGfAhUgUZleVFaOLY4RIUUw==}
+    engines: {node: '>=20'}
     hasBin: true
 
   pngjs@6.0.0:
@@ -4796,6 +4789,9 @@ packages:
   zod@4.3.6:
     resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
 
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -4980,7 +4976,7 @@ snapshots:
 
   '@brillout/picocolors@1.0.30': {}
 
-  '@brillout/release-me@0.4.12(conventional-commits-filter@5.0.0)':
+  '@brillout/release-me@0.5.2(conventional-commits-filter@5.0.0)':
     dependencies:
       '@brillout/picocolors': 1.0.30
       commander: 11.1.0
@@ -5001,7 +4997,7 @@ snapshots:
       esbuild: 0.23.1
       fast-glob: 3.3.3
       pixelmatch: 5.3.0
-      playwright-chromium: 1.56.0
+      playwright-chromium: 1.65.1
       pngjs: 6.0.0
       source-map-support: 0.5.21
       strip-ansi: 6.0.1
@@ -5983,7 +5979,7 @@ snapshots:
       '@vercel/build-utils': 13.2.4
       '@vercel/nft': 1.1.1(rollup@4.54.0)
       '@vercel/routing-utils': 5.3.1
-      '@vite-plugin-vercel/schemas': 1.1.0
+      '@vite-plugin-vercel/schemas': 1.1.1
       convert-route: 0.1.2
       esbuild: 0.27.2
       fast-glob: 3.3.3
@@ -6013,9 +6009,9 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@playwright/test@1.57.0':
+  '@playwright/test@1.65.1':
     dependencies:
-      playwright: 1.57.0
+      playwright: 1.65.1
 
   '@polka/url@1.0.0-next.29': {}
 
@@ -6623,6 +6619,10 @@ snapshots:
   '@vite-plugin-vercel/schemas@1.1.0':
     dependencies:
       zod: 4.3.6
+
+  '@vite-plugin-vercel/schemas@1.1.1':
+    dependencies:
+      zod: 4.6.7
 
   '@vitejs/plugin-react@5.1.2(vite@7.3.0(@types/node@20.19.25)(jiti@2.6.1))':
     dependencies:
@@ -7542,9 +7542,6 @@ snapshots:
 
   fresh@2.0.0: {}
 
-  fsevents@2.3.2:
-    optional: true
-
   fsevents@2.3.3:
     optional: true
 
@@ -8425,19 +8422,15 @@ snapshots:
       exsolve: 1.0.7
       pathe: 2.0.3
 
-  playwright-chromium@1.56.0:
+  playwright-chromium@1.65.1:
     dependencies:
-      playwright-core: 1.56.0
+      playwright-core: 1.65.1
 
-  playwright-core@1.56.0: {}
+  playwright-core@1.65.1: {}
 
-  playwright-core@1.57.0: {}
-
-  playwright@1.57.0:
+  playwright@1.65.1:
     dependencies:
-      playwright-core: 1.57.0
-    optionalDependencies:
-      fsevents: 2.3.2
+      playwright-core: 1.65.1
 
   pngjs@6.0.0: {}
 
@@ -9407,5 +9400,7 @@ snapshots:
   zod@3.25.76: {}
 
   zod@4.3.6: {}
+
+  zod@4.6.7: {}
 
   zwitch@2.0.4: {}
